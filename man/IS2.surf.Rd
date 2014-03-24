@@ -1,0 +1,19 @@
+\docType{data}
+\name{IS2.surf}
+\alias{IS2.surf}
+\title{Surface model of the IS2 reference brain}
+\description{
+Surface model of the IS2 reference brain
+}
+\examples{
+\dontrun{
+# Depends on nat
+plot3d(IS2.surf)
+}
+}
+\references{
+Cachero S., Ostrovsky A.D., Yu J.Y., Dickson B.J., and
+Jefferis G.S.X.E. (2010). Sexual dimorphism in the fly
+brain. Curr Biol 20 (18), 1589-601.
+}
+

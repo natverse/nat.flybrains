@@ -1,0 +1,17 @@
+\docType{data}
+\name{FCWB.surf}
+\alias{FCWB.surf}
+\title{Surface model of the FCWB FlyCircuit reference brain}
+\description{
+The FCWB reference brain is a shape averaged template brain
+generated using the CMTK avg_adm tool. See
+\url{https://github.com/jefferislab/MakeAverageBrain} for
+the relevant code.
+}
+\examples{
+\dontrun{
+# Depends on nat
+plot3d(FCWB.surf)
+}
+}
+
