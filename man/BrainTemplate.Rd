@@ -5,7 +5,8 @@ registration}
 \usage{
 BrainTemplate(name = NULL, type = c("Single brain", "Average"),
   sex = c("Female", "Male", "Intersex"), voxdims = NULL, origin = NULL,
-  BoundingBox = NULL, units = NULL, description = NULL)
+  BoundingBox = NULL, units = NULL, description = NULL,
+  mirrorLoc = NULL)
 }
 \arguments{
   \item{name}{the name of the template.}

@@ -21,8 +21,8 @@
 #'   voxel dimension (rather than 0) for any dimension with only 1 voxel.
 #' @export
 #' @family BrainTemplate
-BrainTemplate <- function(name=NULL, type=c('Single brain', 'Average'), sex=c('Female', 'Male', 'Intersex'), voxdims=NULL, origin=NULL, BoundingBox=NULL, units=NULL, description=NULL) {
-  template <- structure(list(name=name, type=type, sex=sex, voxdims, origin=origin, BoundingBox=BoundingBox, units=units, description=description), class="BrainTemplate")
+BrainTemplate <- function(name=NULL, type=c('Single brain', 'Average'), sex=c('Female', 'Male', 'Intersex'), voxdims=NULL, origin=NULL, BoundingBox=NULL, units=NULL, description=NULL, mirrorLoc=NULL) {
+  template <- structure(list(name=name, type=type, sex=sex, voxdims=voxdims, origin=origin, BoundingBox=BoundingBox, units=units, description=description, mirrorLoc=mirrorLoc), class="BrainTemplate")
 }
 
 #' Print brain template information in human-readable form
