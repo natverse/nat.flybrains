@@ -1,0 +1,17 @@
+\name{print.BrainTemplate}
+\alias{print.BrainTemplate}
+\title{Print brain template information in human-readable form}
+\usage{
+\method{print}{BrainTemplate}(x, ...)
+}
+\arguments{
+  \item{x}{the object of class \code{BrainTemplate} to
+  print}
+}
+\description{
+Print brain template information in human-readable form
+}
+\seealso{
+Other BrainTemplate: \code{\link{BrainTemplate}}
+}
+
