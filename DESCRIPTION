@@ -1,9 +1,12 @@
 Package: nat.misc
 Type: Package
-Title: What the package does (short line)
+Title: Additional data for use with the NeuroAnatomy Toolbox (nat)
 Version: 1.0
 Date: 2014-03-24
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Greg Jefferis
+Maintainer: Greg Jefferis <jefferis@gmail.com>
+Description: Includes 3D brain surfaces, neuropil segmentations and bridging
+    registrations for various template brains.
+License: GPL-3
+Suggests:
+    nat
