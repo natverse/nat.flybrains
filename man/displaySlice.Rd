@@ -8,7 +8,7 @@ displaySlice(brain, slice, ...)
 \arguments{
 \item{brain}{template brain (e.g. IS2) of the slice.}
 
-\item{slice}{the slice image to display.}
+\item{slice}{path to the slice PNG image to display.}
 
 \item{z}{the z position of the slice. By default the slice will be positioned
 midway through the brain.}

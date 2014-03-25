@@ -1,7 +1,7 @@
 #' Display an image slice in 3D
 #'
 #' @param brain template brain (e.g. IS2) of the slice.
-#' @param slice the slice image to display.
+#' @param slice path to the slice PNG image to display.
 #' @param z the z position of the slice. By default the slice will be positioned
 #'   midway through the brain.
 #' @param ... extra arguments to pass to persp3d.
