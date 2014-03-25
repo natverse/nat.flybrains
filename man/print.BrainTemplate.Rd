@@ -6,7 +6,9 @@
 }
 \arguments{
   \item{x}{the object of class \code{BrainTemplate} to
-  print}
+  print.}
+
+  \item{...}{further objects to print.}
 }
 \description{
 Print brain template information in human-readable form

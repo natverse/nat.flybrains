@@ -27,7 +27,8 @@ BrainTemplate <- function(name=NULL, type=c('Single brain', 'Average'), sex=c('F
 
 #' Print brain template information in human-readable form
 #'
-#' @param x the object of class \code{BrainTemplate} to print
+#' @param x the object of class \code{BrainTemplate} to print.
+#' @param ... further objects to print.
 #' @export
 #' @family BrainTemplate
 print.BrainTemplate <- function(x, ...) {
@@ -43,4 +44,8 @@ print.BrainTemplate <- function(x, ...) {
     cat("  x = ", x$BoundingBox[1, 1], ", y = ", x$BoundingBox[1, 2], ", z = ", x$BoundingBox[1, 3], ",\n")
     cat("  x = ", x$BoundingBox[2, 1], ", y = ", x$BoundingBox[2, 2], ", z = ", x$BoundingBox[2, 3], "\n")
   cat("Description:", x$description)
+  if(exists('...')) {
+    cat("\n")
+    cat(...)
+  }
 }
