@@ -3,5 +3,7 @@
 S3method(mirror,BrainTemplate)
 S3method(print,BrainTemplate)
 export(BrainTemplate)
+export(displaySlice)
 importFrom(nat,mirror)
 importFrom(nat,read.im3d)
+importFrom(rgl,persp3d)
