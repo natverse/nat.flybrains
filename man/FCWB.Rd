@@ -1,6 +1,6 @@
 \docType{data}
-\name{FCWB.rds}
-\alias{FCWB.rds}
+\name{FCWB}
+\alias{FCWB}
 \title{Template information for the FCWB FlyCircuit reference brain}
 \description{
 The FCWB reference brain is a shape averaged template brain
