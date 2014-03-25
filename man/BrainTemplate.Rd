@@ -3,13 +3,13 @@
 \title{Construct a BrainTemplate object representing a template brain for
 registration}
 \usage{
-BrainTemplate(name = NULL, type = c("Single brain", "Average"),
-  sex = c("Female", "Male", "Intersex"), voxdims = NULL, origin = NULL,
-  BoundingBox = NULL, units = NULL, description = NULL,
-  mirrorLoc = NULL)
+BrainTemplate(name, imageFile, type, sex, description, mirrorLoc)
 }
 \arguments{
   \item{name}{the name of the template.}
+
+  \item{imageFile}{path to the image that defines the
+  template brain.}
 
   \item{type}{one of \code{c('single brain', 'average')},
   indicating whether the template brain has been created
@@ -20,15 +20,10 @@ BrainTemplate(name = NULL, type = c("Single brain", "Average"),
   with \code{type=='average'}, the possibility of
   \code{sex='intersex'} exists.}
 
-  \item{dims}{the dimensions of the image array as an
-  integer vector.}
+  \item{description}{details of the template.}
 
-  \item{origin}{the location (or centre) of the first
-  voxel.}
-
-  \item{BoundingBox}{physical extent of image. See the
-  details section of \code{\link[nat]{boundingbox}}'s help
-  for the distinction.}
+  \item{mirrorLoc}{path to the mirroring registration for
+  the template.}
 }
 \value{
 A list with additional class \code{BrainTemplate}

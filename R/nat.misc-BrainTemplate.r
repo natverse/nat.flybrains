@@ -7,22 +7,32 @@
 #' centers option in the
 #' \href{http://teem.sourceforge.net/nrrd/format.html}{NRRD format}.
 #' @param name the name of the template.
+#' @param imageFile path to the image that defines the template brain.
 #' @param type one of \code{c('single brain', 'average')}, indicating whether
 #'   the template brain has been created from just one image, or is the average
 #'   of multiple images.
 #' @param sex the sex of the template brain. For templates with
 #'   \code{type=='average'}, the possibility of \code{sex='intersex'} exists.
-#' @param dims the dimensions of the image array as an integer vector.
-#' @param origin the location (or centre) of the first voxel.
-#' @param BoundingBox physical extent of image. See the details section of
-#'   \code{\link[nat]{boundingbox}}'s help for the distinction.
+#' @param description details of the template.
+#' @param mirrorLoc path to the mirroring registration for the template.
 #' @return A list with additional class \code{BrainTemplate}
 #' @details We follow Amira's convention of setting the bounding box equal to
 #'   voxel dimension (rather than 0) for any dimension with only 1 voxel.
 #' @export
 #' @family BrainTemplate
-BrainTemplate <- function(name=NULL, type=c('Single brain', 'Average'), sex=c('Female', 'Male', 'Intersex'), voxdims=NULL, origin=NULL, BoundingBox=NULL, units=NULL, description=NULL, mirrorLoc=NULL) {
-  template <- structure(list(name=name, type=type, sex=sex, voxdims=voxdims, origin=origin, BoundingBox=BoundingBox, units=units, description=description, mirrorLoc=mirrorLoc), class="BrainTemplate")
+BrainTemplate <- function(name, imageFile, type, sex, description, mirrorLoc) {
+  im3d <- read.im3d(imageFile, ReadData=FALSE)
+  template <- BrainTemplate(im3d, name=name, type=type, sex=sex, description=description, mirrorLoc=mirrorLoc)
+}
+
+#' @importFrom nat read.im3d
+BrainTemplate.im3d <- function(im3d, name, type, sex, description, mirrorLoc) {
+  # This will be incorrect if the directions are not rectilinear
+  voxdims <- diag(attr(im3d, 'header')$'space directions')
+  boundingbox <- attr(im3d, 'BoundingBox')
+  units <- attr(im3d, 'header')$'space units'
+  origin <- NULL
+  template <- structure(list(name=name, type=type, sex=sex, voxdims=voxdims, origin=origin, BoundingBox=boundingbox, units=units, description=description, mirrorLoc=mirrorLoc), class="BrainTemplate")
 }
 
 #' Print brain template information in human-readable form
