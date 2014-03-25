@@ -10,7 +10,7 @@ Description: Includes 3D brain surfaces, neuropil segmentations and bridging
 License: GPL-3
 Depends:
     R (>= 2.10)
-Suggests:
+Imports:
     nat
 Suggests:
     testthat
