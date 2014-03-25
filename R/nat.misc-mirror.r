@@ -6,6 +6,7 @@
 #' @param transform whether to use warp (default) or affine component of
 #'   registration, or simply flip about midplane of axis.
 #' @importFrom nat mirror
+#' @method mirror BrainTemplate
 #' @export
 mirror.BrainTemplate <- function(x, data, mirrorAxis=c("X","Y","Z"), transform=c("warp",'affine','flip')) {
   warpfile <- x$mirrorLoc()

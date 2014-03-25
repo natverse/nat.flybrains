@@ -3,7 +3,7 @@
 \alias{mirror.BrainTemplate}
 \title{Mirror 3D object around a given axis, optionally using a warping registration}
 \usage{
-mirror.BrainTemplate(x, data, mirrorAxis = c("X", "Y", "Z"),
+\method{mirror}{BrainTemplate}(x, data, mirrorAxis = c("X", "Y", "Z"),
   transform = c("warp", "affine", "flip"))
 }
 \arguments{
