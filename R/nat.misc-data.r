@@ -19,7 +19,7 @@ NULL
 #' the CMTK avg_adm tool. See
 #' \url{https://github.com/jefferislab/MakeAverageBrain} for the relevant code.
 #'
-#' @name FCWB.rds
+#' @name FCWB.rda
 #' @docType data
 NULL
 
