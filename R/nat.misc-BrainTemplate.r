@@ -46,7 +46,6 @@ BrainTemplate.im3d <- function(im3d, name, type, sex, description, mirrorLoc) {
 #' @param x the object of class \code{BrainTemplate} to print.
 #' @param ... further objects to print.
 #' @export
-#' @family BrainTemplate
 print.BrainTemplate <- function(x, ...) {
   cat("=== Template Brain ===", "\n")
   cat("Name:", x$name, "\n")

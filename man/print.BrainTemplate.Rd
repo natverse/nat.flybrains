@@ -13,7 +13,4 @@
 \description{
 Print brain template information in human-readable form
 }
-\seealso{
-Other BrainTemplate: \code{\link{BrainTemplate}}
-}
 
