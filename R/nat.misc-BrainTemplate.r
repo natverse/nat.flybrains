@@ -6,6 +6,14 @@
 #' visualisation and analysis software. This corresponds to the \strong{node}
 #' centers option in the
 #' \href{http://teem.sourceforge.net/nrrd/format.html}{NRRD format}.
+#'
+#' @param x the object to use to construct the BrainTemplate.
+#' @return A list with additional class \code{BrainTemplate}.
+#' @details We follow Amira's convention of setting the bounding box equal to
+#'   voxel dimension (rather than 0) for any dimension with only 1 voxel.
+#' @export
+BrainTemplate <- function(x, ...) { UseMethod("BrainTemplate") }
+
 #' @param name the name of the template.
 #' @param imageFile path to the image that defines the template brain.
 #' @param type one of \code{c('single brain', 'average')}, indicating whether
@@ -15,16 +23,14 @@
 #'   \code{type=='average'}, the possibility of \code{sex='intersex'} exists.
 #' @param description details of the template.
 #' @param mirrorLoc path to the mirroring registration for the template.
-#' @return A list with additional class \code{BrainTemplate}
-#' @details We follow Amira's convention of setting the bounding box equal to
-#'   voxel dimension (rather than 0) for any dimension with only 1 voxel.
-#' @export
-#' @family BrainTemplate
-BrainTemplate <- function(name, imageFile, type, sex, description, mirrorLoc) {
+#' @method BrainTemplate default
+#' @rdname BrainTemplate
+BrainTemplate.default <- function(name, imageFile, type, sex, description, mirrorLoc) {
   im3d <- read.im3d(imageFile, ReadData=FALSE)
   template <- BrainTemplate(im3d, name=name, type=type, sex=sex, description=description, mirrorLoc=mirrorLoc)
 }
 
+#' @method BrainTemplate im3d
 #' @importFrom nat read.im3d
 BrainTemplate.im3d <- function(im3d, name, type, sex, description, mirrorLoc) {
   # This will be incorrect if the directions are not rectilinear
