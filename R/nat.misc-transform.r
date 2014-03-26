@@ -10,7 +10,7 @@
 #' @aliases xform
 #' @export
 xform.BrainTemplate <- function(x, x2, data, transform=c("warp",'affine')) {
-  reg <- system.file(package="nat.misc", paste0("extdata/bridgingregistrations/", deparse(substitute(x)), "_", deparse(substitute(x2)), ".list"))
+  reg <- extdata(paste0("bridgingregistrations/", deparse(substitute(x2)), "_", deparse(substitute(x)), ".list"))
   xform(data, reg=reg, transform=transform)
 }
 
