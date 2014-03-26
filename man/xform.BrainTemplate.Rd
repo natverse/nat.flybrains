@@ -4,7 +4,8 @@
 \alias{xform.BrainTemplate}
 \title{Transform 3D object from one template brain to another, optionally using a warping registration}
 \usage{
-\method{xform}{BrainTemplate}(x, x2, data, transform = c("warp", "affine"))
+\method{xform}{BrainTemplate}(x, x2, data, transform = c("warp", "affine"),
+  ...)
 }
 \arguments{
 \item{x}{template brain (e.g. IS2) that data is in.}
@@ -15,6 +16,8 @@
 
 \item{transform}{whether to use warp (default) or affine component of
 registration.}
+
+\item{...}{extra arguments to pass to methods and eventually xformpoints.}
 }
 \description{
 Transform 3D object from one template brain to another, optionally using a warping registration

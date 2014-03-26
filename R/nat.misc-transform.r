@@ -5,13 +5,14 @@
 #' @param data the 3D object to be mirrored.
 #' @param transform whether to use warp (default) or affine component of
 #'   registration.
+#' @param ... extra arguments to pass to methods and eventually xformpoints.
 #' @importFrom nat xform
 #' @method xform BrainTemplate
 #' @aliases xform
 #' @export
-xform.BrainTemplate <- function(x, x2, data, transform=c("warp",'affine')) {
+xform.BrainTemplate <- function(x, x2, data, transform=c("warp",'affine'), ...) {
   reg <- extdata(paste0("bridgingregistrations/", deparse(substitute(x2)), "_", deparse(substitute(x)), ".list"))
-  xform(data, reg=reg, transform=transform)
+  xform(data, reg=reg, transform=transform, ...)
 }
 
 #' Mirror 3D object around a given axis, optionally using a warping registration
