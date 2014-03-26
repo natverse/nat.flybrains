@@ -90,6 +90,15 @@ NULL
 #' }
 NULL
 
+#' Template information for the JFRC2 reference brain
+#'
+#' The JFRC2 reference brain is a refractive-index-corrected version of the
+#' original FlyLight reference brain (JFRC).
+#'
+#' @name JFRC2
+#' @docType data
+NULL
+
 #' Surface model of the Insect Brain Name Working Group neuropil segmentation in
 #' JFRC2 coordinate space
 #'
