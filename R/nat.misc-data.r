@@ -58,6 +58,12 @@ NULL
 #' }
 NULL
 
+#' Template information for the IS2 reference brain
+#'
+#' @name IS2
+#' @docType data
+NULL
+
 #' Surface model of the Insect Brain Name Working Group neuropil segmentation in
 #' IS2 coordinate space
 #'

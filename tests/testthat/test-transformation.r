@@ -21,3 +21,14 @@ test_that("can mirror JFRC2", {
 
   expect_equal(points.mirror, points.mirrorexp)
 })
+
+test_that("can mirror IS2", {
+  points <- matrix(c(30, 30, 30, 110, 110, 110), ncol=3, byrow=T)
+  colnames(points) <- c("X", "Y", "Z")
+  points.mirror <- mirror(IS2, points)
+
+  points.mirrorexp <- matrix(c(284.682251, 204.314929, 30.2698099, 110.658494, 30.1569345, 110.068235), ncol=3)
+  colnames(points.mirrorexp) <- c("X", "Y", "Z")
+
+  expect_equal(points.mirror, points.mirrorexp)
+})
