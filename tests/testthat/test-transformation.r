@@ -32,3 +32,14 @@ test_that("can mirror IS2", {
 
   expect_equal(points.mirror, points.mirrorexp)
 })
+
+test_that("can bridge JFRC2 to FCWB", {
+  points <- matrix(c(30, 30, 30, 110, 110, 110), ncol=3, byrow=T)
+  colnames(points) <- c("X", "Y", "Z")
+  points.bridge <- xform(JFRC2, FCWB, points)
+
+  points.bridgeexp <- matrix(c(23.1763202, 92.8401558, 35.5010956, 115.450817, 29.7029072, 85.9619354), ncol=3)
+  colnames(points.bridgeexp) <- c("X", "Y", "Z")
+
+  expect_equal(points.bridge, points.bridgeexp)
+})
