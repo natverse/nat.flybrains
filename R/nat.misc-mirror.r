@@ -7,6 +7,7 @@
 #'   registration, or simply flip about midplane of axis.
 #' @importFrom nat mirror
 #' @method mirror BrainTemplate
+#' @aliases mirror
 #' @export
 mirror.BrainTemplate <- function(x, data, mirrorAxis=c("X","Y","Z"), transform=c("warp",'affine','flip')) {
   warpfile <- x$mirrorLoc()
