@@ -38,3 +38,12 @@ test_that("can bridge JFRC2 to FCWB", {
 
   expect_equal(points.bridge, points.bridgeexp)
 })
+
+test_that("can bridge FCWB to JFRC2 using inverse registration", {
+  points.bridge <- xform(FCWB, JFRC2, points)
+
+  points.bridgeexp <- matrix(c(37.4934668, 110, 24.0202789, 110, 30.1584055, 110), ncol=3)
+  colnames(points.bridgeexp) <- c("X", "Y", "Z")
+
+  expect_equal(points.bridge, points.bridgeexp)
+})
