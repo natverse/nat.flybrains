@@ -1,4 +1,4 @@
-context("Mirroring")
+context("Transformation")
 
 test_that("mirroring test BrainTemplate is successful", {
   points <- matrix(c(30, 30, 30, 110, 110, 110), ncol=3, byrow=T)
