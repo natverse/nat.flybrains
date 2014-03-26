@@ -11,8 +11,16 @@
 #' @aliases xform
 #' @export
 xform.BrainTemplate <- function(x, x2, data, transform=c("warp",'affine'), ...) {
+  direction <- "inverse"
   reg <- extdata(paste0("bridgingregistrations/", deparse(substitute(x2)), "_", deparse(substitute(x)), ".list"))
-  xform(data, reg=reg, transform=transform, ...)
+  if(reg == "") {
+    # We have no registration in this direction, so try inverting one in the other direction
+    direction <- "forward"
+    reg <- extdata(paste0("bridgingregistrations/", deparse(substitute(x)), "_", deparse(substitute(x2)), ".list"))
+    if(reg == "") stop("No suitable registration found.")
+    warning("Numerically inverting registration from ", deparse(substitute(x)), " to ", deparse(substitute(x2)), ". This may take some time and results may be inaccurate.")
+  }
+  xform(data, reg=reg, transform=transform, direction=direction, ...)
 }
 
 #' Mirror 3D object around a given axis, optionally using a warping registration
