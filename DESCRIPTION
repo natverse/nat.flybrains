@@ -1,12 +1,12 @@
-Package: nat.misc
+Package: nat.flybrains
 Type: Package
 Title: Additional data for use with the NeuroAnatomy Toolbox (nat)
 Version: 1.0
 Date: 2014-03-24
-Author: Greg Jefferis
-Maintainer: Greg Jefferis <jefferis@gmail.com>
-Description: Includes 3D brain surfaces, neuropil segmentations and bridging
-    registrations for various template brains.
+Author: James Manton and Greg Jefferis
+Maintainer: James Manton <ajd.manton@googlemail.com>
+Description: Includes 3D brain surfaces, bridging and mirroring registrations,
+    and neuropil segmentations for various template brains.
 License: GPL-3
 Depends:
     R (>= 2.10),
