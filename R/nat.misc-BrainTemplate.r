@@ -8,6 +8,7 @@
 #' \href{http://teem.sourceforge.net/nrrd/format.html}{NRRD format}.
 #'
 #' @param x the object to use to construct the BrainTemplate.
+#' @param ... additional arguments to pass.
 #' @return A list with additional class \code{BrainTemplate}.
 #' @details We follow Amira's convention of setting the bounding box equal to
 #'   voxel dimension (rather than 0) for any dimension with only 1 voxel.

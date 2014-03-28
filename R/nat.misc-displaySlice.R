@@ -2,16 +2,18 @@
 #'
 #' @param brain template brain (e.g. IS2) of the slice.
 #' @param slice path to the slice PNG image to display.
-#' @param z the z position of the slice. By default the slice will be positioned
-#'   midway through the brain.
 #' @param ... extra arguments to pass to persp3d.
-#' @importFrom rgl persp3d
 #' @export
 displaySlice <- function(brain, slice, ...) {
   UseMethod("displaySlice")
 }
 
+#' @method displaySlice default
+displaySlice.default <- function(brain, slice, ...) {
+}
+
 #' @importFrom rgl persp3d
+#' @method displaySlice BrainTemplate
 displaySlice.BrainTemplate <- function(brain, slice, z=NULL, ...) {
   bbox <- brain$BoundingBox
 

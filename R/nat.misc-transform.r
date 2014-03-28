@@ -30,11 +30,12 @@ xform.BrainTemplate <- function(x, x2, data, transform=c("warp",'affine'), ...) 
 #' @param mirrorAxis the axis to mirror (default \code{"X"}).
 #' @param transform whether to use warp (default) or affine component of
 #'   registration, or simply flip about midplane of axis.
+#' @param extra arguments to pass.
 #' @importFrom nat mirror
 #' @method mirror BrainTemplate
 #' @aliases mirror
 #' @export
-mirror.BrainTemplate <- function(x, data, mirrorAxis=c("X","Y","Z"), transform=c("warp",'affine','flip')) {
+mirror.BrainTemplate <- function(x, data, mirrorAxis=c("X","Y","Z"), transform=c("warp",'affine','flip'), ...) {
   warpfile <- x$mirrorLoc()
   mirrorAxis <- match.arg(mirrorAxis)
   axisCol <- which(mirrorAxis == c("X", "Y", "Z"))

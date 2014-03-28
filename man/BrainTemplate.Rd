@@ -13,6 +13,8 @@ BrainTemplate(x, ...)
 \arguments{
 \item{x}{the object to use to construct the BrainTemplate.}
 
+\item{...}{additional arguments to pass.}
+
 \item{name}{the name of the template.}
 
 \item{imageFile}{path to the image that defines the template brain.}
