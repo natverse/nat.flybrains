@@ -1,24 +1,22 @@
 #' Transform 3D object from one template brain to another, optionally using a warping registration
 #'
-#' @param x template brain (e.g. IS2) that data is in.
-#' @param x2 template brain (e.g. IS2) that data should be transformed into.
+#' @param template1 source template brain (e.g. IS2) that data is in.
+#' @param template2 target template brain (e.g. IS2) that data should be transformed into.
 #' @param data the 3D object to be mirrored.
 #' @param transform whether to use warp (default) or affine component of
 #'   registration.
-#' @param ... extra arguments to pass to methods and eventually xformpoints.
+#' @param ... extra arguments to pass to \code{\link[nat]{xform}}.
 #' @importFrom nat xform
-#' @method xform BrainTemplate
-#' @aliases xform
 #' @export
-xform.BrainTemplate <- function(x, x2, data, transform=c("warp",'affine'), ...) {
+trans3d <- function(template1, template2, data, transform=c('warp', 'affine'), ...) {
   direction <- "inverse"
-  reg <- extdata(paste0("bridgingregistrations/", deparse(substitute(x2)), "_", deparse(substitute(x)), ".list"))
+  reg <- extdata(paste0("bridgingregistrations/", deparse(substitute(template2)), "_", deparse(substitute(template1)), ".list"))
   if(reg == "") {
     # We have no registration in this direction, so try inverting one in the other direction
     direction <- "forward"
-    reg <- extdata(paste0("bridgingregistrations/", deparse(substitute(x)), "_", deparse(substitute(x2)), ".list"))
+    reg <- extdata(paste0("bridgingregistrations/", deparse(substitute(template1)), "_", deparse(substitute(template2)), ".list"))
     if(reg == "") stop("No suitable registration found.")
-    warning("Numerically inverting registration from ", deparse(substitute(x)), " to ", deparse(substitute(x2)), ". This may take some time and results may be inaccurate.")
+    warning("Numerically inverting registration from ", deparse(substitute(template1)), " to ", deparse(substitute(template2)), ". This may take some time and results may be inaccurate.")
   }
   xform(data, reg=reg, transform=transform, direction=direction, ...)
 }
