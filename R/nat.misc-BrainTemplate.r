@@ -32,14 +32,15 @@ BrainTemplate.default <- function(name, imageFile, type, sex, description, mirro
 }
 
 #' @method BrainTemplate im3d
-#' @importFrom nat read.im3d
+#' @importFrom nat read.im3d voxdims boundingbox origin
 BrainTemplate.im3d <- function(im3d, name, type, sex, description, mirrorLoc) {
   # This will be incorrect if the directions are not rectilinear
-  voxdims <- diag(attr(im3d, 'header')$'space directions')
-  boundingbox <- attr(im3d, 'BoundingBox')
   units <- attr(im3d, 'header')$'space units'
-  origin <- NULL
-  template <- structure(list(name=name, type=type, sex=sex, voxdims=voxdims, origin=origin, BoundingBox=boundingbox, units=units, description=description, mirrorLoc=mirrorLoc), class="BrainTemplate")
+  template <- structure(list(name=name, type=type, sex=sex,
+                             voxdims=voxdims(im3d), origin=origin(im3d),
+                             BoundingBox=boundingbox(im3d), units=units,
+                             description=description, mirrorLoc=mirrorLoc),
+                        class="BrainTemplate")
 }
 
 #' Print brain template information in human-readable form
