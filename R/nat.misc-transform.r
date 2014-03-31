@@ -34,7 +34,7 @@ trans <- function(template1, template2, data, transform=c('warp', 'affine'), ...
 #' @aliases mirror
 #' @export
 mirror.BrainTemplate <- function(x, data, mirrorAxis=c("X","Y","Z"), transform=c("warp",'affine','flip'), ...) {
-  warpfile <- x$mirrorLoc()
+  warpfile <- extdata(paste0("mirroringregistrations/", deparse(substitute(x)), "_mirror.list"))
   mirrorAxis <- match.arg(mirrorAxis)
   axisCol <- which(mirrorAxis == c("X", "Y", "Z"))
   mirrorAxisSize <- x$BoundingBox[2, axisCol] - x$BoundingBox[1, axisCol]
