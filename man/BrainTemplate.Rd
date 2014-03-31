@@ -27,8 +27,6 @@ of multiple images.}
 \code{type=='average'}, the possibility of \code{sex='intersex'} exists.}
 
 \item{description}{details of the template.}
-
-\item{mirrorLoc}{path to the mirroring registration for the template.}
 }
 \value{
 A list with additional class \code{BrainTemplate}.

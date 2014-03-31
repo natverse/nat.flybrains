@@ -23,23 +23,22 @@ BrainTemplate <- function(x, ...) { UseMethod("BrainTemplate") }
 #' @param sex the sex of the template brain. For templates with
 #'   \code{type=='average'}, the possibility of \code{sex='intersex'} exists.
 #' @param description details of the template.
-#' @param mirrorLoc path to the mirroring registration for the template.
 #' @method BrainTemplate default
 #' @rdname BrainTemplate
 BrainTemplate.default <- function(name, imageFile, type, sex, description, mirrorLoc) {
   im3d <- read.im3d(imageFile, ReadData=FALSE)
-  template <- BrainTemplate(im3d, name=name, type=type, sex=sex, description=description, mirrorLoc=mirrorLoc)
+  template <- BrainTemplate(im3d, name=name, type=type, sex=sex, description=description)
 }
 
 #' @method BrainTemplate im3d
 #' @importFrom nat read.im3d voxdims boundingbox origin
-BrainTemplate.im3d <- function(im3d, name, type, sex, description, mirrorLoc) {
+BrainTemplate.im3d <- function(im3d, name, type, sex, description) {
   # This will be incorrect if the directions are not rectilinear
   units <- attr(im3d, 'header')$'space units'
   template <- structure(list(name=name, type=type, sex=sex,
                              voxdims=voxdims(im3d), origin=origin(im3d),
                              BoundingBox=boundingbox(im3d), units=units,
-                             description=description, mirrorLoc=mirrorLoc),
+                             description=description),
                         class="BrainTemplate")
 }
 
