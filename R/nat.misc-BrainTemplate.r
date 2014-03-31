@@ -25,7 +25,7 @@ BrainTemplate <- function(x, ...) { UseMethod("BrainTemplate") }
 #' @param description details of the template.
 #' @method BrainTemplate default
 #' @rdname BrainTemplate
-BrainTemplate.default <- function(name, imageFile, type, sex, description, mirrorLoc) {
+BrainTemplate.default <- function(name, imageFile, type, sex, description) {
   im3d <- read.im3d(imageFile, ReadData=FALSE)
   template <- BrainTemplate(im3d, name=name, type=type, sex=sex, description=description)
 }

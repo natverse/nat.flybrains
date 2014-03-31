@@ -7,8 +7,7 @@ registration}
 \usage{
 BrainTemplate(x, ...)
 
-\method{BrainTemplate}{default}(name, imageFile, type, sex, description,
-  mirrorLoc)
+\method{BrainTemplate}{default}(name, imageFile, type, sex, description)
 }
 \arguments{
 \item{x}{the object to use to construct the BrainTemplate.}
