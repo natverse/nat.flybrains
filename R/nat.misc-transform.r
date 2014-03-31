@@ -8,7 +8,7 @@
 #' @param ... extra arguments to pass to \code{\link[nat]{xform}}.
 #' @importFrom nat xform
 #' @export
-trans3d <- function(template1, template2, data, transform=c('warp', 'affine'), ...) {
+trans <- function(template1, template2, data, transform=c('warp', 'affine'), ...) {
   direction <- "inverse"
   reg <- extdata(paste0("bridgingregistrations/", deparse(substitute(template2)), "_", deparse(substitute(template1)), ".list"))
   if(reg == "") {
