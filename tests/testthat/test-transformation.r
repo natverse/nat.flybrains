@@ -31,7 +31,7 @@ test_that("can mirror IS2", {
 })
 
 test_that("can bridge JFRC2 to FCWB", {
-  points.bridge <- xform_brain(points, FCWB, JFRC2)
+  points.bridge <- xform_brain(points, JFRC2, FCWB)
 
   points.bridgeexp <- matrix(c(23.1763202, 92.8401558, 35.5010956, 115.450817, 29.7029072, 85.9619354), ncol=3)
   colnames(points.bridgeexp) <- c("X", "Y", "Z")
@@ -40,7 +40,7 @@ test_that("can bridge JFRC2 to FCWB", {
 })
 
 test_that("can bridge JFRC2 to IS2 using inverse registration", {
-  points.bridge <- xform_brain(points, IS2, JFRC2)
+  points.bridge <- xform_brain(points, JFRC2, IS2)
 
   points.bridgeexp <- matrix(c(-76.9174206, -14.0714713, 44.4391667, 121.076295, 37.566708, 150.794994), ncol=3)
   colnames(points.bridgeexp) <- c("X", "Y", "Z")

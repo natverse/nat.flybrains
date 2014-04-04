@@ -10,11 +10,11 @@ brain2reg <- function(reference, sample, mirror=FALSE) {
 #' Transform 3D object from one template brain to another, optionally using a warping registration
 #'
 #' @param x the 3D object to be mirrored.
-#' @param reference target template brain (e.g. IS2) that data should be transformed into.
 #' @param sample source template brain (e.g. IS2) that data is currently in.
+#' @param reference target template brain (e.g. IS2) that data should be transformed into.
 #' @param ... extra arguments to pass to \code{\link[nat]{xform}}.
 #' @export
-xform_brain <- function(x, reference, sample, ...) {
+xform_brain <- function(x, sample, reference, ...) {
   direction <- 'inverse'
   reg <- brain2reg(reference, sample)
   if(reg == "") {

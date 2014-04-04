@@ -3,14 +3,14 @@
 \alias{xform_brain}
 \title{Transform 3D object from one template brain to another, optionally using a warping registration}
 \usage{
-xform_brain(x, reference, sample, ...)
+xform_brain(x, sample, reference, ...)
 }
 \arguments{
 \item{x}{the 3D object to be mirrored.}
 
-\item{reference}{target template brain (e.g. IS2) that data should be transformed into.}
-
 \item{sample}{source template brain (e.g. IS2) that data is currently in.}
+
+\item{reference}{target template brain (e.g. IS2) that data should be transformed into.}
 
 \item{...}{extra arguments to pass to \code{\link[nat]{xform}}.}
 }
