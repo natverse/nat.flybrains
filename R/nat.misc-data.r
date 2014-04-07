@@ -125,3 +125,8 @@ NULL
 #' plot3d(JFRC2NP.surf)
 #' }
 NULL
+
+#' Template information for the Insect Brain Nomenclature reference brain
+#' @name IBN
+#' @docType data
+NULL
