@@ -16,6 +16,7 @@
 BrainTemplate <- function(x, ...) { UseMethod("BrainTemplate") }
 
 #' @param name the name of the template.
+#' @param regName the short name to use for finding appropriate registrations.
 #' @param imageFile path to the image that defines the template brain.
 #' @param type one of \code{c('single brain', 'average')}, indicating whether
 #'   the template brain has been created from just one image, or is the average
@@ -25,7 +26,7 @@ BrainTemplate <- function(x, ...) { UseMethod("BrainTemplate") }
 #' @param description details of the template.
 #' @method BrainTemplate default
 #' @rdname BrainTemplate
-BrainTemplate.default <- function(name, imageFile, type, sex, description) {
+BrainTemplate.default <- function(name, regName, imageFile, type, sex, description) {
   im3d <- read.im3d(imageFile, ReadData=FALSE)
   template <- BrainTemplate(im3d, name=name, type=type, sex=sex, description=description)
 }

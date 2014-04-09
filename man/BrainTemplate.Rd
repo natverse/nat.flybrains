@@ -7,7 +7,8 @@ registration}
 \usage{
 BrainTemplate(x, ...)
 
-\method{BrainTemplate}{default}(name, imageFile, type, sex, description)
+\method{BrainTemplate}{default}(name, regName, imageFile, type, sex,
+  description)
 }
 \arguments{
 \item{x}{the object to use to construct the BrainTemplate.}
@@ -15,6 +16,8 @@ BrainTemplate(x, ...)
 \item{...}{additional arguments to pass.}
 
 \item{name}{the name of the template.}
+
+\item{regName}{the short name to use for finding appropriate registrations.}
 
 \item{imageFile}{path to the image that defines the template brain.}
 
