@@ -130,3 +130,8 @@ NULL
 #' @name IBN
 #' @docType data
 NULL
+
+#' Template information for the Insect Brain Nomenclature Whole Brain reference brain
+#' @name IBNWB
+#' @docType data
+NULL
