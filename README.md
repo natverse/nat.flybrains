@@ -1,5 +1,5 @@
 # nat.flybrains
-[![Build Status](https://travis-ci.org/jefferislab/nat.flybrains.png)](https://travis-ci.org/jefferislab/nat.flybrains)
+[![Build Status](https://travis-ci.org/jefferislab/nat.flybrains.svg)](https://travis-ci.org/jefferislab/nat.flybrains)
 
 Additional data for use with the [NeuroAnatomy Toolbox](https://github.com/jefferis/nat) (nat)
 
