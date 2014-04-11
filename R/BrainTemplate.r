@@ -36,7 +36,7 @@ BrainTemplate.default <- function(name, regName, imageFile, type, sex, descripti
 BrainTemplate.im3d <- function(im3d, name, type, sex, description) {
   # This will be incorrect if the directions are not rectilinear
   units <- attr(im3d, 'header')$'space units'
-  template <- structure(list(name=name, type=type, sex=sex,
+  template <- structure(list(name=name, type=type, sex=sex, dims=dim(im3d),
                              voxdims=voxdims(im3d), origin=origin(im3d),
                              BoundingBox=boundingbox(im3d), units=units,
                              description=description),
@@ -66,3 +66,39 @@ print.BrainTemplate <- function(x, ...) {
     cat(...)
   }
 }
+
+#' @export
+#' @method as.im3d BrainTemplate
+#' @importFrom nat as.im3d
+as.im3d.BrainTemplate <- function(x, ...) {
+  newim3d <- nat::im3d(NA, dims=x$dims, voxdims=x$voxdims, origin=x$origin)
+  newim3d
+}
+
+#' @export
+#' @method origin BrainTemplate
+#' @importFrom nat origin
+origin.BrainTemplate <- function(x, ...) {
+  origin(nat::as.im3d(x))
+}
+
+#' @export
+#' @method dim BrainTemplate
+dim.BrainTemplate <- function(x, ...) {
+  dim(nat::as.im3d(x))
+}
+
+#' @export
+#' @method voxdims BrainTemplate
+#' @importFrom nat voxdims
+voxdims.BrainTemplate <- function(x, ...) {
+  voxdims(nat::as.im3d(x))
+}
+
+#' @export
+#' @method boundingbox BrainTemplate
+#' @importFrom nat boundingbox
+boundingbox.BrainTemplate <- function(x, ...) {
+  boundingbox(nat::as.im3d(x))
+}
+
