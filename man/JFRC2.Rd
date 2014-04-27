@@ -2,9 +2,18 @@
 \docType{data}
 \name{JFRC2}
 \alias{JFRC2}
+\alias{JFRC2.surf}
 \title{Template information for the JFRC2 reference brain}
 \description{
 The JFRC2 reference brain is a refractive-index-corrected version of the
 original FlyLight reference brain (JFRC).
+
+Surface model of the JFRC2 reference brain
+}
+\examples{
+\dontrun{
+# Depends on nat
+plot3d(JFRC2.surf)
+}
 }
 

@@ -85,17 +85,6 @@ NULL
 #' }
 NULL
 
-#' Surface model of the JFRC2 reference brain
-#'
-#' @name JFRC2.surf
-#' @docType data
-#' @examples
-#' \dontrun{
-#' # Depends on nat
-#' plot3d(JFRC2.surf)
-#' }
-NULL
-
 #' Template information for the JFRC2 reference brain
 #'
 #' The JFRC2 reference brain is a refractive-index-corrected version of the
@@ -103,6 +92,18 @@ NULL
 #'
 #' @name JFRC2
 #' @docType data
+NULL
+
+#' Surface model of the JFRC2 reference brain
+#'
+#' @name JFRC2.surf
+#' @docType data
+#' @rdname JFRC2
+#' @examples
+#' \dontrun{
+#' # Depends on nat
+#' plot3d(JFRC2.surf)
+#' }
 NULL
 
 #' Surface model of the Insect Brain Name Working Group neuropil segmentation in
