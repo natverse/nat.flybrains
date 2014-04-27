@@ -3,12 +3,16 @@
 \name{JFRC2}
 \alias{JFRC2}
 \alias{JFRC2.surf}
-\title{Template information for the JFRC2 reference brain}
+\title{Template information and surface model for the JFRC2 reference brain}
 \description{
-The JFRC2 reference brain is a refractive-index-corrected version of the
-original FlyLight reference brain (JFRC).
+The JFRC2 reference brain is a spatially calibrated version of the original
+FlyLight reference brain (JFRC), which was delivered uncalibrated. This in
+turn was derived from a single female brain stained with nc82, that was
+imaged at 1 micron spacing in Z. It was then interpolated in Z to give an
+isotropic voxel size of 0.622088.
 
-Surface model of the JFRC2 reference brain
+The surface model was constructed in Amira in the Jefferis Lab using a simple
+threshold, followed by a surface simplification.
 }
 \examples{
 \dontrun{

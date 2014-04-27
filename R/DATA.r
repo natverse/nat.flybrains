@@ -85,16 +85,20 @@ NULL
 #' }
 NULL
 
-#' Template information for the JFRC2 reference brain
+#' Template information and surface model for the JFRC2 reference brain
 #'
-#' The JFRC2 reference brain is a refractive-index-corrected version of the
-#' original FlyLight reference brain (JFRC).
+#' The JFRC2 reference brain is a spatially calibrated version of the original
+#' FlyLight reference brain (JFRC), which was delivered uncalibrated. This in
+#' turn was derived from a single female brain stained with nc82, that was
+#' imaged at 1 micron spacing in Z. It was then interpolated in Z to give an
+#' isotropic voxel size of 0.622088.
 #'
 #' @name JFRC2
 #' @docType data
 NULL
 
-#' Surface model of the JFRC2 reference brain
+#' The surface model was constructed in Amira in the Jefferis Lab using a simple
+#' threshold, followed by a surface simplification.
 #'
 #' @name JFRC2.surf
 #' @docType data
