@@ -2,8 +2,15 @@
 \docType{data}
 \name{IBNWB}
 \alias{IBNWB}
-\title{Template information for the Insect Brain Nomenclature Whole Brain reference brain}
+\title{Template information for the Insect Brain Nomenclature Whole Brain reference
+brain}
 \description{
-Template information for the Insect Brain Nomenclature Whole Brain reference brain
+A synthetic whole brain constructed from the Insect Brain Nomenclature
+template brain. The original confocal stack was duplicated, mirrored about a
+vertical axis and then displaced by 392 pixels in \eqn{x} and then merged
+with the original, with a linear blend in the overlapping region.
+}
+\seealso{
+\code{\link{IBN}}
 }
 
