@@ -1,0 +1,8 @@
+\docType{data}
+\name{T1}
+\alias{T1}
+\title{Template information for the T1 reference brain}
+\description{
+Template information for the T1 reference brain
+}
+

@@ -174,3 +174,9 @@ NULL
 #' @docType data
 #' @seealso \code{\link{IBN}}
 NULL
+
+#' Template information for the T1 reference brain
+#'
+#' @name T1
+#' @docType data
+NULL
