@@ -4,11 +4,11 @@
 **nat.flybrains** provdides additional data and functions for use with the [NeuroAnatomy Toolbox](https://github.com/jefferis/nat) (nat). In particular **nat.flybrains** defines the physical properties of a
 number of commonly used template brains in *Drosophila* neuronatomy including:
 
-* [JFRC2](http://dx.doi.org/10.1016/j.celrep.2012.09.011)
-* [IS2](http://dx.doi.org/10.1016/j.cub.2010.07.045)
-* [T1](http://brainbase.imp.ac.at/bbweb/)
-* [FlyCircuit](http://dx.doi.org/10.1016/j.cub.2010.11.056)
-* [Insect Brain Name](http://dx.doi.org/10.1016/j.neuron.2013.12.017)
+* [JFRC2](http://dx.doi.org/10.1016/j.celrep.2012.09.011),
+* [IS2](http://dx.doi.org/10.1016/j.cub.2010.07.045),
+* [T1](http://brainbase.imp.ac.at/bbweb/),
+* [FlyCircuit](http://dx.doi.org/10.1016/j.cub.2010.11.056),
+* [Insect Brain Name](http://dx.doi.org/10.1016/j.neuron.2013.12.017),
 
 along with bridging registrations between some of these template brains (see https://github.com/jefferislab/BridgingRegistrations) and functions to transform objects such as **nat** neurons from one space to another as simply as:
 
@@ -28,7 +28,7 @@ IS2
 ```
 
 ## Installation
-This package already has very useful functionality but still in alpha status so there is currently no released version on CRAN.
+This package already has very useful functionality but is still in alpha status and so there is currently no released version on CRAN.
 
 ### Bleeding Edge
 You can, however, download the [tar ball](https://github.com/jefferislab/nat.flybrains/tarball/master),
