@@ -6,7 +6,7 @@ number of commonly used template brains in *Drosophila* neuronatomy including:
 
 * [JFRC2](http://dx.doi.org/10.1016/j.celrep.2012.09.011),
 * [IS2](http://dx.doi.org/10.1016/j.cub.2010.07.045),
-* [T1](http://brainbase.imp.ac.at/bbweb/),
+* [T1](http://dx.doi.org/10.1016/j.cub.2010.08.025),
 * [FlyCircuit](http://dx.doi.org/10.1016/j.cub.2010.11.056),
 * [Insect Brain Name](http://dx.doi.org/10.1016/j.neuron.2013.12.017),
 
