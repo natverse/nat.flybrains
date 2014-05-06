@@ -20,7 +20,7 @@ xform_brain <- function(x, sample, reference, ...) {
   if(reg == "") {
     reg <- brain2reg(sample, reference)
     if(reg == "") stop("No suitable registration found.")
-    warning("Numerically inverting registration from ", reference$regName, " to ", sample$regName, ". This may take some time and results may be inaccurate.")
+    message("Numerically inverting registration from ", reference$regName, " to ", sample$regName, ". This may take some time and results may be inaccurate.")
     direction <- 'forward'
   }
   nat::xform(x, reg=reg, direction=direction, ...)
