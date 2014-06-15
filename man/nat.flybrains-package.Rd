@@ -84,6 +84,9 @@ researchers working with fly data.
   additional directories containing mirroring registrations.
 
   }
+
+  Note that registrations in these extra directories will override those of
+  the same name provided with the package.
 }
 \seealso{
 \code{\link[nat]{nat}}
