@@ -1,5 +1,4 @@
 brain2reg <- function(reference, sample, mirror=FALSE) {
-
   if(mirror) {
     stem=paste0(reference$regName, "_mirror.list")
     extradirs=getOption('nat.flybrains.extramirror')
@@ -26,6 +25,9 @@ brain2reg <- function(reference, sample, mirror=FALSE) {
 
 #' Transform 3D object between template brains
 #'
+#' @details NB the sample and reference brains can either be
+#'   \code{BrainTemplate} objects or a character string containing the short
+#'   name of the template e.g. \code{"IS2"}.
 #' @param x the 3D object to be transformed
 #' @param sample source template brain (e.g. IS2) that data is currently in.
 #' @param reference target template brain (e.g. IS2) that data should be
@@ -34,11 +36,15 @@ brain2reg <- function(reference, sample, mirror=FALSE) {
 #' @export
 xform_brain <- function(x, sample, reference, ...) {
   direction <- 'inverse'
+  if(is.character(reference)) reference=list(regName=reference)
+  if(!missing(sample) && is.character(sample)) sample=list(regName=sample)
   reg <- brain2reg(reference, sample)
   if(reg == "") {
     reg <- brain2reg(sample, reference)
     if(reg == "") stop("No suitable registration found.")
-    message("Numerically inverting registration from ", reference$regName, " to ", sample$regName, ". This may take some time and results may be inaccurate.")
+    message("Numerically inverting registration from ", reference$regName,
+            " to ", sample$regName,
+            ". This may take some time and results may be inaccurate.")
     direction <- 'forward'
   }
   nat::xform(x, reg=reg, direction=direction, ...)

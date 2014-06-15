@@ -16,8 +16,11 @@ transformed into.}
 \item{...}{extra arguments to pass to \code{\link[nat]{xform}}.}
 }
 \description{
-NB the sample and reference brains can either be \code{BrainTemplate} objects
-or a character string containing the short name of the template e.g.
-\code{"IS2"}.
+Transform 3D object between template brains
+}
+\details{
+NB the sample and reference brains can either be
+  \code{BrainTemplate} objects or a character string containing the short
+  name of the template e.g. \code{"IS2"}.
 }
 
