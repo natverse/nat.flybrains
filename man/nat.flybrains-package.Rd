@@ -71,6 +71,20 @@ researchers working with fly data.
   are provided. See especially \code{\link{xform_brain}},
   \code{\link{mirror_brain}} and \code{\link{plot3d.BrainTemplate}}.
 }
+
+\section{Package options}{
+
+
+  \itemize{
+
+  \item options('nat.flybrain.extrabridge') specifies a character vector of
+  additional directories containing bridging registrations.
+
+  \item options('nat.flybrain.extramirror') specifies a character vector of
+  additional directories containing mirroring registrations.
+
+  }
+}
 \seealso{
 \code{\link[nat]{nat}}
 }
