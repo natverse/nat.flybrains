@@ -59,6 +59,10 @@ researchers working with fly data.
   \item JFRC2
 
   }
+
+  See \code{\link{mirror_brain}} for examples of how to use these
+  registrations. Additional registrations are available at
+  \url{https://github.com/jefferislab/MirrorRegistrations}.
 }
 
 \section{Helper functions}{

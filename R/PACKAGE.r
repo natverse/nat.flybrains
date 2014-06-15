@@ -50,6 +50,10 @@
 #'
 #'   }
 #'
+#'   See \code{\link{mirror_brain}} for examples of how to use these
+#'   registrations. Additional registrations are available at
+#'   \url{https://github.com/jefferislab/MirrorRegistrations}.
+#'
 #' @section Helper functions: Easy-to-use functions for transforming data from
 #'   one template brain to another, displaying slices alongside 3D data, etc.
 #'   are provided. See especially \code{\link{xform_brain}},
