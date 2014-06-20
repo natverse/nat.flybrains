@@ -59,6 +59,10 @@ researchers working with fly data.
   \item JFRC2
 
   }
+
+  See \code{\link{mirror_brain}} for examples of how to use these
+  registrations. Additional registrations are available at
+  \url{https://github.com/jefferislab/MirrorRegistrations}.
 }
 
 \section{Helper functions}{
@@ -66,6 +70,23 @@ researchers working with fly data.
   one template brain to another, displaying slices alongside 3D data, etc.
   are provided. See especially \code{\link{xform_brain}},
   \code{\link{mirror_brain}} and \code{\link{plot3d.BrainTemplate}}.
+}
+
+\section{Package options}{
+
+
+  \itemize{
+
+  \item options('nat.flybrain.extrabridge') specifies a character vector of
+  additional directories containing bridging registrations.
+
+  \item options('nat.flybrain.extramirror') specifies a character vector of
+  additional directories containing mirroring registrations.
+
+  }
+
+  Note that registrations in these extra directories will override those of
+  the same name provided with the package.
 }
 \seealso{
 \code{\link[nat]{nat}}
