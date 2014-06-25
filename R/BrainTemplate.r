@@ -1,19 +1,22 @@
-#' Construct a BrainTemplate object representing a template brain for
-#' registration
+#' Construct templatebrain object for an image registration template
 #'
-#' There should always be a \code{BoundingBox} value set which defines the
-#' physical extent of the volume in the same manner as the Amira 3D
-#' visualisation and analysis software. This corresponds to the \strong{node}
-#' centers option in the
-#' \href{http://teem.sourceforge.net/nrrd/format.html}{NRRD format}.
+#' \code{templatebrain} objects encapsulate key information for the reference
+#' brain in an image registration. Usually this will be a standard template
+#' brain used for many registrations.
 #'
-#' @param x the object to use to construct the BrainTemplate.
+#' \code{templatebrain} objects are only useful for transformation processes
+#' when the \code{BoundingBox} is specified to define the physical extent of the
+#' volume. We use the definition of the Amira 3D visualisation and analysis
+#' software. This corresponds to the \strong{node} centers option in the
+#' \href{http://teem.sourceforge.net/nrrd/format.html}{NRRD format}. The
+#' bounding box can be obtained from nrrd or amiramesh format files.
+#'
+#' @param x the object to use to construct the templatebrain.
 #' @param ... additional arguments to pass.
-#' @return A list with additional class \code{BrainTemplate}.
-#' @details We follow Amira's convention of setting the bounding box equal to
-#'   voxel dimension (rather than 0) for any dimension with only 1 voxel.
+#' @return A list with additional class \code{templatebrain}.
 #' @export
-BrainTemplate <- function(x, ...) { UseMethod("BrainTemplate") }
+#' @seealso \code{\link[nat]{im3d}, \link[nat]{boundingbox}}
+templatebrain <- function(x, ...) { UseMethod("templatebrain") }
 
 #' @param name the name of the template.
 #' @param regName the short name to use for finding appropriate registrations.
@@ -24,31 +27,31 @@ BrainTemplate <- function(x, ...) { UseMethod("BrainTemplate") }
 #' @param sex the sex of the template brain. For templates with
 #'   \code{type=='average'}, the possibility of \code{sex='intersex'} exists.
 #' @param description details of the template.
-#' @method BrainTemplate default
-#' @rdname BrainTemplate
-BrainTemplate.default <- function(name, regName, imageFile, type, sex, description) {
+#' @method templatebrain default
+#' @rdname templatebrain
+templatebrain.default <- function(name, regName, imageFile, type, sex, description) {
   im3d <- read.im3d(imageFile, ReadData=FALSE)
-  template <- BrainTemplate(im3d, name=name, type=type, sex=sex, description=description)
+  template <- templatebrain(im3d, name=name, type=type, sex=sex, description=description)
 }
 
-#' @method BrainTemplate im3d
+#' @method templatebrain im3d
 #' @importFrom nat read.im3d voxdims boundingbox origin
-BrainTemplate.im3d <- function(im3d, name, type, sex, description) {
+templatebrain.im3d <- function(im3d, name, type, sex, description) {
   # This will be incorrect if the directions are not rectilinear
   units <- attr(im3d, 'header')$'space units'
   template <- structure(list(name=name, type=type, sex=sex, dims=dim(im3d),
                              voxdims=voxdims(im3d), origin=origin(im3d),
                              BoundingBox=boundingbox(im3d), units=units,
                              description=description),
-                        class="BrainTemplate")
+                        class="templatebrain")
 }
 
 #' Print brain template information in human-readable form
 #'
-#' @param x the object of class \code{BrainTemplate} to print.
+#' @param x the object of class \code{templatebrain} to print.
 #' @param ... further objects to print.
 #' @export
-print.BrainTemplate <- function(x, ...) {
+print.templatebrain <- function(x, ...) {
   cat("=== Template Brain ===", "\n")
   cat("Name:", x$name, "\n")
   cat("Type:", x$type, "\n")
@@ -68,37 +71,37 @@ print.BrainTemplate <- function(x, ...) {
 }
 
 #' @export
-#' @method as.im3d BrainTemplate
+#' @method as.im3d templatebrain
 #' @importFrom nat as.im3d
-as.im3d.BrainTemplate <- function(x, ...) {
+as.im3d.templatebrain <- function(x, ...) {
   newim3d <- nat::im3d(NA, dims=x$dims, voxdims=x$voxdims, origin=x$origin)
   newim3d
 }
 
 #' @export
-#' @method origin BrainTemplate
+#' @method origin templatebrain
 #' @importFrom nat origin
-origin.BrainTemplate <- function(x, ...) {
+origin.templatebrain <- function(x, ...) {
   origin(nat::as.im3d(x))
 }
 
 #' @export
-#' @method dim BrainTemplate
-dim.BrainTemplate <- function(x, ...) {
+#' @method dim templatebrain
+dim.templatebrain <- function(x, ...) {
   dim(nat::as.im3d(x))
 }
 
 #' @export
-#' @method voxdims BrainTemplate
+#' @method voxdims templatebrain
 #' @importFrom nat voxdims
-voxdims.BrainTemplate <- function(x, ...) {
+voxdims.templatebrain <- function(x, ...) {
   voxdims(nat::as.im3d(x))
 }
 
 #' @export
-#' @method boundingbox BrainTemplate
+#' @method boundingbox templatebrain
 #' @importFrom nat boundingbox
-boundingbox.BrainTemplate <- function(x, ...) {
+boundingbox.templatebrain <- function(x, ...) {
   boundingbox(nat::as.im3d(x))
 }
 

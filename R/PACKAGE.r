@@ -20,6 +20,9 @@
 #'
 #'   \item \link{T1} }
 #'
+#'   This information is defined in an object of class
+#'   \code{\link{templatebrain}} of the same name as the template brain.
+#'
 #' @section Bridging registrations: A number of registrations for bridging data
 #'   from one template to another are provided. \itemize{
 #'
@@ -57,7 +60,7 @@
 #' @section Helper functions: Easy-to-use functions for transforming data from
 #'   one template brain to another, displaying slices alongside 3D data, etc.
 #'   are provided. See especially \code{\link{xform_brain}},
-#'   \code{\link{mirror_brain}} and \code{\link{plot3d.BrainTemplate}}.
+#'   \code{\link{mirror_brain}} and \code{\link{plot3d.templatebrain}}.
 #'
 #' @section Package options:
 #'
@@ -74,7 +77,7 @@
 #'   Note that registrations in these extra directories will override those of
 #'   the same name provided with the package.
 #' @name nat.flybrains-package
-#' @aliases nat.flybrains
+#' @aliases nat.flybrains template-brains
 #' @seealso \code{\link[nat]{nat}}
 #' @docType package
 #' @keywords package

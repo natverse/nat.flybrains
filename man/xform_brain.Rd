@@ -20,7 +20,7 @@ Transform 3D object between template brains
 }
 \details{
 NB the sample and reference brains can either be
-  \code{BrainTemplate} objects or a character string containing the short
+  \code{templatebrain} objects or a character string containing the short
   name of the template e.g. \code{"IS2"}.
 }
 

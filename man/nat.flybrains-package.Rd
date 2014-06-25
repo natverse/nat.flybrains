@@ -3,6 +3,7 @@
 \name{nat.flybrains-package}
 \alias{nat.flybrains}
 \alias{nat.flybrains-package}
+\alias{template-brains}
 \title{Additional flybrain-specific data and tools for use with the NeuroAnatomy
 Toolbox (nat)}
 \description{
@@ -25,6 +26,9 @@ researchers working with fly data.
   \item \link{JFRC2}
 
   \item \link{T1} }
+
+  This information is defined in an object of class
+  \code{\link{templatebrain}} of the same name as the template brain.
 }
 
 \section{Bridging registrations}{
@@ -69,7 +73,7 @@ researchers working with fly data.
  Easy-to-use functions for transforming data from
   one template brain to another, displaying slices alongside 3D data, etc.
   are provided. See especially \code{\link{xform_brain}},
-  \code{\link{mirror_brain}} and \code{\link{plot3d.BrainTemplate}}.
+  \code{\link{mirror_brain}} and \code{\link{plot3d.templatebrain}}.
 }
 
 \section{Package options}{
