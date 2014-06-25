@@ -36,8 +36,8 @@ brain2reg <- function(reference, sample, mirror=FALSE) {
 #' @export
 xform_brain <- function(x, sample, reference, ...) {
   direction <- 'inverse'
-  if(is.character(reference)) reference=list(regName=reference)
-  if(!missing(sample) && is.character(sample)) sample=list(regName=sample)
+  if(is.character(reference)) reference=templatebrain(name=reference)
+  if(!missing(sample) && is.character(sample)) sample=templatebrain(name=sample)
   reg <- brain2reg(reference, sample)
   if(reg == "") {
     reg <- brain2reg(sample, reference)
