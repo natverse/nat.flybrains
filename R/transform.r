@@ -26,7 +26,7 @@ brain2reg <- function(reference, sample, mirror=FALSE) {
 #' Transform 3D object between template brains
 #'
 #' @details NB the sample and reference brains can either be
-#'   \code{BrainTemplate} objects or a character string containing the short
+#'   \code{templatebrain} objects or a character string containing the short
 #'   name of the template e.g. \code{"IS2"}.
 #' @param x the 3D object to be transformed
 #' @param sample source template brain (e.g. IS2) that data is currently in.

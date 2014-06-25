@@ -13,8 +13,8 @@ displaySlice.default <- function(brain, slice, ...) {
 }
 
 #' @importFrom rgl persp3d
-#' @method displaySlice BrainTemplate
-displaySlice.BrainTemplate <- function(brain, slice, z=NULL, ...) {
+#' @method displaySlice templatebrain
+displaySlice.templatebrain <- function(brain, slice, z=NULL, ...) {
   bbox <- brain$BoundingBox
 
   x <- c(bbox[1, 1], bbox[2, 1])

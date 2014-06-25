@@ -69,7 +69,7 @@ researchers working with fly data.
  Easy-to-use functions for transforming data from
   one template brain to another, displaying slices alongside 3D data, etc.
   are provided. See especially \code{\link{xform_brain}},
-  \code{\link{mirror_brain}} and \code{\link{plot3d.BrainTemplate}}.
+  \code{\link{mirror_brain}} and \code{\link{plot3d.templatebrain}}.
 }
 
 \section{Package options}{
