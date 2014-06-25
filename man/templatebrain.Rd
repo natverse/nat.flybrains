@@ -2,8 +2,7 @@
 \name{templatebrain}
 \alias{templatebrain}
 \alias{templatebrain.default}
-\title{Construct a templatebrain object representing a template brain for
-registration}
+\title{Construct templatebrain object for an image registration template}
 \usage{
 templatebrain(x, ...)
 
@@ -34,14 +33,19 @@ of multiple images.}
 A list with additional class \code{templatebrain}.
 }
 \description{
-There should always be a \code{BoundingBox} value set which defines the
-physical extent of the volume in the same manner as the Amira 3D
-visualisation and analysis software. This corresponds to the \strong{node}
-centers option in the
-\href{http://teem.sourceforge.net/nrrd/format.html}{NRRD format}.
+\code{templatebrain} objects encapsulate key information for the reference
+brain in an image registration. Usually this will be a standard template
+brain used for many registrations.
 }
 \details{
-We follow Amira's convention of setting the bounding box equal to
-  voxel dimension (rather than 0) for any dimension with only 1 voxel.
+\code{templatebrain} objects are only useful for transformation processes
+when the \code{BoundingBox} is specified to define the physical extent of the
+volume. We use the definition of the Amira 3D visualisation and analysis
+software. This corresponds to the \strong{node} centers option in the
+\href{http://teem.sourceforge.net/nrrd/format.html}{NRRD format}. The
+bounding box can be obtained from nrrd or amiramesh format files.
+}
+\seealso{
+\code{\link[nat]{im3d}, \link[nat]{boundingbox}}
 }
 

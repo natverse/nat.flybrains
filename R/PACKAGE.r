@@ -20,6 +20,9 @@
 #'
 #'   \item \link{T1} }
 #'
+#'   This information is defined in an object of class
+#'   \code{\link{templatebrain}} of the same name as the template brain.
+#'
 #' @section Bridging registrations: A number of registrations for bridging data
 #'   from one template to another are provided. \itemize{
 #'
@@ -74,7 +77,7 @@
 #'   Note that registrations in these extra directories will override those of
 #'   the same name provided with the package.
 #' @name nat.flybrains-package
-#' @aliases nat.flybrains
+#' @aliases nat.flybrains template-brains
 #' @seealso \code{\link[nat]{nat}}
 #' @docType package
 #' @keywords package
