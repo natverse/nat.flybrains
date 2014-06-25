@@ -2,7 +2,9 @@
 #'
 #' \code{templatebrain} objects encapsulate key information for the reference
 #' brain in an image registration. Usually this will be a standard template
-#' brain used for many registrations.
+#' brain used for many registrations. \strong{It will normally be much more
+#' convenient to use  \code{\link{as.templatebrain}} methods to convert an image
+#' file or an im3d object into a \code{templatebrain}}.
 #'
 #' \code{templatebrain} objects are only useful for transformation processes
 #' when the \code{BoundingBox} is specified to define the physical extent of the
@@ -11,39 +13,75 @@
 #' \href{http://teem.sourceforge.net/nrrd/format.html}{NRRD format}. The
 #' bounding box can be obtained from nrrd or amiramesh format files.
 #'
-#' @param x the object to use to construct the templatebrain.
-#' @param ... additional arguments to pass.
-#' @return A list with additional class \code{templatebrain}.
-#' @export
-#' @seealso \code{\link[nat]{im3d}, \link[nat]{boundingbox}}
-templatebrain <- function(x, ...) { UseMethod("templatebrain") }
-
 #' @param name the name of the template.
 #' @param regName the short name to use for finding appropriate registrations.
-#' @param imageFile path to the image that defines the template brain.
 #' @param type one of \code{c('single brain', 'average')}, indicating whether
 #'   the template brain has been created from just one image, or is the average
 #'   of multiple images.
 #' @param sex the sex of the template brain. For templates with
 #'   \code{type=='average'}, the possibility of \code{sex='intersex'} exists.
+#' @param dims dimensions of the image (number of voxels)
+#' @param BoundingBox physical dimensions of the image (see
+#'   \code{\link[nat]{boundingbox}})
+#' @param voxdims physical spacing between voxels
+#' @param units units of physical measurements (e.g. microns)
 #' @param description details of the template.
-#' @method templatebrain default
 #' @rdname templatebrain
-templatebrain.default <- function(name, regName, imageFile, type, sex, description) {
-  im3d <- read.im3d(imageFile, ReadData=FALSE)
-  template <- templatebrain(im3d, name=name, type=type, sex=sex, description=description)
-}
-
-#' @method templatebrain im3d
-#' @importFrom nat read.im3d voxdims boundingbox origin
-templatebrain.im3d <- function(im3d, name, type, sex, description) {
-  # This will be incorrect if the directions are not rectilinear
-  units <- attr(im3d, 'header')$'space units'
-  template <- structure(list(name=name, type=type, sex=sex, dims=dim(im3d),
-                             voxdims=voxdims(im3d), origin=origin(im3d),
-                             BoundingBox=boundingbox(im3d), units=units,
+#' @param ... additional named arguments that will be added as fields to the
+#'   \code{templatebrain} object
+#' @return A list with class \code{templatebrain}.
+#' @export
+#' @seealso \code{\link{as.templatebrain}}, \code{\link[nat]{im3d},
+#'   \link[nat]{boundingbox}}
+templatebrain<-function(name, regName=name, type=NULL, sex=NULL, dims=NULL,
+                        BoundingBox=NULL, voxdims=NULL, units=NULL,
+                        description=NULL, ...) {
+  template <- structure(list(name=name, regName=name, type=type, sex=sex,
+                             dims=dims, voxdims=voxdims, origin=origin,
+                             BoundingBox=BoundingBox, units=units,
                              description=description),
                         class="templatebrain")
+  if(!missing(...)) {
+    apl=pairlist(...)
+    template[names(apl)]=apl
+  }
+  template
+}
+
+#' Use image file or other object to initialise template brain
+#'
+#' @param x object used to construct the templatebrain, either a character
+#'   vector with the path to a file or a \code{im3d} object.
+#' @param ... additional named arguments passed to methods or to
+#'   \code{templatebrain} and that will be added as fields to the
+#'   \code{templatebrain} object.
+#' @return A list with class \code{templatebrain}.
+#' @export
+#' @seealso  \code{\link[nat]{im3d}}
+#' @rdname as.templatebrain
+as.templatebrain <- function(x, ...) UseMethod("as.templatebrain")
+
+#' @rdname as.templatebrain
+#' @param name name of the template brain. Will use the filename (minus final
+#'   extension) by default for \code{as.templatebrain.character} but must be
+#'   supplied for \code{as.templatebrain.im3d}.
+#' @importFrom nat read.im3d voxdims boundingbox origin
+#' @export
+as.templatebrain.character <- function(x, name=NULL, ...) {
+  if(!file.exists(x)) stop("x does not specify a valid path!")
+  im3d <- read.im3d(x, ReadData=FALSE)
+  if(is.null(name)) sub("\\.[^.]+$", "", basename(x))
+  templatebrain(im3d, name=name, ...)
+}
+
+#' @rdname as.templatebrain
+#' @export
+as.templatebrain.im3d <- function(x, name, ...) {
+  # This will be incorrect if the directions are not rectilinear
+  units <- attr(x, 'header')$'space units'
+  templatebrain(name=name, dims=dim(im3d), voxdims=voxdims(im3d),
+                origin=origin(im3d), BoundingBox=boundingbox(im3d),
+                units=units, ...)
 }
 
 #' Print brain template information in human-readable form
