@@ -1,3 +1,7 @@
+nat.flybrains 1.2
+=================
+* templatebrain definitions and functions moved to nat.templatebrains package
+
 nat.flybrains 1.1
 =================
 * BrainTemplate class is now templatebrain
