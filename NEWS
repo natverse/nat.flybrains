@@ -1,0 +1,7 @@
+nat.flybrains 1.1
+=================
+* BrainTemplate class is now templatebrain
+* templatebrain function is now a dedicated constructor
+* as.templatebrain methods provided for im3d/character to make it easier to
+  construct template brain objects from image files
+* doc: minor improvements
