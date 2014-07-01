@@ -81,4 +81,5 @@
 #' @seealso \code{\link[nat]{nat}}
 #' @docType package
 #' @keywords package
+#' @import nat.templatebrains
 NULL
