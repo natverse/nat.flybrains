@@ -3,7 +3,6 @@
 \name{nat.flybrains-package}
 \alias{nat.flybrains}
 \alias{nat.flybrains-package}
-\alias{template-brains}
 \title{Additional flybrain-specific data and tools for use with the NeuroAnatomy
 Toolbox (nat)}
 \description{

@@ -77,7 +77,7 @@
 #'   Note that registrations in these extra directories will override those of
 #'   the same name provided with the package.
 #' @name nat.flybrains-package
-#' @aliases nat.flybrains template-brains
+#' @aliases nat.flybrains
 #' @seealso \code{\link[nat]{nat}}
 #' @docType package
 #' @keywords package
