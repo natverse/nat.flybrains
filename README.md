@@ -1,7 +1,7 @@
 # nat.flybrains
 [![Build Status](https://travis-ci.org/jefferislab/nat.flybrains.svg)](https://travis-ci.org/jefferislab/nat.flybrains)
 
-**nat.flybrains** provdides additional data and functions for use with the [NeuroAnatomy Toolbox](https://github.com/jefferis/nat) (nat). In particular **nat.flybrains** defines the physical properties of a
+**nat.flybrains** provides additional data and functions for use with the [NeuroAnatomy Toolbox](https://github.com/jefferis/nat) (nat). In particular **nat.flybrains** defines the physical properties of a
 number of commonly used template brains in *Drosophila* neuronatomy including:
 
 * [JFRC2](http://dx.doi.org/10.1016/j.celrep.2012.09.011),
