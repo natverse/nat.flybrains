@@ -57,28 +57,11 @@
 #'   registrations. Additional registrations are available at
 #'   \url{https://github.com/jefferislab/MirrorRegistrations}.
 #'
-#' @section Helper functions: Easy-to-use functions for transforming data from
-#'   one template brain to another, displaying slices alongside 3D data, etc.
-#'   are provided. See especially \code{\link{xform_brain}},
-#'   \code{\link{mirror_brain}} and \code{\link{plot3d.templatebrain}}.
-#'
-#' @section Package options:
-#'
-#'   \itemize{
-#'
-#'   \item options('nat.flybrain.extrabridge') specifies a character vector of
-#'   additional directories containing bridging registrations.
-#'
-#'   \item options('nat.flybrain.extramirror') specifies a character vector of
-#'   additional directories containing mirroring registrations.
-#'
-#'   }
-#'
-#'   Note that registrations in these extra directories will override those of
-#'   the same name provided with the package.
+#' @section Additional registrations: See the \code{\link{nat.templatebrains}}
+#'   package documentation for details of how to add extra registrations.
 #' @name nat.flybrains-package
 #' @aliases nat.flybrains
-#' @seealso \code{\link[nat]{nat}}
+#' @seealso \code{\link[nat]{nat}, \link{nat.templatebrains}}
 #' @docType package
 #' @keywords package
 #' @import nat.templatebrains
