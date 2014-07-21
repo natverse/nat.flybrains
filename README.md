@@ -35,8 +35,12 @@ You can, however, download the [tar ball](https://github.com/jefferislab/nat.fly
 and run `R CMD INSTALL` on it, or use the **devtools** package to install the development version:
 
 ```r
-# install.packages("devtools")
-devtools::install_github("nat.flybrains", "jefferislab")
+# install devtools package if you don't already have it
+install.packages("devtools")
+# install generic templatebrains package not yet on CRAN
+devtools::install_github("jefferis/nat.templatebrains")
+# install this package
+devtools::install_github("jefferis/nat.flybrains")
 ```
 
 Note: Windows users need [Rtools](http://www.murdoch-sutherland.com/Rtools/) and
