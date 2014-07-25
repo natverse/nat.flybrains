@@ -53,12 +53,12 @@ test_that("can bridge JFRC2 to IS2 using inverse registration", {
 })
 
 test_that("can use a via registration", {
-  points.bridge <- xform_brain(points, sample=JFRC2, reference=IS2)
+  points.bridge1 <- xform_brain(points, sample=IS2, reference=JFRC2)
+  points.bridge2 <- xform_brain(points.bridge1, sample=JFRC2, reference=FCWB)
 
-  points.bridgeexp <- matrix(c(-76.9174206, -14.0714713, 44.4391667, 121.076295, 37.566708, 150.794994), ncol=3)
-  colnames(points.bridgeexp) <- c("X", "Y", "Z")
+  points.via <- xform_brain(points, sample=IS2, reference=FCWB, via=JFRC2)
 
-  expect_equal(points.bridge, points.bridgeexp)
+  expect_equal(points.bridge2, points.via)
 })
 
 }
