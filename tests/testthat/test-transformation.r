@@ -59,6 +59,12 @@ test_that("can use a via registration", {
   points.via <- xform_brain(points, sample=IS2, reference=FCWB, via=JFRC2)
 
   expect_equal(points.bridge2, points.via)
+
+  # test a via registration back and forth to same sample
+  expect_equal(xform_brain(points, ref=IS2, sample=IS2, via=JFRC2), points)
+  # I think there should be a warning due to a failure to transform points
+  # but I'm not seeing one with current CMTK (v3.1.0) streamxform
+  # expect_warning(xform_brain(cbind(1,1,1), ref=IS2, sample=IS2, via=JFRC2))
 })
 
 }
