@@ -39,8 +39,13 @@ test_that("can bridge JFRC2 to FCWB", {
 
   points.bridgeexp <- matrix(c(23.1763202, 92.8401558, 35.5010956, 115.450817, 29.7029072, 85.9619354), ncol=3)
   colnames(points.bridgeexp) <- c("X", "Y", "Z")
-
   expect_equal(points.bridge, points.bridgeexp)
+
+  # test known point left tip of protocerebral bridge in 3 brainsQ
+  expect_equal(xform_brain(cbind(198, 134, 150), sample=IS2, reference=JFRC2),
+               cbind(365, 113, 112), tolerance=10)
+  expect_equal(xform_brain(cbind(365, 113, 112), sample=JFRC2, reference=FCWB),
+               cbind(325, 126, 85), tolerance=10)
 })
 
 test_that("can bridge JFRC2 to IS2 using inverse registration", {
