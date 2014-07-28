@@ -1,3 +1,10 @@
+nat.flybrains 1.4
+=================
+* package loading adds appropriate directories to the option
+  nat.templatebrains.regdirs.
+* dev: add real tests for via registrations
+* dev: reinstate detailed transformation tests
+
 nat.flybrains 1.3
 =================
 * add T1 mirroring registration

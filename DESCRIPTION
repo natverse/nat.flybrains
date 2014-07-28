@@ -1,8 +1,8 @@
 Package: nat.flybrains
 Type: Package
 Title: Additional data for use with the NeuroAnatomy Toolbox (nat)
-Version: 1.3
-Date: 2014-07-17
+Version: 1.4
+Date: 2014-07-28
 Author: James Manton and Greg Jefferis
 Maintainer: James Manton <ajd.manton@googlemail.com>
 Description: Includes 3D brain surfaces, bridging and mirroring registrations,
