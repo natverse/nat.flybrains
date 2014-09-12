@@ -28,19 +28,17 @@ IS2
 ```
 
 ## Installation
-This package already has very useful functionality but is still in alpha status and so there is currently no released version on CRAN.
+This package already has very useful functionality but is still in beta status, so there is currently no released version on CRAN.
 
 ### Bleeding Edge
 You can, however, download the [tar ball](https://github.com/jefferislab/nat.flybrains/tarball/master),
-and run `R CMD INSTALL` on it, or use the **devtools** package to install the development version:
+and run `R CMD INSTALL` on it, or (recommended) use the **devtools** package to install the development version:
 
 ```r
 # install devtools package if you don't already have it
-install.packages("devtools")
-# install generic templatebrains package not yet on CRAN
-devtools::install_github("jefferis/nat.templatebrains")
-# install this package
-devtools::install_github("jefferis/nat.flybrains")
+if (!require("devtools")) install.packages("devtools")
+# nb also install generic templatebrains package not yet on CRAN
+devtools::install_github(username = "jefferislab", repo=c("nat.templatebrains","nat.flybrains"))
 ```
 
 Note: Windows users need [Rtools](http://www.murdoch-sutherland.com/Rtools/) and
