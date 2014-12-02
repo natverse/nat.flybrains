@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE namedpointset [
+  <!ELEMENT namedpointset (pointworld*)>
+  <!ELEMENT pointworld EMPTY>
+  <!ATTLIST namedpointset version CDATA #REQUIRED>
+  <!ATTLIST pointworld set (true|false) #REQUIRED>
+  <!ATTLIST pointworld name CDATA #REQUIRED>
+  <!ATTLIST pointworld x CDATA #IMPLIED>
+  <!ATTLIST pointworld y CDATA #IMPLIED>
+  <!ATTLIST pointworld z CDATA #IMPLIED>
+]>
+
+<namedpointset version="1.0">
+  <pointworld set="true" name="right_alpha_tip" x="222.95815479807692" y="23.245171000000003" z="60.0"/>
+  <pointworld set="true" name="right_tract_cross_vLH" x="169.0526781730769" y="95.52810000000001" z="71.0"/>
+  <pointworld set="true" name="left_vlpr_tract_crossing" x="400.9419178557692" y="124.504957" z="42.0"/>
+</namedpointset>
