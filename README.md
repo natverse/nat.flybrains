@@ -38,7 +38,7 @@ and run `R CMD INSTALL` on it, or (highly recommended) use the **devtools** pack
 # install devtools package if you don't already have it
 if (!require("devtools")) install.packages("devtools")
 # nb this will install the generic templatebrains package from CRAN
-devtools::install_github(username = "jefferislab/nat.flybrains")
+devtools::install_github("jefferislab/nat.flybrains")
 ```
 
 Note: Windows users need [Rtools](http://www.murdoch-sutherland.com/Rtools/) and
