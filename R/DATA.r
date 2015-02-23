@@ -192,12 +192,17 @@ NULL
 #'   G.S.X.E. (2010). Sexual dimorphism in the fly brain. Curr Biol 20 (18),
 #'   1589-601. See also \url{http://dx.doi.org/10.5281/zenodo.13884}
 #' @docType data
+#' @examples
+#' plot3d(VNCIS1.surf)
+#' # slightly different display
+#' plot3d(VNCIS1)
 NULL
 
 
 #' Template information for VNCIS1
 #'
 #' @examples
+#' VNCIS1
 #' # originally calculated thus:
 #' \dontrun{
 #' as.templatebrain(read.im3d(

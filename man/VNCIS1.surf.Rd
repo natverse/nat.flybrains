@@ -8,6 +8,11 @@
 The VNCIS1 template is a shape-averaged, intersex template brain generated
 using the CMTK avg_adm tool.
 }
+\examples{
+plot3d(VNCIS1.surf)
+# slightly different display
+plot3d(VNCIS1)
+}
 \references{
 Cachero S., Ostrovsky A.D., Yu J.Y., Dickson B.J., and Jefferis
   G.S.X.E. (2010). Sexual dimorphism in the fly brain. Curr Biol 20 (18),

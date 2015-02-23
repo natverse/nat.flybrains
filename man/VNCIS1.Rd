@@ -8,6 +8,7 @@
 Template information for VNCIS1
 }
 \examples{
+VNCIS1
 # originally calculated thus:
 \dontrun{
 as.templatebrain(read.im3d(
