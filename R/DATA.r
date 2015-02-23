@@ -180,3 +180,32 @@ NULL
 #' @name T1
 #' @docType data
 NULL
+
+
+#' Surface model of the VNCIS1 ventral nerve cord template brain
+#'
+#' The VNCIS1 template is a shape-averaged, intersex template brain generated
+#' using the CMTK avg_adm tool.
+#'
+#' @name VNCIS1.surf
+#' @references Cachero S., Ostrovsky A.D., Yu J.Y., Dickson B.J., and Jefferis
+#'   G.S.X.E. (2010). Sexual dimorphism in the fly brain. Curr Biol 20 (18),
+#'   1589-601. See also \url{http://dx.doi.org/10.5281/zenodo.13884}
+#' @docType data
+NULL
+
+
+#' Template information for VNCIS1
+#'
+#' @examples
+#' # originally calculated thus:
+#' \dontrun{
+#' as.templatebrain(read.im3d(
+#'   "/GD/projects/CommonNeuroanatomy/VNCIS1/VNCIS1.nrrd", ReadData = FALSE),
+#'   type="Average", sex='Intersex',
+#'   description = "See http://dx.doi.org/10.1016/j.cub.2010.07.045 for details")
+#' }
+#' @name VNCIS1
+#' @docType data
+#' @seealso \code{\link{VNCIS1}}
+NULL
