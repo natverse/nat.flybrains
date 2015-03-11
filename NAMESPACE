@@ -3,3 +3,4 @@
 export(add_reg_repo)
 export(update_reg_repos)
 import(nat.templatebrains)
+importFrom(rappdirs,user_data_dir)
