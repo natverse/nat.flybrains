@@ -24,7 +24,7 @@ add_reg_repo<-function(url, localdir=NULL, ...) {
     localdir = local_reg_dir_for_url(url)
 
   if(file.exists(localdir)) {
-    update_reg_repo(localdir)
+    update_reg_repos(localdir)
   } else {
     git2r::clone(url, localdir, ...)
     options(nat.templatebrains.regdirs=union(
