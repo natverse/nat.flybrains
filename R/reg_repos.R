@@ -42,6 +42,7 @@ add_reg_repo<-function(url, localdir=NULL, ...) {
 #'   for meaning of default.
 #' @export
 #' @seealso \code{\link{add_reg_repo}}
+#' @importFrom rappdirs user_data_dir
 update_reg_repos<-function(x=NULL) {
   if(is.null(x)) {
     x=getOption('nat.templatebrains.regdirs')
