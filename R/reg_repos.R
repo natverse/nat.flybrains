@@ -61,7 +61,21 @@ make_reg_url<-function(url) {
   url
 }
 
-# standard local checkout location for registration directory
+#' Standard local checkout location for extra registration directories
+#'
+#' When called without any argument returns the root directory that will be
+#' inspected for extra registrations. You can put them there yourself manually,
+#' but you are better off in general using \code{\link{add_reg_repo}} to install
+#' those that can be found in our github repos e.g.
+#' \href{https://github.com/jefferislab/BridgingRegistrations}{jefferislab/BridgingRegistrations}
+#'
+#' Note that this location will always be the same place on a machine i.e. this
+#' defines a consistent, persistent location on disk to store data across
+#' sesssions.
+#'
+#' @param url Character vector containing a url. When \code{url=NULL} defaults
+#'   to giving the base path.
+#' @export
 local_reg_dir_for_url<-function(url=NULL) {
   basedir=file.path(rappdirs::user_data_dir("rpkg-nat.flybrains"),"regrepos")
   if(length(url)) file.path(basedir, basename(url))
