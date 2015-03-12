@@ -11,6 +11,8 @@ License: GPL-3
 Depends:
     R (>= 2.10),
     nat.templatebrains (>= 0.3)
+Imports: rappdirs
 Suggests:
-    testthat
+    testthat,
+    git2r,
 LazyData: true
