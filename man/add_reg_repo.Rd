@@ -18,17 +18,27 @@ rappdirs function.}
 credentials for private repo.}
 }
 \description{
-Download and register git repository containing registrations
+Note that these extra registrations will be downloaded to a standard location
+on your hard drive that will be used for one session to the next. See
+examples.
 }
 \examples{
 \dontrun{
+## Add the two main jefferislab bridging and mirroring registration
+# collections for Drosophila brains from github.com.
 add_reg_repo("jefferislab/BridgingRegistrations")
 add_reg_repo("jefferislab/MirrorRegistrations")
-# update all current registration repositories
+
+## update all current registration repositories
 update_reg_repos()
+
+## find the root location of all registration directories
+local_reg_dir_for_url()
 }
 }
 \seealso{
+\code{\link{local_reg_dir_for_url}}, \code{\link[git2r]{clone}}
+
 \code{\link{update_reg_repos}}
 }
 

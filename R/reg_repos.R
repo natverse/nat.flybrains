@@ -1,5 +1,9 @@
 #' Download and register git repository containing registrations
 #'
+#' Note that these extra registrations will be downloaded to a standard location
+#' on your hard drive that will be used for one session to the next. See
+#' examples.
+#'
 #' @param url Location of remote git repository. Can accept partial github
 #'   specifications of the form "<user>/<repo>".
 #' @param localdir Full path to local checkout location of git repository. When
@@ -7,12 +11,19 @@
 #'   rappdirs function.
 #' @param ... additional arguments passed to \code{git2r::clone} e.g.
 #'   credentials for private repo.
+#' @seealso \code{\link{local_reg_dir_for_url}}, \code{\link[git2r]{clone}}
 #' @examples
 #' \dontrun{
+#' ## Add the two main jefferislab bridging and mirroring registration
+#' # collections for Drosophila brains from github.com.
 #' add_reg_repo("jefferislab/BridgingRegistrations")
 #' add_reg_repo("jefferislab/MirrorRegistrations")
-#' # update all current registration repositories
+#'
+#' ## update all current registration repositories
 #' update_reg_repos()
+#'
+#' ## find the root location of all registration directories
+#' local_reg_dir_for_url()
 #' }
 #' @seealso \code{\link{update_reg_repos}}
 #' @export
