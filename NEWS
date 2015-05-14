@@ -1,3 +1,12 @@
+nat.flybrains 1.5
+=================
+* added functions to support download/update of additional external
+  registrations from github repositories (see ?add_reg_repo and
+  ?update_reg_repos)
+* Add any additional registrations to options nat.templatebrains.regdirs on
+  startup
+* add VNCIS1 template brain and surface model
+
 nat.flybrains 1.4
 =================
 * package loading adds appropriate directories to the option
