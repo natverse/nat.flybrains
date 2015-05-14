@@ -10,7 +10,7 @@ if(is.null(cmtk.bindir())){
   test_that("can mirror FCWB", {
   points.mirror <- mirror_brain(points, FCWB)
 
-  points.mirrorexp <- matrix(c(533.852385, 453.736535, 29.7033156, 110.009148, 29.9916627, 107), ncol=3)
+  points.mirrorexp <- matrix(c(533.852385, NA, 29.7033156, NA, 29.9916627, NA), ncol=3)
   colnames(points.mirrorexp) <- c("X", "Y", "Z")
 
   expect_equal(points.mirror, points.mirrorexp)
