@@ -37,7 +37,7 @@ local_reg_dir_for_url()
 }
 }
 \seealso{
-\code{\link{local_reg_dir_for_url}}, \code{\link[git2r]{clone}}
+\code{\link{local_reg_dir_for_url}}, \code{git2r::\link[git2r]{clone}}
 
 \code{\link{update_reg_repos}}
 }

@@ -11,7 +11,7 @@
 #'   rappdirs function.
 #' @param ... additional arguments passed to \code{git2r::clone} e.g.
 #'   credentials for private repo.
-#' @seealso \code{\link{local_reg_dir_for_url}}, \code{\link[git2r]{clone}}
+#' @seealso \code{\link{local_reg_dir_for_url}}, \code{git2r::\link[git2r]{clone}}
 #' @examples
 #' \dontrun{
 #' ## Add the two main jefferislab bridging and mirroring registration
