@@ -97,3 +97,16 @@ local_reg_dir_for_url<-function(url=NULL) {
 extra_reg_repos<-function(full.names=TRUE) {
   dir(local_reg_dir_for_url(), full.names=full.names)
 }
+
+#' Download and install Jefferis lab registrations
+#'
+#' Uses \code{\link{add_reg_repo}} to download git repositories containing
+#' bridging and mirroring registrations for Drosophila melanogaster, simulans
+#' and virilis template brains.
+#' @seealso \url{https://github.com/jefferislab/BridgingRegistrations}, \url{https://github.com/jefferislab/MirrorRegistrations}, and \url{https://github.com/jefferislab/DrosophilidBridgingRegistrations}.
+#' @export
+download_jefferislab_registrations <- function() {
+  add_reg_repo("jefferislab/BridgingRegistrations")
+  add_reg_repo("jefferislab/MirrorRegistrations")
+  add_reg_repo("jefferislab/DrosophilidBridgingRegistrations")
+}
