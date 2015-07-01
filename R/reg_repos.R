@@ -3,6 +3,10 @@
 #' Uses \code{nat.templatebrains::\link{download_reg_repo}} to download git
 #' repositories containing bridging and mirroring registrations for Drosophila
 #' melanogaster, simulans and virilis template brains.
+#'
+#' @param repos character vector of Jefferis Lab GitHub repositories to download
+#'   from.
+#'
 #' @seealso \url{https://github.com/jefferislab/BridgingRegistrations},
 #'   \url{https://github.com/jefferislab/MirrorRegistrations}, and
 #'   \url{https://github.com/jefferislab/DrosophilidBridgingRegistrations}.

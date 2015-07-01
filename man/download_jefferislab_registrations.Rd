@@ -7,10 +7,14 @@
 download_jefferislab_registrations(repos = c("BridgingRegistrations",
   "MirrorRegistrations", "DrosophilidBridgingRegistrations"))
 }
+\arguments{
+\item{repos}{character vector of Jefferis Lab GitHub repositories to download
+  from.}
+}
 \description{
-Uses \code{nat.templatebrains::\link{download_reg_repo}} to download git repositories containing
-bridging and mirroring registrations for Drosophila melanogaster, simulans
-and virilis template brains.
+Uses \code{nat.templatebrains::\link{download_reg_repo}} to download git
+repositories containing bridging and mirroring registrations for Drosophila
+melanogaster, simulans and virilis template brains.
 }
 \examples{
 \dontrun{
@@ -22,7 +26,9 @@ download_reg_repo("https://github.com/myuser/myrepo")
 }
 }
 \seealso{
-\url{https://github.com/jefferislab/BridgingRegistrations}, \url{https://github.com/jefferislab/MirrorRegistrations}, and \url{https://github.com/jefferislab/DrosophilidBridgingRegistrations}.
+\url{https://github.com/jefferislab/BridgingRegistrations},
+  \url{https://github.com/jefferislab/MirrorRegistrations}, and
+  \url{https://github.com/jefferislab/DrosophilidBridgingRegistrations}.
 
 \code{\link{download_reg_repo}}
 }
