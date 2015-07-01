@@ -2,14 +2,24 @@
 % Please edit documentation in R/reg_repos.R
 \name{download_jefferislab_registrations}
 \alias{download_jefferislab_registrations}
-\title{Download and install Jefferis lab registrations}
+\title{Download (or update) and install Jefferis lab registrations}
 \usage{
-download_jefferislab_registrations()
+download_jefferislab_registrations(repos = c("BridgingRegistrations",
+  "MirrorRegistrations", "DrosophilidBridgingRegistrations"))
 }
 \description{
-Uses \code{\link{download_reg_repo}} to download git repositories containing
+Uses \code{nat.templatebrains::\link{download_reg_repo}} to download git repositories containing
 bridging and mirroring registrations for Drosophila melanogaster, simulans
 and virilis template brains.
+}
+\examples{
+\dontrun{
+# to download just one of these repositories do e.g.:
+download_jefferislab_registrations("Mirror")
+
+# to download your own registration repositories for use do
+download_reg_repo("https://github.com/myuser/myrepo")
+}
 }
 \seealso{
 \url{https://github.com/jefferislab/BridgingRegistrations}, \url{https://github.com/jefferislab/MirrorRegistrations}, and \url{https://github.com/jefferislab/DrosophilidBridgingRegistrations}.
