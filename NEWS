@@ -1,3 +1,12 @@
+nat.flybrains 1.6
+=================
+* add information and surfaces for Drosophila melanogaster, virilis and
+  simulans template brains
+* add DOIs to template brain information
+* remove functions to support download/update of addition external registrations
+  as these are now in nat.templatebrains v0.6
+* add function to download all Jefferis Lab registrations
+
 nat.flybrains 1.5
 =================
 * added functions to support download/update of additional external
