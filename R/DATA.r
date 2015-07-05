@@ -131,6 +131,36 @@ NULL
 #' }
 NULL
 
+#' Template information and surface model for the JFRC2013 reference brain
+#'
+#' @description The JFRC2013 reference brain is a single female brain. It is a
+#'   spatially calibrated version of the brain used in Aso et al. 2014, "The
+#'   neuronal architecture of the mushroom body provides a logic for associative
+#'   learning".
+#'
+#' @section Calibration: The isotropic calibration of 0.38 microns is based on a
+#'   personal communication from Yoshi Aso on 21st May 2014, where he noted:
+#'
+#'   It is 0.38um isotropic. Due to dehydration steps with EtOH, tissues are
+#'   about 20% smaller than when mounted in Vectashield or other glycerol based
+#'   mounting medium.
+#'
+#'   No attempt was made to correct for this shrinkage artefact.
+#' @name JFRC2013
+#' @aliases JRC2013
+#' @docType data
+JFRC2013=templatebrain(
+  name = "JFRC2013", regName = "JFRC2013", type = NULL, sex = "Female",
+  dims = c(1450, 725, 436), voxdims = c(0.38, 0.38, 0.38), origin = c(0, 0, 0),
+  BoundingBox = structure(c(0, 550.62, 0, 275.12, 0, 165.3), .Dim = 2:3,
+                          class = "boundingbox"),
+  units = c("microns", "microns", "microns"),
+  description = paste0('The JFRC2013 reference brain is a spatially calibrated',
+                       ' version of the brain used in Aso et al. 2014, "The ',
+                       'neuronal architecture of the mushroom body provides a ',
+                       'logic for associative learning".'),
+  doi = NULL)
+
 #' Template information for the Insect Brain Nomenclature reference brain
 #'
 #' Template used for the study "A Systematic Nomenclature for the Insect Brain"
