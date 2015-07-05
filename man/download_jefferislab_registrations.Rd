@@ -25,6 +25,15 @@ download_jefferislab_registrations("Mirror")
 download_reg_repo("https://github.com/myuser/myrepo")
 }
 }
+\references{
+For a full description and sample applications of these registrations,
+  please see:
+
+Combining genome-scale Drosophila 3D neuroanatomical data by bridging template brains
+James D. Manton, Aaron D. Ostrovsky, Lea Goetz, Marta Costa, Torsten Rohlfing,
+Gregory S. X. E. Jefferis
+\href{http://dx.doi.org/10.1101/006353}{bioRxiv doi: 10.1101/006353}
+}
 \seealso{
 \url{https://github.com/jefferislab/BridgingRegistrations},
   \url{https://github.com/jefferislab/MirrorRegistrations}, and
