@@ -161,6 +161,22 @@ JFRC2013=templatebrain(
                        'logic for associative learning".'),
   doi = NULL)
 
+
+#' Surface model of the JFRC2013 brain
+#'
+#' Generated in Amira from a 2 micron downsampled and median filtered version of
+#' the JFRC2013 template brain.
+#' @name JFRC2013.surf
+#' @docType data
+#' @examples
+#' \dontrun{
+#' library(nat)
+#' plot3d(JFRC2013)
+#' plot3d(JFRC2013.surf)
+#' plot3d(JFRC2013.surf, col='red', alpha=0.3)
+#' }
+NULL
+
 #' Template information for the Insect Brain Nomenclature reference brain
 #'
 #' Template used for the study "A Systematic Nomenclature for the Insect Brain"
