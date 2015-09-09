@@ -157,7 +157,6 @@ NULL
 #' @name JFRC2013
 #' @aliases JRC2013
 #' @docType data
-#' @export
 NULL
 
 #' Surface model of the JFRC2013 brain
