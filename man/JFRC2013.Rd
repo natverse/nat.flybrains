@@ -5,23 +5,6 @@
 \alias{JFRC2013}
 \alias{JRC2013}
 \title{Template information and surface model for the JFRC2013 reference brain}
-\format{\preformatted{List of 11
- $ name       : chr "JFRC2013"
- $ regName    : chr "JFRC2013"
- $ type       : NULL
- $ sex        : chr "Female"
- $ dims       : num [1:3] 1450 725 436
- $ voxdims    : num [1:3] 0.38 0.38 0.38
- $ origin     : num [1:3] 0 0 0
- $ BoundingBox: boundingbox [1:2, 1:3] 0 551 0 275 0 ...
- $ units      : chr [1:3] "microns" "microns" "microns"
- $ description: chr "The JFRC2013 reference brain is a spatially calibrated version of the brain used in Aso et al. 2014, \\"The neuronal architectur"| __truncated__
- $ doi        : NULL
- - attr(*, "class")= chr "templatebrain"
-}}
-\usage{
-JFRC2013
-}
 \description{
 The JFRC2013 reference brain is a single female brain. It is a
   spatially calibrated version of the brain used in Aso et al. 2014, "The
@@ -47,5 +30,4 @@ Mushroom body output neurons encode valence and guide memory-based action select
 Elife 3, e04580.
 \href{http://dx.doi.org/10.7554/eLife.04577}{doi:10.7554/eLife.04577}
 }
-\keyword{datasets}
 

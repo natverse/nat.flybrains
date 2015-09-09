@@ -157,18 +157,8 @@ NULL
 #' @name JFRC2013
 #' @aliases JRC2013
 #' @docType data
-JFRC2013=templatebrain(
-  name = "JFRC2013", regName = "JFRC2013", type = NULL, sex = "Female",
-  dims = c(1450, 725, 436), voxdims = c(0.38, 0.38, 0.38), origin = c(0, 0, 0),
-  BoundingBox = structure(c(0, 550.62, 0, 275.12, 0, 165.3), .Dim = 2:3,
-                          class = "boundingbox"),
-  units = c("microns", "microns", "microns"),
-  description = paste0('The JFRC2013 reference brain is a spatially calibrated',
-                       ' version of the brain used in Aso et al. 2014, "The ',
-                       'neuronal architecture of the mushroom body provides a ',
-                       'logic for associative learning".'),
-  doi = NULL)
-
+#' @export
+NULL
 
 #' Surface model of the JFRC2013 brain
 #'
