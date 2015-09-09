@@ -22,8 +22,8 @@ The JFRC2013 reference brain is a single female brain. It is a
   No attempt was made to correct for this shrinkage artefact.
 }
 \references{
-Aso, Y., Sitaraman, D., Ichinose, T., Kaun, K. R., Vogt, K., Belliart-Guérin,
-G., Plaçais, P.-Y., Robie, A. A., Yamagata, N., Schnaitmann, C., Rowell, W. J.,
+Aso, Y., Sitaraman, D., Ichinose, T., Kaun, K. R., Vogt, K., Belliart-Guerin,
+G., Placais, P.-Y., Robie, A. A., Yamagata, N., Schnaitmann, C., Rowell, W. J.,
 Johnston, R. M., Ngo, T.-T. B., Chen, N., Korff, W., Nitabach, M. N.,
 Heberlein, U., Preat, T., Branson, K. M., Tanimoto, H. and Rubin, G. M. (2014b).
 Mushroom body output neurons encode valence and guide memory-based action selection in Drosophila.
