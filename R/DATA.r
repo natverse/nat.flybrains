@@ -146,6 +146,14 @@ NULL
 #'   mounting medium.
 #'
 #'   No attempt was made to correct for this shrinkage artefact.
+#' @references
+#' Aso, Y., Sitaraman, D., Ichinose, T., Kaun, K. R., Vogt, K., Belliart-Guérin,
+#' G., Plaçais, P.-Y., Robie, A. A., Yamagata, N., Schnaitmann, C., Rowell, W. J.,
+#' Johnston, R. M., Ngo, T.-T. B., Chen, N., Korff, W., Nitabach, M. N.,
+#' Heberlein, U., Preat, T., Branson, K. M., Tanimoto, H. and Rubin, G. M. (2014b).
+#' Mushroom body output neurons encode valence and guide memory-based action selection in Drosophila.
+#' Elife 3, e04580.
+#' \href{http://dx.doi.org/10.7554/eLife.04577}{doi:10.7554/eLife.04577}
 #' @name JFRC2013
 #' @aliases JRC2013
 #' @docType data
