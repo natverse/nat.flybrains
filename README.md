@@ -19,6 +19,11 @@ myneuron.jfrc2=xform_brain(myneuron, sample=IS2, reference=JFRC2)
 # flip neuron to opposite hemisphere of JFRC2 space
 myneuron.jfrc2.flip=mirror_brain(myneuron.jfrc2, JFRC2)
 
+# to install additional/updated registrations 
+# (beyond those distributed as part of the R package)
+# Strongly recommended!
+download_jefferislab_registrations()
+
 # for more information
 JFRC2
 IS2
@@ -39,6 +44,11 @@ and run `R CMD INSTALL` on it, or (highly recommended) use the **devtools** pack
 if (!require("devtools")) install.packages("devtools")
 # nb this will install the generic templatebrains package from CRAN
 devtools::install_github("jefferislab/nat.flybrains")
+
+# to install additional/updated registrations 
+# (beyond those distributed as part of the R package)
+# Strongly recommended!
+nat.flybrains::download_jefferislab_registrations()
 ```
 
 Note: Windows users need [Rtools](http://www.murdoch-sutherland.com/Rtools/) and
