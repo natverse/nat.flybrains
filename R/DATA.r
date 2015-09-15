@@ -218,10 +218,24 @@ NULL
 #' @seealso \code{\link{IBN}}
 NULL
 
-#' Template information for the T1 reference brain
+
+#' Template information and surface model for the T1 reference brain
 #'
 #' @name T1
 #' @docType data
+NULL
+
+#' The surface model was constructed in Amira in the Jefferis Lab using a simple
+#' threshold, followed by a surface simplification.
+#'
+#' @name T1.surf
+#' @docType data
+#' @rdname T1
+#' @examples
+#' \dontrun{
+#' # Depends on nat
+#' plot3d(T1.surf)
+#' }
 NULL
 
 
