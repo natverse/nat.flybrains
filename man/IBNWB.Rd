@@ -3,6 +3,7 @@
 \docType{data}
 \name{IBNWB}
 \alias{IBNWB}
+\alias{IBNWB.surf}
 \title{Template information for the Insect Brain Nomenclature Whole Brain reference
 brain}
 \description{
@@ -10,6 +11,9 @@ A synthetic whole brain constructed from the Insect Brain Nomenclature
 template brain. The original confocal stack was duplicated, mirrored about a
 vertical axis and then displaced by 392 pixels in \eqn{x} and then merged
 with the original, with a linear blend in the overlapping region.
+
+The surface model was constructed in Amira in the Jefferis Lab using a simple
+median filter, followed by thresholding and a surface simplification.
 }
 \seealso{
 \code{\link{IBN}}

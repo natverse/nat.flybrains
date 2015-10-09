@@ -218,6 +218,16 @@ NULL
 #' @seealso \code{\link{IBN}}
 NULL
 
+#' Surface model for the Insect Brain Nomenclature Whole Brain reference brain
+#'
+#' The surface model was constructed in Amira in the Jefferis Lab using a simple
+#' median filter, followed by thresholding and a surface simplification.
+#'
+#' @name IBNWB.surf
+#' @docType data
+#' @rdname IBNWB
+NULL
+
 
 #' Template information and surface model for the T1 reference brain
 #'
