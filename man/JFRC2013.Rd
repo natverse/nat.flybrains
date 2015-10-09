@@ -3,6 +3,8 @@
 \docType{data}
 \name{JFRC2013}
 \alias{JFRC2013}
+\alias{JFRC2013DS}
+\alias{JFRC2013DS.surf}
 \alias{JRC2013}
 \title{Template information and surface model for the JFRC2013 reference brain}
 \description{
@@ -10,6 +12,11 @@ The JFRC2013 reference brain is a single female brain. It is a
   spatially calibrated version of the brain used in Aso et al. 2014, "The
   neuronal architecture of the mushroom body provides a logic for associative
   learning".
+
+JFRC2013DS is a downsampled version of the JFRC2013 reference
+  brain, designed for use with images taken on a microscope with 20 x
+  magnification. The downsampling has shrunk the z direction, such that the
+  brain appears flattened when compared with the original.
 }
 \section{Calibration}{
  The isotropic calibration of 0.38 microns is based on a

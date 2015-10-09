@@ -174,6 +174,18 @@ NULL
 #' }
 NULL
 
+#' @name JFRC2013DS
+#' @rdname JFRC2013
+#' @description JFRC2013DS is a downsampled version of the JFRC2013 reference
+#'   brain, designed for use with images taken on a microscope with 20 x
+#'   magnification. The downsampling has shrunk the z direction, such that the
+#'   brain appears flattened when compared with the original.
+NULL
+
+#' @name JFRC2013DS.surf
+#' @rdname JFRC2013
+NULL
+
 #' Template information for the Insect Brain Nomenclature reference brain
 #'
 #' Template used for the study "A Systematic Nomenclature for the Insect Brain"
