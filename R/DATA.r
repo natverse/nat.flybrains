@@ -31,8 +31,8 @@ NULL
 #'  Homberg, Arnim Jenett, Haig Keshishian, Linda L. Restifo, Wolfgang
 #'  \enc{Rössler}{Roessler}, Julie H. Simpson, Nicholas J. Strausfeld, Roland
 #'  Strauss, Leslie B. Vosshall, Insect Brain Name Working Group (2013). A
-#'  systematic nomenclature for the insect brain. Neuron 81 (4), 755-765. doi:
-#'  10.1016/j.neuron.2013.12.017.
+#'  systematic nomenclature for the insect brain. Neuron 81 (4), 755-765.
+#'  \href{http://dx.doi.org/10.1016/j.neuron.2013.12.017}{doi:10.1016/j.neuron.2013.12.017}
 #'
 #' @name FCWBNP.surf
 #' @docType data
@@ -72,8 +72,8 @@ NULL
 #'  Homberg, Arnim Jenett, Haig Keshishian, Linda L. Restifo, Wolfgang
 #'  \enc{Rössler}{Roessler}, Julie H. Simpson, Nicholas J. Strausfeld, Roland
 #'  Strauss, Leslie B. Vosshall, Insect Brain Name Working Group (2013). A
-#'  systematic nomenclature for the insect brain. Neuron 81 (4), 755-765. doi:
-#'  10.1016/j.neuron.2013.12.017.
+#'  systematic nomenclature for the insect brain. Neuron 81 (4), 755-765.
+#'  \href{http://dx.doi.org/10.1016/j.neuron.2013.12.017}{doi:10.1016/j.neuron.2013.12.017}
 #'
 #' @name IS2NP.surf
 #' @docType data
@@ -118,8 +118,8 @@ NULL
 #'  Homberg, Arnim Jenett, Haig Keshishian, Linda L. Restifo, Wolfgang
 #'  \enc{Rössler}{Roessler}, Julie H. Simpson, Nicholas J. Strausfeld, Roland
 #'  Strauss, Leslie B. Vosshall, Insect Brain Name Working Group (2013). A
-#'  systematic nomenclature for the insect brain. Neuron 81 (4), 755-765. doi:
-#'  10.1016/j.neuron.2013.12.017.
+#'  systematic nomenclature for the insect brain. Neuron 81 (4), 755-765.
+#'  \href{http://dx.doi.org/10.1016/j.neuron.2013.12.017}{doi:10.1016/j.neuron.2013.12.017}
 #'
 #' @name JFRC2NP.surf
 #' @docType data
@@ -177,7 +177,7 @@ NULL
 #' Template information for the Insect Brain Nomenclature reference brain
 #'
 #' Template used for the study "A Systematic Nomenclature for the Insect Brain"
-#' (doi: 10.1016/j.neuron.2013.12.01).
+#' (\href{http://dx.doi.org/10.1016/j.neuron.2013.12.017}{doi:10.1016/j.neuron.2013.12.017}).
 #'
 #' Constructed from the green channel of serial sections of a Drosophila
 #' melanogaster brain that was tricolor-labeled with a combination of the

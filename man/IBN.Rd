@@ -6,7 +6,7 @@
 \title{Template information for the Insect Brain Nomenclature reference brain}
 \description{
 Template used for the study "A Systematic Nomenclature for the Insect Brain"
-(doi: 10.1016/j.neuron.2013.12.01).
+(\href{http://dx.doi.org/10.1016/j.neuron.2013.12.017}{doi:10.1016/j.neuron.2013.12.017}).
 }
 \details{
 Constructed from the green channel of serial sections of a Drosophila
