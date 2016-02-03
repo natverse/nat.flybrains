@@ -8,7 +8,9 @@
 The FCWB reference brain is a shape averaged template brain generated using
 the CMTK avg_adm tool. See
 \url{https://github.com/jefferislab/MakeAverageBrain} for the relevant code.
-\ref{http://dx.doi.org/10.1016/j.cub.2010.11.056}{doi:10.5281/zenodo.10568}
+}
+\details{
+\href{http://dx.doi.org/10.1016/j.cub.2010.11.056}{doi:10.5281/zenodo.10568}
 }
 \examples{
 \dontrun{

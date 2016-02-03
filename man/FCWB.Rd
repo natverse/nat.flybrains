@@ -17,6 +17,6 @@ Ann-Shyn Chiangemail, Chih-Yung Lin11, Chao-Chun Chuang11, Hsiu-Ming Chang11,
  Ru-Fen Ni, Chao-Yuan Yeh, Jenn-Kang Hwang (2011).
  Three-dimensional reconstruction of brain-wide wiring networks in Drosophila at single-cell resolution.
  Current Biology 21, 1-11.
- \ref{http://dx.doi.org/10.1016/j.cub.2010.11.056}{doi:10.5281/zenodo.10568}
+ \href{http://dx.doi.org/10.1016/j.cub.2010.11.056}{doi:10.5281/zenodo.10568}
 }
 

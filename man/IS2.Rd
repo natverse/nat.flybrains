@@ -9,8 +9,8 @@ Template information for the IS2 reference brain
 }
 \references{
 Cachero S., Ostrovsky A.D., Yu J.Y., Dickson B.J., and Jefferis
-G.S.X.E. (2010). Sexual dimorphism in the fly brain. Curr Biol 20 (18),
-1589-601.
+ G.S.X.E. (2010). Sexual dimorphism in the fly brain. Curr Biol 20 (18),
+ 1589-601.
 \href{http://dx.doi.org/10.1016/j.cub.2010.07.045}{doi:10.1016/j.cub.2010.07.045}
 }
 

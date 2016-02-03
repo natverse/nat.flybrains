@@ -17,6 +17,12 @@ as.templatebrain(read.im3d(
   description = "See http://dx.doi.org/10.1016/j.cub.2010.07.045 for details")
 }
 }
+\references{
+Cachero S., Ostrovsky A.D., Yu J.Y., Dickson B.J., and Jefferis
+ G.S.X.E. (2010). Sexual dimorphism in the fly brain. Curr Biol 20 (18),
+ 1589-601.
+ \href{http://dx.doi.org/10.1016/j.cub.2010.07.045}{doi:10.1016/j.cub.2010.07.045}
+}
 \seealso{
 \code{\link{VNCIS1}}
 }

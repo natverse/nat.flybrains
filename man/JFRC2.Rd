@@ -23,19 +23,19 @@ plot3d(JFRC2.surf)
 }
 \references{
 Arnim Jenett, Gerald M. Rubinemail, Teri-T.B. Ngo, David Shepherd, Christine Murphy, Heather Dionne, Barret D. Pfeiffer,
-Amanda Cavallaro, Donald Hall, Jennifer Jeter, Nirmala Iyer, Dona Fetter, Joanna H. Hausenfluck, Hanchuan Peng,
-Eric T. Trautman, Robert R. Svirskas, Eugene W. Myers, Zbigniew R. Iwinski, Yoshinori Aso, Gina M. DePasquale,
-Adrianne Enos, Phuson Hulamm, Shing Chun Benny Lam, Hsing-Hsi Li, Todd R. Laverty, Fuhui Long, Lei Qu, Sean D. Murphy,
-Konrad Rokicki, Todd Safford, Kshiti Shaw, Julie H. Simpson, Allison Sowell, Susana Tae, Yang Yu,
-Christopher T. Zugates (2012).A GAL4-Driver Line Resource for Drosophila Neurobiology. Cell Reports 2 (4), 991 - 1001.
-\href{http://dx.doi.org/10.1016/j.celrep.2012.09.011}{doi:10.1016/j.celrep.2012.09.011}
+ Amanda Cavallaro, Donald Hall, Jennifer Jeter, Nirmala Iyer, Dona Fetter, Joanna H. Hausenfluck, Hanchuan Peng,
+ Eric T. Trautman, Robert R. Svirskas, Eugene W. Myers, Zbigniew R. Iwinski, Yoshinori Aso, Gina M. DePasquale,
+ Adrianne Enos, Phuson Hulamm, Shing Chun Benny Lam, Hsing-Hsi Li, Todd R. Laverty, Fuhui Long, Lei Qu, Sean D. Murphy,
+ Konrad Rokicki, Todd Safford, Kshiti Shaw, Julie H. Simpson, Allison Sowell, Susana Tae, Yang Yu,
+ Christopher T. Zugates (2012).A GAL4-Driver Line Resource for Drosophila Neurobiology. Cell Reports 2 (4), 991 - 1001.
+ \href{http://dx.doi.org/10.1016/j.celrep.2012.09.011}{doi:10.1016/j.celrep.2012.09.011}
 
 Arnim Jenett, Gerald M. Rubinemail, Teri-T.B. Ngo, David Shepherd, Christine Murphy, Heather Dionne, Barret D. Pfeiffer,
-Amanda Cavallaro, Donald Hall, Jennifer Jeter, Nirmala Iyer, Dona Fetter, Joanna H. Hausenfluck, Hanchuan Peng,
-Eric T. Trautman, Robert R. Svirskas, Eugene W. Myers, Zbigniew R. Iwinski, Yoshinori Aso, Gina M. DePasquale,
-Adrianne Enos, Phuson Hulamm, Shing Chun Benny Lam, Hsing-Hsi Li, Todd R. Laverty, Fuhui Long, Lei Qu, Sean D. Murphy,
-Konrad Rokicki, Todd Safford, Kshiti Shaw, Julie H. Simpson, Allison Sowell, Susana Tae, Yang Yu,
-Christopher T. Zugates (2012).A GAL4-Driver Line Resource for Drosophila Neurobiology. Cell Reports 2 (4), 991 - 1001.
-\href{http://dx.doi.org/10.1016/j.celrep.2012.09.011}{doi:10.1016/j.celrep.2012.09.011}
+ Amanda Cavallaro, Donald Hall, Jennifer Jeter, Nirmala Iyer, Dona Fetter, Joanna H. Hausenfluck, Hanchuan Peng,
+ Eric T. Trautman, Robert R. Svirskas, Eugene W. Myers, Zbigniew R. Iwinski, Yoshinori Aso, Gina M. DePasquale,
+ Adrianne Enos, Phuson Hulamm, Shing Chun Benny Lam, Hsing-Hsi Li, Todd R. Laverty, Fuhui Long, Lei Qu, Sean D. Murphy,
+ Konrad Rokicki, Todd Safford, Kshiti Shaw, Julie H. Simpson, Allison Sowell, Susana Tae, Yang Yu,
+ Christopher T. Zugates (2012).A GAL4-Driver Line Resource for Drosophila Neurobiology. Cell Reports 2 (4), 991 - 1001.
+ \href{http://dx.doi.org/10.1016/j.celrep.2012.09.011}{doi:10.1016/j.celrep.2012.09.011}
 }
 

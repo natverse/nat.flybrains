@@ -15,7 +15,8 @@ plot3d(VNCIS1)
 }
 \references{
 Cachero S., Ostrovsky A.D., Yu J.Y., Dickson B.J., and Jefferis
-  G.S.X.E. (2010). Sexual dimorphism in the fly brain. Curr Biol 20 (18),
-  1589-601. See also \url{http://dx.doi.org/10.5281/zenodo.13884}
+ G.S.X.E. (2010). Sexual dimorphism in the fly brain. Curr Biol 20 (18),
+ 1589-601.
+ \href{http://dx.doi.org/10.1016/j.cub.2010.07.045}{doi:10.1016/j.cub.2010.07.045}
 }
 
