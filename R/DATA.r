@@ -3,6 +3,7 @@
 #' The FCWB reference brain is a shape averaged template brain generated using
 #' the CMTK avg_adm tool. See
 #' \url{https://github.com/jefferislab/MakeAverageBrain} for the relevant code.
+#' \ref{http://dx.doi.org/10.1016/j.cub.2010.11.056}{doi:10.5281/zenodo.10568}
 #'
 #' @name FCWB.surf
 #' @docType data
@@ -18,6 +19,8 @@ NULL
 #' The FCWB reference brain is a shape averaged template brain generated using
 #' the CMTK avg_adm tool. See
 #' \url{https://github.com/jefferislab/MakeAverageBrain} for the relevant code.
+#' @references Ann-Shyn Chiangemail, Chih-Yung Lin11, Chao-Chun Chuang11, Hsiu-Ming Chang11, Chang-Huain Hsieh11, Chang-Wei Yeh, Chi-Tin Shih, Jian-Jheng Wu, Guo-Tzau Wang, Yung-Chang Chen, Cheng-Chi Wu, Guan-Yu Chen, Yu-Tai Ching, Ping-Chang Lee, Chih-Yang Lin, Hui-Hao Lin, Chia-Chou Wu, Hao-Wei Hsu, Yun-Ann Huang, Jing-Yi Chen, Hsin-Jung Chiang, Chun-Fang Lu, Ru-Fen Ni, Chao-Yuan Yeh, Jenn-Kang Hwang (2011). Three-dimensional reconstruction of brain-wide wiring networks in Drosophila at single-cell resolution. Current Biology 21, 1-11.
+#' \ref{http://dx.doi.org/10.1016/j.cub.2010.11.056}{doi:10.5281/zenodo.10568}
 #'
 #' @name FCWB
 #' @docType data
@@ -49,6 +52,7 @@ NULL
 #' @references Cachero S., Ostrovsky A.D., Yu J.Y., Dickson B.J., and Jefferis
 #' G.S.X.E. (2010). Sexual dimorphism in the fly brain. Curr Biol 20 (18),
 #' 1589-601.
+#' \href{http://dx.doi.org/10.1016/j.cub.2010.07.045}{doi:10.1016/j.cub.2010.07.045}
 #' @name IS2.surf
 #' @docType data
 #' @examples
