@@ -35,7 +35,7 @@ NULL
 NULL
 
 #' Surface model of the Insect Brain Name Working Group neuropil segmentation in
-#' FlyCircuit coordinate space 
+#' FlyCircuit coordinate space
 #'
 #' @references Kei Ito, Kazunori Shinomiya, Masayoshi Ito, J. Douglas Armstrong,
 #'  George Boyan, Volker Hartenstein, Steffen Harzsch, Martin Heisenberg, Uwe
@@ -263,6 +263,7 @@ NULL
 #'  \href{http://dx.doi.org/10.1016/j.neuron.2013.12.017}{doi:10.1016/j.neuron.2013.12.017}
 #' @name IBN
 #' @docType data
+#' @encoding UTF-8
 NULL
 
 #' Template information for the Insect Brain Nomenclature Whole Brain reference
@@ -283,6 +284,7 @@ NULL
 #' @name IBNWB
 #' @docType data
 #' @seealso \code{\link{IBN}}
+#' @encoding UTF-8
 NULL
 
 #' Surface model for the Insect Brain Nomenclature Whole Brain reference brain
@@ -300,6 +302,7 @@ NULL
 #' @name IBNWB.surf
 #' @docType data
 #' @rdname IBNWB
+#' @encoding UTF-8
 NULL
 
 
