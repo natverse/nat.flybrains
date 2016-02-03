@@ -35,7 +35,7 @@ NULL
 NULL
 
 #' Surface model of the Insect Brain Name Working Group neuropil segmentation in
-#' FlyCircuit coordinate space
+#' FlyCircuit coordinate space 
 #'
 #' @references Kei Ito, Kazunori Shinomiya, Masayoshi Ito, J. Douglas Armstrong,
 #'  George Boyan, Volker Hartenstein, Steffen Harzsch, Martin Heisenberg, Uwe
