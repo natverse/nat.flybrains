@@ -3,20 +3,35 @@
 \docType{data}
 \name{FCWB}
 \alias{FCWB}
-\title{Template information for the FCWB FlyCircuit reference brain}
+\alias{FCWB.surf}
+\title{Template information and Surface model of the FCWB FlyCircuit reference brain}
 \description{
-The FCWB reference brain is a shape averaged template brain generated using
+The \code{FCWB} reference brain is a shape averaged template brain generated using
 the CMTK avg_adm tool. See
 \url{https://github.com/jefferislab/MakeAverageBrain} for the relevant code.
+
+The \code{FCWB.surf} surface model was generated in Amira by constructing an
+isosurface model based on the \code{FCWB} brain.
+}
+\examples{
+\dontrun{
+# Depends on nat
+plot3d(FCWB.surf)
+}
 }
 \references{
-Ann-Shyn Chiangemail, Chih-Yung Lin11, Chao-Chun Chuang11, Hsiu-Ming Chang11,
+Ann-Shyn Chiang, Chih-Yung Lin, Chao-Chun Chuang, Hsiu-Ming Chang,
  Chang-Huain Hsieh11, Chang-Wei Yeh, Chi-Tin Shih, Jian-Jheng Wu, Guo-Tzau Wang, Yung-Chang Chen,
  Cheng-Chi Wu, Guan-Yu Chen, Yu-Tai Ching, Ping-Chang Lee, Chih-Yang Lin, Hui-Hao Lin,
  Chia-Chou Wu, Hao-Wei Hsu, Yun-Ann Huang, Jing-Yi Chen, Hsin-Jung Chiang, Chun-Fang Lu,
  Ru-Fen Ni, Chao-Yuan Yeh, Jenn-Kang Hwang (2011).
  Three-dimensional reconstruction of brain-wide wiring networks in Drosophila at single-cell resolution.
  Current Biology 21, 1-11.
- \href{http://dx.doi.org/10.1016/j.cub.2010.11.056}{doi:10.5281/zenodo.10568}
+ \href{http://dx.doi.org/10.1016/j.cub.2010.11.056}{doi:10.1016/j.cub.2010.11.056}
+
+ \code{FCWB} is available for download at \url{http://dx.doi.org/10.5281/zenodo.10568}
+}
+\seealso{
+\code{\link{FCWBNP.surf}}
 }
 

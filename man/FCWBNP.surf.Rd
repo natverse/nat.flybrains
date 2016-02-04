@@ -5,10 +5,10 @@
 \name{FCWBNP.surf}
 \alias{FCWBNP.surf}
 \title{Surface model of the Insect Brain Name Working Group neuropil segmentation in
-FlyCircuit coordinate space}
+FCWB space}
 \description{
-Surface model of the Insect Brain Name Working Group neuropil segmentation in
-FlyCircuit coordinate space
+The \code{\link{JFRC2NP.surf}} model was mapped from \code{\link{JFRC2}} to
+\code{\link{FCWB}} space using a bridging registration.
 }
 \examples{
 \dontrun{
@@ -18,11 +18,14 @@ plot3d(FCWBNP.surf)
 }
 \references{
 Kei Ito, Kazunori Shinomiya, Masayoshi Ito, J. Douglas Armstrong,
- George Boyan, Volker Hartenstein, Steffen Harzsch, Martin Heisenberg, Uwe
- Homberg, Arnim Jenett, Haig Keshishian, Linda L. Restifo, Wolfgang
- \enc{Rössler}{Roessler}, Julie H. Simpson, Nicholas J. Strausfeld, Roland
- Strauss, Leslie B. Vosshall, Insect Brain Name Working Group (2013). A
- systematic nomenclature for the insect brain. Neuron 81 (4), 755-765.
- \href{http://dx.doi.org/10.1016/j.neuron.2013.12.017}{doi:10.1016/j.neuron.2013.12.017}
+  George Boyan, Volker Hartenstein, Steffen Harzsch, Martin Heisenberg, Uwe
+  Homberg, Arnim Jenett, Haig Keshishian, Linda L. Restifo, Wolfgang
+  \enc{Rössler}{Roessler}, Julie H. Simpson, Nicholas J. Strausfeld, Roland
+  Strauss, Leslie B. Vosshall, Insect Brain Name Working Group (2013). A
+  systematic nomenclature for the insect brain. Neuron 81 (4), 755-765.
+  \href{http://dx.doi.org/10.1016/j.neuron.2013.12.017}{doi:10.1016/j.neuron.2013.12.017}
+}
+\seealso{
+\code{\link{FCWB}}
 }
 
