@@ -10,19 +10,67 @@ JFRC2 coordinate space}
 Surface model of the Insect Brain Name Working Group neuropil segmentation in
 JFRC2 coordinate space
 }
+\details{
+Note that the supplementary information for the Insect Brain Name
+  working group only includes neuropil information in the \code{\link{IBN}}
+  space, which can be downloaded from
+  \url{ftp://flybase.org/flybase/associated_files/InsectBrainNomenclature_RawData.zip}.
+
+
+  However Arnim Jenett, Kazunori Shinomiya and Kei Ito generated a full brain
+  segmentation based on the \code{\link{JFRC2}} template (used by the Virtual
+  Fly Brain project and internally at Janelia Farm for several years.)
+
+  This surface model was generated in Amira from the segmentation in the file
+  \code{JFRCtempate2010.mask130819.am} with md5
+  \code{d0a40b38d1a0045a423d947ebf1778d2}. The data are available in a github
+  repository \url{https://github.com/VirtualFlyBrain/DrosAdultBRAINdomains}.
+  The original full size model was then simplified to reduce the number of
+  vertices resulting
+}
 \examples{
+# list the materials for the different surface regions
+materials(JFRC2NP.surf)
+
 \dontrun{
-# Depends on nat
+# plot the surface
 plot3d(JFRC2NP.surf)
+
+# calculate volumes ond surface areas for all regions
+if(require("RvtkStatismo") && require("tidyr") && require("ggplot2") && require("stringr")){
+  # convert each region to a mesh3d object, note that we use simplify=FALSE
+  # to stop sapply mangling the result
+  meshes=sapply(JFRC2NP.surf$RegionList,
+    function(r) as.mesh3d(subset(JFRC2NP.surf, r)), simplify=FALSE)
+
+  # now calculate information for each mesh
+  # NB vtkMeshInfo returns a list so we need to convert to a vector
+  # to end up with a nice matrix output
+  vs=sapply(meshes, function(x) unlist(vtkMeshInfo(x)))
+
+  # now make that into a tidy data.frame and plot
+  df=data.frame(key=colnames(vs), t(vs),
+                region=sub("_[LR]", "", colnames(vs)),
+                side=str_match(colnames(vs), "_([LR])")[,2])
+
+  df2=gather(df, measure, value, volume:surfaceArea)
+  library(ggplot2)
+  qplot( value, region, data=x, col=side, facets = . ~ measure) + scale_x_log10()
+
+}
+
 }
 }
 \references{
 Kei Ito, Kazunori Shinomiya, Masayoshi Ito, J. Douglas Armstrong,
- George Boyan, Volker Hartenstein, Steffen Harzsch, Martin Heisenberg, Uwe
- Homberg, Arnim Jenett, Haig Keshishian, Linda L. Restifo, Wolfgang
- \enc{Rössler}{Roessler}, Julie H. Simpson, Nicholas J. Strausfeld, Roland
- Strauss, Leslie B. Vosshall, Insect Brain Name Working Group (2013). A
- systematic nomenclature for the insect brain. Neuron 81 (4), 755-765.
- \href{http://dx.doi.org/10.1016/j.neuron.2013.12.017}{doi:10.1016/j.neuron.2013.12.017}
+  George Boyan, Volker Hartenstein, Steffen Harzsch, Martin Heisenberg, Uwe
+  Homberg, Arnim Jenett, Haig Keshishian, Linda L. Restifo, Wolfgang
+  \enc{Rössler}{Roessler}, Julie H. Simpson, Nicholas J. Strausfeld, Roland
+  Strauss, Leslie B. Vosshall, Insect Brain Name Working Group (2013). A
+  systematic nomenclature for the insect brain. Neuron 81 (4), 755-765.
+  \href{http://dx.doi.org/10.1016/j.neuron.2013.12.017}{doi:10.1016/j.neuron.2013.12.017}
+}
+\seealso{
+\code{\link{JFRC2}}
 }
 

@@ -112,29 +112,22 @@ NULL
 #' FlyLight reference brain (JFRC), which was delivered uncalibrated. This in
 #' turn was derived from a single female brain stained with nc82, that was
 #' imaged at 1 micron spacing in Z. It was then interpolated in Z to give an
-#' isotropic voxel size of 0.622088.
+#' isotropic voxel size of 0.622088 microns.
 #'
-#' @references Arnim Jenett, Gerald M. Rubinemail, Teri-T.B. Ngo, David Shepherd, Christine Murphy, Heather Dionne, Barret D. Pfeiffer,
+#' @references Arnim Jenett, Gerald M. Rubin, Teri-T.B. Ngo, David Shepherd, Christine Murphy, Heather Dionne, Barret D. Pfeiffer,
 #'  Amanda Cavallaro, Donald Hall, Jennifer Jeter, Nirmala Iyer, Dona Fetter, Joanna H. Hausenfluck, Hanchuan Peng,
 #'  Eric T. Trautman, Robert R. Svirskas, Eugene W. Myers, Zbigniew R. Iwinski, Yoshinori Aso, Gina M. DePasquale,
 #'  Adrianne Enos, Phuson Hulamm, Shing Chun Benny Lam, Hsing-Hsi Li, Todd R. Laverty, Fuhui Long, Lei Qu, Sean D. Murphy,
 #'  Konrad Rokicki, Todd Safford, Kshiti Shaw, Julie H. Simpson, Allison Sowell, Susana Tae, Yang Yu,
-#'  Christopher T. Zugates (2012).A GAL4-Driver Line Resource for Drosophila Neurobiology. Cell Reports 2 (4), 991 - 1001.
+#'  Christopher T. Zugates (2012). A GAL4-Driver Line Resource for Drosophila Neurobiology. Cell Reports 2 (4), 991 - 1001.
 #'  \href{http://dx.doi.org/10.1016/j.celrep.2012.09.011}{doi:10.1016/j.celrep.2012.09.011}
 #' @name JFRC2
 #' @docType data
+#' @seealso \code{\link{JFRC2NP.surf}}
 NULL
 
-#' The surface model was constructed in Amira in the Jefferis Lab using a simple
+#' The \code{JFRC2.surf} surface model was constructed in Amira in the Jefferis Lab using a simple
 #' threshold, followed by a surface simplification.
-#'
-#' @references Arnim Jenett, Gerald M. Rubinemail, Teri-T.B. Ngo, David Shepherd, Christine Murphy, Heather Dionne, Barret D. Pfeiffer,
-#'  Amanda Cavallaro, Donald Hall, Jennifer Jeter, Nirmala Iyer, Dona Fetter, Joanna H. Hausenfluck, Hanchuan Peng,
-#'  Eric T. Trautman, Robert R. Svirskas, Eugene W. Myers, Zbigniew R. Iwinski, Yoshinori Aso, Gina M. DePasquale,
-#'  Adrianne Enos, Phuson Hulamm, Shing Chun Benny Lam, Hsing-Hsi Li, Todd R. Laverty, Fuhui Long, Lei Qu, Sean D. Murphy,
-#'  Konrad Rokicki, Todd Safford, Kshiti Shaw, Julie H. Simpson, Allison Sowell, Susana Tae, Yang Yu,
-#'  Christopher T. Zugates (2012).A GAL4-Driver Line Resource for Drosophila Neurobiology. Cell Reports 2 (4), 991 - 1001.
-#'  \href{http://dx.doi.org/10.1016/j.celrep.2012.09.011}{doi:10.1016/j.celrep.2012.09.011}
 #'
 #' @name JFRC2.surf
 #' @docType data
@@ -149,21 +142,67 @@ NULL
 #' Surface model of the Insect Brain Name Working Group neuropil segmentation in
 #' JFRC2 coordinate space
 #'
+#' @details Note that the supplementary information for the Insect Brain Name
+#'   working group only includes neuropil information in the \code{\link{IBN}}
+#'   space, which can be downloaded from
+#'   \url{ftp://flybase.org/flybase/associated_files/InsectBrainNomenclature_RawData.zip}.
+#'
+#'
+#'   However Arnim Jenett, Kazunori Shinomiya and Kei Ito generated a full brain
+#'   segmentation based on the \code{\link{JFRC2}} template (used by the Virtual
+#'   Fly Brain project and internally at Janelia Farm for several years.)
+#'
+#'   This surface model was generated in Amira from the segmentation in the file
+#'   \code{JFRCtempate2010.mask130819.am} with md5
+#'   \code{d0a40b38d1a0045a423d947ebf1778d2}. The data are available in a github
+#'   repository \url{https://github.com/VirtualFlyBrain/DrosAdultBRAINdomains}.
+#'   The original full size model was then simplified to reduce the number of
+#'   vertices resulting
+#'
 #' @references Kei Ito, Kazunori Shinomiya, Masayoshi Ito, J. Douglas Armstrong,
-#'  George Boyan, Volker Hartenstein, Steffen Harzsch, Martin Heisenberg, Uwe
-#'  Homberg, Arnim Jenett, Haig Keshishian, Linda L. Restifo, Wolfgang
-#'  \enc{Rössler}{Roessler}, Julie H. Simpson, Nicholas J. Strausfeld, Roland
-#'  Strauss, Leslie B. Vosshall, Insect Brain Name Working Group (2013). A
-#'  systematic nomenclature for the insect brain. Neuron 81 (4), 755-765.
-#'  \href{http://dx.doi.org/10.1016/j.neuron.2013.12.017}{doi:10.1016/j.neuron.2013.12.017}
+#'   George Boyan, Volker Hartenstein, Steffen Harzsch, Martin Heisenberg, Uwe
+#'   Homberg, Arnim Jenett, Haig Keshishian, Linda L. Restifo, Wolfgang
+#'   \enc{Rössler}{Roessler}, Julie H. Simpson, Nicholas J. Strausfeld, Roland
+#'   Strauss, Leslie B. Vosshall, Insect Brain Name Working Group (2013). A
+#'   systematic nomenclature for the insect brain. Neuron 81 (4), 755-765.
+#'   \href{http://dx.doi.org/10.1016/j.neuron.2013.12.017}{doi:10.1016/j.neuron.2013.12.017}
+#'
 #'
 #' @name JFRC2NP.surf
 #' @docType data
+#' @seealso \code{\link{JFRC2}}
 #' @encoding UTF-8
 #' @examples
+#' # list the materials for the different surface regions
+#' materials(JFRC2NP.surf)
+#'
 #' \dontrun{
-#' # Depends on nat
+#' # plot the surface
 #' plot3d(JFRC2NP.surf)
+#'
+#' # calculate volumes ond surface areas for all regions
+#' if(require("RvtkStatismo") && require("tidyr") && require("ggplot2") && require("stringr")){
+#'   # convert each region to a mesh3d object, note that we use simplify=FALSE
+#'   # to stop sapply mangling the result
+#'   meshes=sapply(JFRC2NP.surf$RegionList,
+#'     function(r) as.mesh3d(subset(JFRC2NP.surf, r)), simplify=FALSE)
+#'
+#'   # now calculate information for each mesh
+#'   # NB vtkMeshInfo returns a list so we need to convert to a vector
+#'   # to end up with a nice matrix output
+#'   vs=sapply(meshes, function(x) unlist(vtkMeshInfo(x)))
+#'
+#'   # now make that into a tidy data.frame and plot
+#'   df=data.frame(key=colnames(vs), t(vs),
+#'                 region=sub("_[LR]", "", colnames(vs)),
+#'                 side=str_match(colnames(vs), "_([LR])")[,2])
+#'
+#'   df2=gather(df, measure, value, volume:surfaceArea)
+#'   library(ggplot2)
+#'   qplot( value, region, data=x, col=side, facets = . ~ measure) + scale_x_log10()
+#'
+#' }
+#'
 #' }
 NULL
 
