@@ -199,7 +199,7 @@ NULL
 #'
 #'   df2=gather(df, measure, value, volume:surfaceArea)
 #'   library(ggplot2)
-#'   qplot( value, region, data=x, col=side, facets = . ~ measure) + scale_x_log10()
+#'   qplot( value, region, data=df2, col=side, facets = . ~ measure) + scale_x_log10()
 #'
 #' }
 #'
