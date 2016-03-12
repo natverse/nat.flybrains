@@ -23,7 +23,7 @@ JFRC2013DS is a downsampled version of the JFRC2013 reference
   personal communication from Yoshi Aso on 21st May 2014, where he noted:
 
   It is 0.38um isotropic. Due to dehydration steps with EtOH, tissues are
-  about 20% smaller than when mounted in Vectashield or other glycerol based
+  about 20\% smaller than when mounted in Vectashield or other glycerol based
   mounting medium.
 
   No attempt was made to correct for this shrinkage artefact.
