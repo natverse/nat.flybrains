@@ -3,8 +3,10 @@ Type: Package
 Title: Additional data for use with the NeuroAnatomy Toolbox (nat)
 Version: 1.6
 Date: 2015-07-01
-Author: James Manton and Greg Jefferis
-Maintainer: James Manton <ajd.manton@googlemail.com>
+Authors@R: c(
+    person("Gregory", "Jefferis", email= "jefferis@gmail.com", role = c("aut")),
+    person("James", "Manton", email="ajd.manton@googlemail.com", role = c("aut", "cre"))
+    )
 Description: Includes 3D brain surfaces, bridging and mirroring registrations,
     and neuropil segmentations for various template brains.
 License: GPL-3
@@ -16,3 +18,5 @@ Suggests:
     git2r,
 LazyData: true
 RoxygenNote: 5.0.1
+Remotes: jefferis/nat,
+    jefferislab/nat.templatebrains

@@ -1,0 +1,35 @@
+reference:
+- title: Package Overview
+  desc: Provides an overview of key features and data/functions in the package as well.
+  contents:
+  - nat.flybrains-package
+  - download_jefferislab_registrations
+- title: Drosophila Template Brains
+  desc: Template objects and brain surface meshes for a range of Drosophila template brains.
+  contents:
+  - Dmel
+  - Dmel.surf
+  - FCWB
+  - FCWBNP.surf
+  - IBN
+  - IBNWB
+  - IS2
+  - IS2.surf
+  - IS2NP.surf
+  - JFRC2
+  - JFRC2013
+  - JFRC2013.surf
+  - JFRC2NP.surf
+  - T1
+- title: Nerve Cord
+  desc: Templates and surface meshes for the ventral nerve cord (i.e. Thoraco-Abdominal Ganglion).
+  contents:
+  - VNCIS1
+  - VNCIS1.surf
+- title: Other Drosophilids
+  desc: Template and brain surfaces for Drosophphilids other than D. melanogaster.
+  contents:
+  - Dsim
+  - Dsim.surf
+  - Dvir
+  - Dvir.surf
