@@ -208,10 +208,10 @@ NULL
 
 #' Template information and surface model for the JFRC2013 reference brain
 #'
-#' @description The JFRC2013 reference brain is a single female brain. It is a
-#'   spatially calibrated version of the brain used in Aso et al. 2014, "The
-#'   neuronal architecture of the mushroom body provides a logic for associative
-#'   learning".
+#' @description The \code{JFRC2013} reference brain is a single female brain. It
+#'   is a spatially calibrated version of the brain used in Aso et al. 2014,
+#'   "The neuronal architecture of the mushroom body provides a logic for
+#'   associative learning".
 #'
 #' @section Calibration: The isotropic calibration of 0.38 microns is based on a
 #'   personal communication from Yoshi Aso on 21st May 2014, where he noted:
@@ -221,34 +221,23 @@ NULL
 #'   mounting medium.
 #'
 #'   No attempt was made to correct for this shrinkage artefact.
-#' @references
-#'  Aso, Y., Sitaraman, D., Ichinose, T., Kaun, K. R., Vogt, K., Belliart-Guerin,
-#'  G., Placais, P.-Y., Robie, A. A., Yamagata, N., Schnaitmann, C., Rowell, W. J.,
-#'  Johnston, R. M., Ngo, T.-T. B., Chen, N., Korff, W., Nitabach, M. N.,
-#'  Heberlein, U., Preat, T., Branson, K. M., Tanimoto, H. and Rubin, G. M. (2014b).
-#'  Mushroom body output neurons encode valence and guide memory-based action selection in Drosophila.
-#'  Elife 3, e04580.
-#'  \href{http://dx.doi.org/10.7554/eLife.04577}{doi:10.7554/eLife.04577}
+#' @references Aso, Y., Sitaraman, D., Ichinose, T., Kaun, K. R., Vogt, K.,
+#' Belliart-Guerin, G., Placais, P.-Y., Robie, A. A., Yamagata, N., Schnaitmann,
+#' C., Rowell, W. J., Johnston, R. M., Ngo, T.-T. B., Chen, N., Korff, W.,
+#' Nitabach, M. N., Heberlein, U., Preat, T., Branson, K. M., Tanimoto, H. and
+#' Rubin, G. M. (2014b). Mushroom body output neurons encode valence and guide
+#' memory-based action selection in Drosophila. Elife 3, e04580.
+#' \href{http://dx.doi.org/10.7554/eLife.04577}{doi:10.7554/eLife.04577}
 #' @name JFRC2013
 #' @aliases JRC2013
 #' @docType data
 NULL
 
-#' Surface model of the JFRC2013 brain
-#'
-#' Generated in Amira from a 2 micron downsampled and median filtered version of
-#' the JFRC2013 template brain.
-#'
-#' @references
-#'  Aso, Y., Sitaraman, D., Ichinose, T., Kaun, K. R., Vogt, K., Belliart-Guerin,
-#'  G., Placais, P.-Y., Robie, A. A., Yamagata, N., Schnaitmann, C., Rowell, W. J.,
-#'  Johnston, R. M., Ngo, T.-T. B., Chen, N., Korff, W., Nitabach, M. N.,
-#'  Heberlein, U., Preat, T., Branson, K. M., Tanimoto, H. and Rubin, G. M. (2014b).
-#'  Mushroom body output neurons encode valence and guide memory-based action selection in Drosophila.
-#'  Elife 3, e04580.
-#'  \href{http://dx.doi.org/10.7554/eLife.04577}{doi:10.7554/eLife.04577}
+#' \code{JFRC2013.surf} was generated in Amira from a 2 micron downsampled and
+#' median filtered version of the JFRC2013 template brain.
 #'
 #' @name JFRC2013.surf
+#' @rdname JFRC2013
 #' @docType data
 #' @examples
 #' \dontrun{
@@ -261,10 +250,11 @@ NULL
 
 #' @name JFRC2013DS
 #' @rdname JFRC2013
-#' @description JFRC2013DS is a downsampled version of the JFRC2013 reference
-#'   brain, designed for use with images taken on a microscope with 20 x
-#'   magnification. The downsampling has shrunk the z direction, such that the
-#'   brain appears flattened when compared with the original.
+#' @description \code{JFRC2013DS} is a downsampled version of the
+#'   \code{JFRC2013} reference brain, designed for use with images taken on a
+#'   microscope with 20 x magnification. The downsampling has shrunk the z
+#'   direction, such that the brain appears flattened when compared with the
+#'   original.
 NULL
 
 #' @name JFRC2013DS.surf
@@ -378,43 +368,37 @@ NULL
 NULL
 
 
-#' Surface model of the VNCIS1 ventral nerve cord template brain
+#' Template information and surface model for the VNCIS1 reference neuropil
 #'
-#' The VNCIS1 template is a shape-averaged, intersex template brain generated
-#' using the CMTK avg_adm tool.
+#' The VNCIS1 template is a shape-averaged, intersex template containing the
+#' \emph{D. melanogaster} adult ventral nerve cord (more properly the
+#' thoracico-abdominal ganglion) generated using the CMTK avg_adm tool.
 #'
 #' @references Cachero S., Ostrovsky A.D., Yu J.Y., Dickson B.J., and Jefferis
-#'  G.S.X.E. (2010). Sexual dimorphism in the fly brain. Curr Biol 20 (18),
-#'  1589-601.
-#'  \href{http://dx.doi.org/10.1016/j.cub.2010.07.045}{doi:10.1016/j.cub.2010.07.045}
+#'   G.S.X.E. (2010). Sexual dimorphism in the fly brain. Curr Biol 20 (18),
+#'   1589-601.
+#'   \href{http://dx.doi.org/10.1016/j.cub.2010.07.045}{doi:10.1016/j.cub.2010.07.045}
 #'
+#' @name VNCIS1
+#' @docType data
+#' @examples
+#' VNCIS1
+#'
+#' # originally calculated thus:
+#' \dontrun{
+#' as.templatebrain(
+#'   "/GD/projects/CommonNeuroanatomy/VNCIS1/VNCIS1.nrrd",
+#'   type="Average", sex='Intersex',
+#'   description = "See http://dx.doi.org/10.1016/j.cub.2010.07.045 for details")
+#' }
+NULL
+
+
 #' @name VNCIS1.surf
+#' @rdname VNCIS1
 #' @docType data
 #' @examples
 #' plot3d(VNCIS1.surf)
 #' # slightly different display
 #' plot3d(VNCIS1)
 NULL
-
-
-#' Template information for VNCIS1
-#'
-#' @references Cachero S., Ostrovsky A.D., Yu J.Y., Dickson B.J., and Jefferis
-#'  G.S.X.E. (2010). Sexual dimorphism in the fly brain. Curr Biol 20 (18),
-#'  1589-601.
-#'  \href{http://dx.doi.org/10.1016/j.cub.2010.07.045}{doi:10.1016/j.cub.2010.07.045}
-#'
-#' @examples
-#' VNCIS1
-#' # originally calculated thus:
-#' \dontrun{
-#' as.templatebrain(read.im3d(
-#'   "/GD/projects/CommonNeuroanatomy/VNCIS1/VNCIS1.nrrd", ReadData = FALSE),
-#'   type="Average", sex='Intersex',
-#'   description = "See http://dx.doi.org/10.1016/j.cub.2010.07.045 for details")
-#' }
-#' @name VNCIS1
-#' @docType data
-#' @seealso \code{\link{VNCIS1}}
-NULL
-

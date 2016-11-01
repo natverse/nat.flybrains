@@ -3,20 +3,25 @@
 \docType{data}
 \name{JFRC2013}
 \alias{JFRC2013}
+\alias{JFRC2013.surf}
 \alias{JFRC2013DS}
 \alias{JFRC2013DS.surf}
 \alias{JRC2013}
 \title{Template information and surface model for the JFRC2013 reference brain}
 \description{
-The JFRC2013 reference brain is a single female brain. It is a
-  spatially calibrated version of the brain used in Aso et al. 2014, "The
-  neuronal architecture of the mushroom body provides a logic for associative
-  learning".
+The \code{JFRC2013} reference brain is a single female brain. It
+  is a spatially calibrated version of the brain used in Aso et al. 2014,
+  "The neuronal architecture of the mushroom body provides a logic for
+  associative learning".
 
-JFRC2013DS is a downsampled version of the JFRC2013 reference
-  brain, designed for use with images taken on a microscope with 20 x
-  magnification. The downsampling has shrunk the z direction, such that the
-  brain appears flattened when compared with the original.
+\code{JFRC2013.surf} was generated in Amira from a 2 micron downsampled and
+median filtered version of the JFRC2013 template brain.
+
+\code{JFRC2013DS} is a downsampled version of the
+  \code{JFRC2013} reference brain, designed for use with images taken on a
+  microscope with 20 x magnification. The downsampling has shrunk the z
+  direction, such that the brain appears flattened when compared with the
+  original.
 }
 \section{Calibration}{
  The isotropic calibration of 0.38 microns is based on a
@@ -28,13 +33,21 @@ JFRC2013DS is a downsampled version of the JFRC2013 reference
 
   No attempt was made to correct for this shrinkage artefact.
 }
+\examples{
+\dontrun{
+library(nat)
+plot3d(JFRC2013)
+plot3d(JFRC2013.surf)
+plot3d(JFRC2013.surf, col='red', alpha=0.3)
+}
+}
 \references{
-Aso, Y., Sitaraman, D., Ichinose, T., Kaun, K. R., Vogt, K., Belliart-Guerin,
- G., Placais, P.-Y., Robie, A. A., Yamagata, N., Schnaitmann, C., Rowell, W. J.,
- Johnston, R. M., Ngo, T.-T. B., Chen, N., Korff, W., Nitabach, M. N.,
- Heberlein, U., Preat, T., Branson, K. M., Tanimoto, H. and Rubin, G. M. (2014b).
- Mushroom body output neurons encode valence and guide memory-based action selection in Drosophila.
- Elife 3, e04580.
- \href{http://dx.doi.org/10.7554/eLife.04577}{doi:10.7554/eLife.04577}
+Aso, Y., Sitaraman, D., Ichinose, T., Kaun, K. R., Vogt, K.,
+Belliart-Guerin, G., Placais, P.-Y., Robie, A. A., Yamagata, N., Schnaitmann,
+C., Rowell, W. J., Johnston, R. M., Ngo, T.-T. B., Chen, N., Korff, W.,
+Nitabach, M. N., Heberlein, U., Preat, T., Branson, K. M., Tanimoto, H. and
+Rubin, G. M. (2014b). Mushroom body output neurons encode valence and guide
+memory-based action selection in Drosophila. Elife 3, e04580.
+\href{http://dx.doi.org/10.7554/eLife.04577}{doi:10.7554/eLife.04577}
 }
 

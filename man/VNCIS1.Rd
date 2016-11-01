@@ -3,27 +3,31 @@
 \docType{data}
 \name{VNCIS1}
 \alias{VNCIS1}
-\title{Template information for VNCIS1}
+\alias{VNCIS1.surf}
+\title{Template information and surface model for the VNCIS1 reference neuropil}
 \description{
-Template information for VNCIS1
+The VNCIS1 template is a shape-averaged, intersex template containing the
+\emph{D. melanogaster} adult ventral nerve cord (more properly the
+thoracico-abdominal ganglion) generated using the CMTK avg_adm tool.
 }
 \examples{
 VNCIS1
+
 # originally calculated thus:
 \dontrun{
-as.templatebrain(read.im3d(
-  "/GD/projects/CommonNeuroanatomy/VNCIS1/VNCIS1.nrrd", ReadData = FALSE),
+as.templatebrain(
+  "/GD/projects/CommonNeuroanatomy/VNCIS1/VNCIS1.nrrd",
   type="Average", sex='Intersex',
   description = "See http://dx.doi.org/10.1016/j.cub.2010.07.045 for details")
 }
+plot3d(VNCIS1.surf)
+# slightly different display
+plot3d(VNCIS1)
 }
 \references{
 Cachero S., Ostrovsky A.D., Yu J.Y., Dickson B.J., and Jefferis
- G.S.X.E. (2010). Sexual dimorphism in the fly brain. Curr Biol 20 (18),
- 1589-601.
- \href{http://dx.doi.org/10.1016/j.cub.2010.07.045}{doi:10.1016/j.cub.2010.07.045}
-}
-\seealso{
-\code{\link{VNCIS1}}
+  G.S.X.E. (2010). Sexual dimorphism in the fly brain. Curr Biol 20 (18),
+  1589-601.
+  \href{http://dx.doi.org/10.1016/j.cub.2010.07.045}{doi:10.1016/j.cub.2010.07.045}
 }
 
