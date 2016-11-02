@@ -17,6 +17,8 @@ Suggests:
     testthat,
     git2r,
 LazyData: true
+URL: https://github.com/jefferislab/nat.flybrains, http://flybrain.mrc-lmb.cam.ac.uk/si/bridging/www/
+BugReports: https://github.com/jefferislab/nat.flybrains/issues
 RoxygenNote: 5.0.1
 Remotes: jefferis/nat,
     jefferislab/nat.templatebrains
