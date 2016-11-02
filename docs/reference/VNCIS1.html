@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Template information for VNCIS1 — VNCIS1 • nat.flybrains</title>
+<title>Template information and surface model for the VNCIS1 reference neuropil — VNCIS1 • nat.flybrains</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -66,24 +66,22 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Template information for VNCIS1</h1>
+    <h1>Template information and surface model for the VNCIS1 reference neuropil</h1>
     </div>
 
     
-    <p>Template information for VNCIS1</p>
+    <p>The VNCIS1 template is a shape-averaged, intersex template containing the
+<em>D. melanogaster</em> adult ventral nerve cord (more properly the
+thoracico-abdominal ganglion) generated using the CMTK avg_adm tool.</p>
     
 
         
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
     <p>Cachero S., Ostrovsky A.D., Yu J.Y., Dickson B.J., and Jefferis
- G.S.X.E. (2010). Sexual dimorphism in the fly brain. Curr Biol 20 (18),
- 1589-601.
- <a href = 'doi:10.1016/j.cub.2010.07.045'>http://dx.doi.org/10.1016/j.cub.2010.07.045</a></p>
-    
-    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
-
-    <p><code>VNCIS1</code></p>
+  G.S.X.E. (2010). Sexual dimorphism in the fly brain. Curr Biol 20 (18),
+  1589-601.
+  <a href = 'doi:10.1016/j.cub.2010.07.045'>http://dx.doi.org/10.1016/j.cub.2010.07.045</a></p>
     
 
     <h2 class="hasAnchor" id="examples">
@@ -104,21 +102,23 @@
 #&gt;   x = 439.9851, y = 329.8813, z = 171.6938.
 #&gt; Description: See http://dx.doi.org/10.1016/j.cub.2010.07.045 for details 
 #&gt; DOI: 10.5281/zenodo.13884
-#&gt; </div><div class='input'><span class='co'># originally calculated thus:</span>
+#&gt; </div><div class='input'>
+<span class='co'># originally calculated thus:</span>
 <span class='co'>## Not run: ------------------------------------</span>
-<span class='co'># as.templatebrain(read.im3d(</span>
-<span class='co'>#   "/GD/projects/CommonNeuroanatomy/VNCIS1/VNCIS1.nrrd", ReadData = FALSE),</span>
+<span class='co'># as.templatebrain(</span>
+<span class='co'>#   "/GD/projects/CommonNeuroanatomy/VNCIS1/VNCIS1.nrrd",</span>
 <span class='co'>#   type="Average", sex='Intersex',</span>
 <span class='co'>#   description = "See http://dx.doi.org/10.1016/j.cub.2010.07.045 for details")</span>
-<span class='co'>## ---------------------------------------------</span></div></pre>
+<span class='co'>## ---------------------------------------------</span>
+<span class='fu'>plot3d</span>(<span class='no'>VNCIS1.surf</span>)
+<span class='co'># slightly different display</span>
+<span class='fu'>plot3d</span>(<span class='no'>VNCIS1</span>)</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       
       <li><a href="#references">References</a></li>
-
-      <li><a href="#see-also">See also</a></li>
       
       <li><a href="#examples">Examples</a></li>
     </ul>

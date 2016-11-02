@@ -70,15 +70,19 @@
     </div>
 
     
-    <p>The JFRC2013 reference brain is a single female brain. It is a
-  spatially calibrated version of the brain used in Aso et al. 2014, &quot;The
-  neuronal architecture of the mushroom body provides a logic for associative
-  learning&quot;.</p>
+    <p>The <code>JFRC2013</code> reference brain is a single female brain. It
+  is a spatially calibrated version of the brain used in Aso et al. 2014,
+  &quot;The neuronal architecture of the mushroom body provides a logic for
+  associative learning&quot;.</p>
 
-    <p>JFRC2013DS is a downsampled version of the JFRC2013 reference
-  brain, designed for use with images taken on a microscope with 20 x
-  magnification. The downsampling has shrunk the z direction, such that the
-  brain appears flattened when compared with the original.</p>
+    <p><code>JFRC2013.surf</code> was generated in Amira from a 2 micron downsampled and
+median filtered version of the JFRC2013 template brain.</p>
+
+    <p><code>JFRC2013DS</code> is a downsampled version of the
+  <code>JFRC2013</code> reference brain, designed for use with images taken on a
+  microscope with 20 x magnification. The downsampling has shrunk the z
+  direction, such that the brain appears flattened when compared with the
+  original.</p>
     
 
         
@@ -93,15 +97,25 @@
     
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
-    <p>Aso, Y., Sitaraman, D., Ichinose, T., Kaun, K. R., Vogt, K., Belliart-Guerin,
- G., Placais, P.-Y., Robie, A. A., Yamagata, N., Schnaitmann, C., Rowell, W. J.,
- Johnston, R. M., Ngo, T.-T. B., Chen, N., Korff, W., Nitabach, M. N.,
- Heberlein, U., Preat, T., Branson, K. M., Tanimoto, H. and Rubin, G. M. (2014b).
- Mushroom body output neurons encode valence and guide memory-based action selection in Drosophila.
- Elife 3, e04580.
- <a href = 'doi:10.7554/eLife.04577'>http://dx.doi.org/10.7554/eLife.04577</a></p>
+    <p>Aso, Y., Sitaraman, D., Ichinose, T., Kaun, K. R., Vogt, K.,
+Belliart-Guerin, G., Placais, P.-Y., Robie, A. A., Yamagata, N., Schnaitmann,
+C., Rowell, W. J., Johnston, R. M., Ngo, T.-T. B., Chen, N., Korff, W.,
+Nitabach, M. N., Heberlein, U., Preat, T., Branson, K. M., Tanimoto, H. and
+Rubin, G. M. (2014b). Mushroom body output neurons encode valence and guide
+memory-based action selection in Drosophila. Elife 3, e04580.
+<a href = 'doi:10.7554/eLife.04577'>http://dx.doi.org/10.7554/eLife.04577</a></p>
     
 
+    <h2 class="hasAnchor" id="examples">
+      <a class="anchor" href="#examples"></a>
+      Examples
+    </h2>
+    <pre class="examples"><div class='input'><span class='co'>## Not run: ------------------------------------</span>
+<span class='co'># library(nat)</span>
+<span class='co'># plot3d(JFRC2013)</span>
+<span class='co'># plot3d(JFRC2013.surf)</span>
+<span class='co'># plot3d(JFRC2013.surf, col='red', alpha=0.3)</span>
+<span class='co'>## ---------------------------------------------</span></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -110,7 +124,9 @@
       <li><a href="#calibration">Calibration</a></li>
 
       <li><a href="#references">References</a></li>
-          </ul>
+      
+      <li><a href="#examples">Examples</a></li>
+    </ul>
 
   </div>
 </div>
