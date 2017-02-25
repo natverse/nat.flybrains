@@ -234,7 +234,8 @@ NULL
 NULL
 
 #' \code{JFRC2013.surf} was generated in Amira from a 2 micron downsampled and
-#' median filtered version of the JFRC2013 template brain.
+#' median filtered version of the JFRC2013 template brain. Further cleaning was
+#' then carried out in MeshLab to remove non-manifold edges and fill holes.
 #'
 #' @name JFRC2013.surf
 #' @rdname JFRC2013
