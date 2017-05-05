@@ -2,8 +2,8 @@
 % Please edit documentation in R/PACKAGE.r
 \docType{package}
 \name{nat.flybrains-package}
-\alias{nat.flybrains}
 \alias{nat.flybrains-package}
+\alias{nat.flybrains}
 \title{Additional flybrain-specific data and tools for use with the NeuroAnatomy
 Toolbox (nat)}
 \description{
@@ -73,8 +73,8 @@ researchers working with fly data.
  See the \code{\link{nat.templatebrains}}
   package documentation for details of how to add extra registrations.
 }
+
 \seealso{
 \code{\link[nat]{nat}, \link{nat.templatebrains}}
 }
 \keyword{package}
-

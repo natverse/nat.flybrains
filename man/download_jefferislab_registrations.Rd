@@ -41,4 +41,3 @@ Gregory S. X. E. Jefferis
 
 \code{\link{download_reg_repo}}
 }
-

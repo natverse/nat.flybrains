@@ -25,4 +25,3 @@ Kei Ito, Kazunori Shinomiya, Masayoshi Ito, J. Douglas Armstrong,
  systematic nomenclature for the insect brain. Neuron 81 (4), 755-765.
  \href{http://dx.doi.org/10.1016/j.neuron.2013.12.017}{doi:10.1016/j.neuron.2013.12.017}
 }
-

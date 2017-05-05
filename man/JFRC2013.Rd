@@ -3,10 +3,10 @@
 \docType{data}
 \name{JFRC2013}
 \alias{JFRC2013}
+\alias{JRC2013}
 \alias{JFRC2013.surf}
 \alias{JFRC2013DS}
 \alias{JFRC2013DS.surf}
-\alias{JRC2013}
 \title{Template information and surface model for the JFRC2013 reference brain}
 \description{
 The \code{JFRC2013} reference brain is a single female brain. It
@@ -34,6 +34,7 @@ then carried out in MeshLab to remove non-manifold edges and fill holes.
 
   No attempt was made to correct for this shrinkage artefact.
 }
+
 \examples{
 \dontrun{
 library(nat)
@@ -51,4 +52,3 @@ Rubin, G. M. (2014b). Mushroom body output neurons encode valence and guide
 memory-based action selection in Drosophila. Elife 3, e04580.
 \href{http://dx.doi.org/10.7554/eLife.04577}{doi:10.7554/eLife.04577}
 }
-

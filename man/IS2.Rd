@@ -13,4 +13,3 @@ Cachero S., Ostrovsky A.D., Yu J.Y., Dickson B.J., and Jefferis
  1589-601.
 \href{http://dx.doi.org/10.1016/j.cub.2010.07.045}{doi:10.1016/j.cub.2010.07.045}
 }
-

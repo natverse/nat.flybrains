@@ -36,4 +36,3 @@ Kei Ito, Kazunori Shinomiya, Masayoshi Ito, J. Douglas Armstrong,
 \seealso{
 \code{\link{IBN}}
 }
-

@@ -33,4 +33,3 @@ Arnim Jenett, Gerald M. Rubin, Teri-T.B. Ngo, David Shepherd, Christine Murphy, 
 \seealso{
 \code{\link{JFRC2NP.surf}}
 }
-

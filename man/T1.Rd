@@ -26,4 +26,3 @@ Jai Y. Yu, Makoto I. Kanai, Ebru Demir, Gregory S. X. E. Jefferis, Barry J. Dick
  Cellular Organization of the Neural Circuit that Drives Drosophila Courtship Behavior. Current Biology 20 (18), 1602-1614.
  \href{http://dx.doi.org/10.1016/j.cub.2010.08.025}{doi:10.1016/j.cub.2010.08.025}
 }
-
