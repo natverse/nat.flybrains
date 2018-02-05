@@ -1,7 +1,7 @@
 Package: nat.flybrains
 Type: Package
 Title: Additional data for use with the NeuroAnatomy Toolbox (nat)
-Version: 1.6
+Version: 1.7
 Authors@R: c(
     person("Gregory", "Jefferis", email= "jefferis@gmail.com", role = c("aut")),
     person("James", "Manton", email="ajd.manton@googlemail.com", role = c("aut", "cre"))
