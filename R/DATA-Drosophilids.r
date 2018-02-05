@@ -78,3 +78,33 @@ NULL
 #' plot3d(Dvir.surf)
 #' }
 NULL
+
+
+#' Template information and surface model for D. sechellia reference brain
+#'
+#' The DsecI reference brain is a shape averaged template brain generated using
+#' the CMTK avg_adm tool. See
+#' \url{https://github.com/jefferislab/MakeAverageBrain} for the relevant code.
+#'
+#' @name DsecI
+#' @family Drosophilid-Brains
+#' @docType data
+NULL
+
+
+#' The surface model was constructed in Amira by G. Jefferis and R. Benton using
+#' a Z drop correction of the DsecI reference brain in Amira (e^u) followed by
+#' a simple threshold (10000), surface simplification to ~ 18,000 faces, default
+#' surface smoothing and manual editing in meshlab to remove a small unconnected
+#' island of points.
+#'
+#' @name DsecI.surf
+#' @rdname DsecI
+#' @docType data
+#' @examples
+#' \dontrun{
+#' # Depends on nat
+#' plot3d(DsecI.surf)
+#' plot3d(DsecI)
+#' }
+NULL
