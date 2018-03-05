@@ -15,7 +15,7 @@ rename_regions <- function(x, from, to) {
   x
 }
 
-JFRC2NP.surf2 = rename_regions(JFRC2NP.surf,
+JFRC2NP.surf = rename_regions(JFRC2NP.surf,
                               from = c("IVLP_R", "IVLP_L"),
                               to = c("WED_R", "WED_L"))
 use_data(JFRC2NP.surf, overwrite = T, compress = 'xz')
