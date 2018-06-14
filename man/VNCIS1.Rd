@@ -18,6 +18,7 @@ VNCIS1
 as.templatebrain(
   "/GD/projects/CommonNeuroanatomy/VNCIS1/VNCIS1.nrrd",
   type="Average", sex='Intersex',
+  doi="http://doi.org/10.5281/zenodo.13884",
   description = "See http://dx.doi.org/10.1016/j.cub.2010.07.045 for details")
 }
 plot3d(VNCIS1.surf)
