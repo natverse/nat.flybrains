@@ -109,7 +109,12 @@ threshold, followed by a surface simplification.</p>
     
     </div>
 
+    <pre class="usage"><span class='no'>T1</span></pre>
         
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
+
+    <p>An object of class <code>templatebrain</code> of dimension 768 x 768 x 165.</p>
+    
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
     <p>Jai Y. Yu, Makoto I. Kanai, Ebru Demir, Gregory S. X. E. Jefferis, Barry J. Dickson (2010).
@@ -121,7 +126,21 @@ Cellular Organization of the Neural Circuit that Drives Drosophila Courtship Beh
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><span class='co'># NOT RUN {</span>
+    <pre class="examples"><div class='input'><span class='no'>T1</span></div><div class='output co'>#&gt; === Template Brain === 
+#&gt; Name: T1 
+#&gt; Short Name: T1 
+#&gt; Type: Average 
+#&gt; Sex:  Intersex 
+#&gt; Dimensions:768 x 768 x 165 voxels
+#&gt; Voxel size:
+#&gt;   x = 0.548887614080834 microns
+#&gt;   y = 0.548887614080834 microns
+#&gt;   z = 1 microns
+#&gt; Bounding box (microns):
+#&gt;   x = 0, y = 0, z = 0,
+#&gt;   x = 420.9968, y = 420.9968, z = 164.
+#&gt; Description: BrainBase 
+#&gt; DOI: 10.5281/zenodo.10590</div><span class='co'># NOT RUN {</span>
 <span class='co'># Depends on nat</span>
 <span class='fu'>plot3d</span>(<span class='no'>T1.surf</span>)
 <span class='co'># }</span></pre>
@@ -130,6 +149,8 @@ Cellular Organization of the Neural Circuit that Drives Drosophila Courtship Beh
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       
+      <li><a href="#format">Format</a></li>
+
       <li><a href="#references">References</a></li>
       
       <li><a href="#examples">Examples</a></li>

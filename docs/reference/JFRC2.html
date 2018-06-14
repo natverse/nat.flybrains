@@ -117,7 +117,12 @@ threshold, followed by a surface simplification.</p>
     
     </div>
 
+    <pre class="usage"><span class='no'>JFRC2</span></pre>
         
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
+
+    <p>An object of class <code>templatebrain</code> of dimension 1024 x 512 x 218.</p>
+    
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
     <p>Arnim Jenett, Gerald M. Rubin, Teri-T.B. Ngo, David Shepherd, Christine Murphy, Heather Dionne, Barret D. Pfeiffer,
@@ -134,7 +139,21 @@ threshold, followed by a surface simplification.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><span class='co'># NOT RUN {</span>
+    <pre class="examples"><div class='input'><span class='no'>JFRC2</span></div><div class='output co'>#&gt; === Template Brain === 
+#&gt; Name: JFRC2 
+#&gt; Short Name: JFRC2 
+#&gt; Type: Single-brain 
+#&gt; Sex:  Female 
+#&gt; Dimensions:1024 x 512 x 218 voxels
+#&gt; Voxel size:
+#&gt;   x = 0.622088 microns
+#&gt;   y = 0.622088 microns
+#&gt;   z = 0.622088 microns
+#&gt; Bounding box (microns):
+#&gt;   x = 0, y = 0, z = 0,
+#&gt;   x = 636.396, y = 317.887, z = 134.9931.
+#&gt; Description: The JFRC2 reference brain is a refractive-index-corrected version of the original FlyLight reference brain (JFRC). 
+#&gt; DOI: 10.5281/zenodo.10567</div><span class='co'># NOT RUN {</span>
 <span class='co'># Depends on nat</span>
 <span class='fu'>plot3d</span>(<span class='no'>JFRC2.surf</span>)
 <span class='co'># }</span></pre>
@@ -143,6 +162,8 @@ threshold, followed by a surface simplification.</p>
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       
+      <li><a href="#format">Format</a></li>
+
       <li><a href="#references">References</a></li>
 
       <li><a href="#see-also">See also</a></li>

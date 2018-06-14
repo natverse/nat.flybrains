@@ -113,7 +113,12 @@ isosurface model based on the <code>FCWB</code> brain.</p>
     
     </div>
 
+    <pre class="usage"><span class='no'>FCWB</span></pre>
         
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
+
+    <p>An object of class <code>templatebrain</code> of dimension 1769 x 1026 x 108.</p>
+    
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
     <p>Ann-Shyn Chiang, Chih-Yung Lin, Chao-Chun Chuang, Hsiu-Ming Chang,
@@ -132,7 +137,21 @@ isosurface model based on the <code>FCWB</code> brain.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><span class='co'># NOT RUN {</span>
+    <pre class="examples"><div class='input'><span class='no'>FCWB</span></div><div class='output co'>#&gt; === Template Brain === 
+#&gt; Name: FlyCircuit Whole Brain 
+#&gt; Short Name: FCWB 
+#&gt; Type: Average 
+#&gt; Sex:  Intersex 
+#&gt; Dimensions:1769 x 1026 x 108 voxels
+#&gt; Voxel size:
+#&gt;   x = 0.318967307692308 microns
+#&gt;   y = 0.318427024390244 microns
+#&gt;   z = 1 microns
+#&gt; Bounding box (microns):
+#&gt;   x = 0, y = 0, z = 0,
+#&gt;   x = 563.9342, y = 326.3877, z = 107.
+#&gt; Description: An intersex averaged brain formed from 17 female and 9 male brains from the FlyCircuit dataset. 
+#&gt; DOI: 10.5281/zenodo.10568</div><span class='co'># NOT RUN {</span>
 <span class='co'># Depends on nat</span>
 <span class='fu'>plot3d</span>(<span class='no'>FCWB.surf</span>)
 <span class='co'># }</span></pre>
@@ -141,6 +160,8 @@ isosurface model based on the <code>FCWB</code> brain.</p>
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       
+      <li><a href="#format">Format</a></li>
+
       <li><a href="#references">References</a></li>
 
       <li><a href="#see-also">See also</a></li>
