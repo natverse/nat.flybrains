@@ -42,12 +42,20 @@ then carried out in MeshLab to remove non-manifold edges and fill holes.
 }
 
 \examples{
+dim(JFRC2013)
+voxdims(JFRC2013)
+boundingbox(JFRC2013)
+JFRC2013
+
 \dontrun{
 library(nat)
 plot3d(JFRC2013)
 plot3d(JFRC2013.surf)
 plot3d(JFRC2013.surf, col='red', alpha=0.3)
 }
+dim(JFRC2013DS)
+voxdims(JFRC2013DS)
+boundingbox(JFRC2013DS)
 JFRC2013DS
 }
 \references{

@@ -237,7 +237,6 @@ NULL
 #' @name JFRC2013
 #' @aliases JRC2013
 #' @docType data
-
 "JFRC2013"
 
 #' \code{JFRC2013.surf} was generated in Amira from a 2 micron downsampled and
@@ -248,6 +247,11 @@ NULL
 #' @rdname JFRC2013
 #' @docType data
 #' @examples
+#' dim(JFRC2013)
+#' voxdims(JFRC2013)
+#' boundingbox(JFRC2013)
+#' JFRC2013
+#'
 #' \dontrun{
 #' library(nat)
 #' plot3d(JFRC2013)
@@ -264,6 +268,9 @@ NULL
 #'   direction, such that the brain appears flattened when compared with the
 #'   original.
 #' @examples
+#' dim(JFRC2013DS)
+#' voxdims(JFRC2013DS)
+#' boundingbox(JFRC2013DS)
 #' JFRC2013DS
 "JFRC2013DS"
 

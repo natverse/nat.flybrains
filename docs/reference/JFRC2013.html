@@ -156,12 +156,35 @@ memory-based action selection in Drosophila. Elife 3, e04580.
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><span class='co'># NOT RUN {</span>
+    <pre class="examples"><div class='input'><span class='fu'>dim</span>(<span class='no'>JFRC2013</span>)</div><div class='output co'>#&gt; [1] 1450  725  436</div><div class='input'><span class='fu'>voxdims</span>(<span class='no'>JFRC2013</span>)</div><div class='output co'>#&gt; [1] 0.38 0.38 0.38</div><div class='input'><span class='fu'>boundingbox</span>(<span class='no'>JFRC2013</span>)</div><div class='output co'>#&gt;        [,1]   [,2]  [,3]
+#&gt; [1,]   0.00   0.00   0.0
+#&gt; [2,] 550.62 275.12 165.3
+#&gt; attr(,"class")
+#&gt; [1] "boundingbox"</div><div class='input'><span class='no'>JFRC2013</span></div><div class='output co'>#&gt; === Template Brain === 
+#&gt; Name: JFRC2013 
+#&gt; Short Name: JFRC2013 
+#&gt; Type: Single brain 
+#&gt; Sex:  Female 
+#&gt; Dimensions:1450 x 725 x 436 voxels
+#&gt; Voxel size:
+#&gt;   x = 0.38 microns
+#&gt;   y = 0.38 microns
+#&gt;   z = 0.38 microns
+#&gt; Bounding box (microns):
+#&gt;   x = 0, y = 0, z = 0,
+#&gt;   x = 550.62, y = 275.12, z = 165.3.
+#&gt; Description: The JFRC2013 reference brain is a spatially calibrated version of the brain used in Aso et al. 2014, "The neuronal architecture of the mushroom body provides a logic for associative learning". 
+#&gt; DOI: 10.7554/eLife.04577</div><div class='input'>
+</div><span class='co'># NOT RUN {</span>
 <span class='fu'>library</span>(<span class='no'>nat</span>)
 <span class='fu'><a href='http://www.rdocumentation.org/packages/nat/topics/plot3d'>plot3d</a></span>(<span class='no'>JFRC2013</span>)
 <span class='fu'><a href='http://www.rdocumentation.org/packages/nat/topics/plot3d'>plot3d</a></span>(<span class='no'>JFRC2013.surf</span>)
 <span class='fu'><a href='http://www.rdocumentation.org/packages/nat/topics/plot3d'>plot3d</a></span>(<span class='no'>JFRC2013.surf</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='st'>'red'</span>, <span class='kw'>alpha</span><span class='kw'>=</span><span class='fl'>0.3</span>)
-<span class='co'># }</span><div class='input'><span class='no'>JFRC2013DS</span></div><div class='output co'>#&gt; === Template Brain === 
+<span class='co'># }</span><div class='input'><span class='fu'>dim</span>(<span class='no'>JFRC2013DS</span>)</div><div class='output co'>#&gt; [1] 1184  592  218</div><div class='input'><span class='fu'><a href='http://www.rdocumentation.org/packages/nat/topics/voxdims'>voxdims</a></span>(<span class='no'>JFRC2013DS</span>)</div><div class='output co'>#&gt; [1] 0.46 0.46 0.46</div><div class='input'><span class='fu'><a href='http://www.rdocumentation.org/packages/nat/topics/boundingbox'>boundingbox</a></span>(<span class='no'>JFRC2013DS</span>)</div><div class='output co'>#&gt;        [,1]   [,2]  [,3]
+#&gt; [1,]   0.00   0.00  0.00
+#&gt; [2,] 544.18 271.86 99.82
+#&gt; attr(,"class")
+#&gt; [1] "boundingbox"</div><div class='input'><span class='no'>JFRC2013DS</span></div><div class='output co'>#&gt; === Template Brain === 
 #&gt; Name: JFRC2013DS 
 #&gt; Short Name: JFRC2013DS 
 #&gt; Type: Single brain 
