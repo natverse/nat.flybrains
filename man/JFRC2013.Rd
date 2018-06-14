@@ -8,6 +8,12 @@
 \alias{JFRC2013DS}
 \alias{JFRC2013DS.surf}
 \title{Template information and surface model for the JFRC2013 reference brain}
+\format{An object of class \code{templatebrain} of dimension 1450 x 725 x 436.}
+\usage{
+JFRC2013
+
+JFRC2013DS
+}
 \description{
 The \code{JFRC2013} reference brain is a single female brain. It
   is a spatially calibrated version of the brain used in Aso et al. 2014,
@@ -42,6 +48,7 @@ plot3d(JFRC2013)
 plot3d(JFRC2013.surf)
 plot3d(JFRC2013.surf, col='red', alpha=0.3)
 }
+JFRC2013DS
 }
 \references{
 Aso, Y., Sitaraman, D., Ichinose, T., Kaun, K. R., Vogt, K.,
@@ -52,3 +59,4 @@ Rubin, G. M. (2014b). Mushroom body output neurons encode valence and guide
 memory-based action selection in Drosophila. Elife 3, e04580.
 \href{http://dx.doi.org/10.7554/eLife.04577}{doi:10.7554/eLife.04577}
 }
+\keyword{datasets}

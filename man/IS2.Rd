@@ -4,8 +4,15 @@
 \name{IS2}
 \alias{IS2}
 \title{Template information for the IS2 reference brain}
+\format{An object of class \code{templatebrain} of dimension 768 x 768 x 173.}
+\usage{
+IS2
+}
 \description{
 Template information for the IS2 reference brain
+}
+\examples{
+IS2
 }
 \references{
 Cachero S., Ostrovsky A.D., Yu J.Y., Dickson B.J., and Jefferis
@@ -13,3 +20,4 @@ Cachero S., Ostrovsky A.D., Yu J.Y., Dickson B.J., and Jefferis
  1589-601.
 \href{http://dx.doi.org/10.1016/j.cub.2010.07.045}{doi:10.1016/j.cub.2010.07.045}
 }
+\keyword{datasets}

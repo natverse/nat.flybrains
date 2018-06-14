@@ -5,6 +5,10 @@
 \alias{VNCIS1}
 \alias{VNCIS1.surf}
 \title{Template information and surface model for the VNCIS1 reference neuropil}
+\format{An object of class \code{templatebrain} of dimension 1024 x 768 x 163.}
+\usage{
+VNCIS1
+}
 \description{
 The VNCIS1 template is a shape-averaged, intersex template containing the
 \emph{D. melanogaster} adult ventral nerve cord (more properly the
@@ -31,3 +35,4 @@ Cachero S., Ostrovsky A.D., Yu J.Y., Dickson B.J., and Jefferis
   1589-601.
   \href{http://dx.doi.org/10.1016/j.cub.2010.07.045}{doi:10.1016/j.cub.2010.07.045}
 }
+\keyword{datasets}

@@ -5,6 +5,10 @@
 \alias{FCWB}
 \alias{FCWB.surf}
 \title{Template information and Surface model of the FCWB FlyCircuit reference brain}
+\format{An object of class \code{templatebrain} of dimension 1769 x 1026 x 108.}
+\usage{
+FCWB
+}
 \description{
 The \code{FCWB} reference brain is a shape averaged template brain generated using
 the CMTK avg_adm tool. See
@@ -14,6 +18,7 @@ The \code{FCWB.surf} surface model was generated in Amira by constructing an
 isosurface model based on the \code{FCWB} brain.
 }
 \examples{
+FCWB
 \dontrun{
 # Depends on nat
 plot3d(FCWB.surf)
@@ -34,3 +39,4 @@ Ann-Shyn Chiang, Chih-Yung Lin, Chao-Chun Chuang, Hsiu-Ming Chang,
 \seealso{
 \code{\link{FCWBNP.surf}}
 }
+\keyword{datasets}

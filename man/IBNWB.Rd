@@ -7,6 +7,10 @@
 \alias{IBNWB.surf}
 \title{Template information for the Insect Brain Nomenclature Whole Brain reference
 brain}
+\format{An object of class \code{templatebrain} of dimension 905 x 513 x 136.}
+\usage{
+IBNWB
+}
 \description{
 A synthetic whole brain constructed from the Insect Brain Nomenclature
 template brain. The original confocal stack was duplicated, mirrored about a
@@ -15,6 +19,9 @@ with the original, with a linear blend in the overlapping region.
 
 The surface model was constructed in Amira in the Jefferis Lab using a simple
 median filter, followed by thresholding and a surface simplification.
+}
+\examples{
+IBNWB
 }
 \references{
 Kei Ito, Kazunori Shinomiya, Masayoshi Ito, J. Douglas Armstrong,
@@ -36,3 +43,4 @@ Kei Ito, Kazunori Shinomiya, Masayoshi Ito, J. Douglas Armstrong,
 \seealso{
 \code{\link{IBN}}
 }
+\keyword{datasets}

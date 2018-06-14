@@ -17,7 +17,9 @@
 #'
 #' @name FCWB
 #' @docType data
-NULL
+#' @examples
+#' FCWB
+"FCWB"
 
 #' The \code{FCWB.surf} surface model was generated in Amira by constructing an
 #' isosurface model based on the \code{FCWB} brain.
@@ -83,7 +85,9 @@ NULL
 #' \href{http://dx.doi.org/10.1016/j.cub.2010.07.045}{doi:10.1016/j.cub.2010.07.045}
 #' @name IS2
 #' @docType data
-NULL
+#' @examples
+#' IS2
+"IS2"
 
 #' Surface model of the Insect Brain Name Working Group neuropil segmentation in
 #' IS2 coordinate space
@@ -124,7 +128,9 @@ NULL
 #' @name JFRC2
 #' @docType data
 #' @seealso \code{\link{JFRC2NP.surf}}
-NULL
+#' @examples
+#' JFRC2
+"JFRC2"
 
 #' The \code{JFRC2.surf} surface model was constructed in Amira in the Jefferis Lab using a simple
 #' threshold, followed by a surface simplification.
@@ -231,7 +237,8 @@ NULL
 #' @name JFRC2013
 #' @aliases JRC2013
 #' @docType data
-NULL
+
+"JFRC2013"
 
 #' \code{JFRC2013.surf} was generated in Amira from a 2 micron downsampled and
 #' median filtered version of the JFRC2013 template brain. Further cleaning was
@@ -256,7 +263,9 @@ NULL
 #'   microscope with 20 x magnification. The downsampling has shrunk the z
 #'   direction, such that the brain appears flattened when compared with the
 #'   original.
-NULL
+#' @examples
+#' JFRC2013DS
+"JFRC2013DS"
 
 #' @name JFRC2013DS.surf
 #' @rdname JFRC2013
@@ -299,7 +308,9 @@ NULL
 #' @name IBN
 #' @docType data
 #' @encoding UTF-8
-NULL
+#' @examples
+#' IBN
+"IBN"
 
 #' Template information for the Insect Brain Nomenclature Whole Brain reference
 #' brain
@@ -320,7 +331,9 @@ NULL
 #' @docType data
 #' @seealso \code{\link{IBN}}
 #' @encoding UTF-8
-NULL
+#' @examples
+#' IBNWB
+"IBNWB"
 
 #' Surface model for the Insect Brain Nomenclature Whole Brain reference brain
 #'
@@ -349,7 +362,9 @@ NULL
 #'
 #' @name T1
 #' @docType data
-NULL
+#' @examples
+#' T1
+"T1"
 
 #' The surface model was constructed in Amira in the Jefferis Lab using a simple
 #' threshold, followed by a surface simplification.
@@ -393,7 +408,7 @@ NULL
 #'   doi="http://doi.org/10.5281/zenodo.13884",
 #'   description = "See http://dx.doi.org/10.1016/j.cub.2010.07.045 for details")
 #' }
-NULL
+"VNCIS1"
 
 
 #' @name VNCIS1.surf

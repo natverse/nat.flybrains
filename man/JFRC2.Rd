@@ -5,6 +5,10 @@
 \alias{JFRC2}
 \alias{JFRC2.surf}
 \title{Template information and surface model for the JFRC2 reference brain}
+\format{An object of class \code{templatebrain} of dimension 1024 x 512 x 218.}
+\usage{
+JFRC2
+}
 \description{
 The JFRC2 reference brain is a spatially calibrated version of the original
 FlyLight reference brain (JFRC), which was delivered uncalibrated. This in
@@ -16,6 +20,7 @@ The \code{JFRC2.surf} surface model was constructed in Amira in the Jefferis Lab
 threshold, followed by a surface simplification.
 }
 \examples{
+JFRC2
 \dontrun{
 # Depends on nat
 plot3d(JFRC2.surf)
@@ -33,3 +38,4 @@ Arnim Jenett, Gerald M. Rubin, Teri-T.B. Ngo, David Shepherd, Christine Murphy, 
 \seealso{
 \code{\link{JFRC2NP.surf}}
 }
+\keyword{datasets}

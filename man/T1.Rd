@@ -5,6 +5,10 @@
 \alias{T1}
 \alias{T1.surf}
 \title{Template information and surface model for the T1 reference brain}
+\format{An object of class \code{templatebrain} of dimension 768 x 768 x 165.}
+\usage{
+T1
+}
 \description{
 Template information and surface model for the T1 reference brain
 
@@ -12,6 +16,7 @@ The surface model was constructed in Amira in the Jefferis Lab using a simple
 threshold, followed by a surface simplification.
 }
 \examples{
+T1
 \dontrun{
 # Depends on nat
 plot3d(T1.surf)
@@ -26,3 +31,4 @@ Jai Y. Yu, Makoto I. Kanai, Ebru Demir, Gregory S. X. E. Jefferis, Barry J. Dick
  Cellular Organization of the Neural Circuit that Drives Drosophila Courtship Behavior. Current Biology 20 (18), 1602-1614.
  \href{http://dx.doi.org/10.1016/j.cub.2010.08.025}{doi:10.1016/j.cub.2010.08.025}
 }
+\keyword{datasets}

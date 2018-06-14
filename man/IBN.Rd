@@ -5,6 +5,10 @@
 \name{IBN}
 \alias{IBN}
 \title{Template information for the Insect Brain Nomenclature reference brain}
+\format{An object of class \code{templatebrain} of dimension 512 x 512 x 135.}
+\usage{
+IBN
+}
 \description{
 Template used for the study "A Systematic Nomenclature for the Insect Brain"
 (\href{http://dx.doi.org/10.1016/j.neuron.2013.12.017}{doi:10.1016/j.neuron.2013.12.017}).
@@ -32,6 +36,9 @@ section, of 135 total, was recorded with a resolution of 1024 by 1024 pixels
 and 1.41 micron optical z-slice steps. These were then down-sampled to a
 resolution of 512 by 512 pixels.
 }
+\examples{
+IBN
+}
 \references{
 Kei Ito, Kazunori Shinomiya, Masayoshi Ito, J. Douglas Armstrong,
  George Boyan, Volker Hartenstein, Steffen Harzsch, Martin Heisenberg, Uwe
@@ -41,3 +48,4 @@ Kei Ito, Kazunori Shinomiya, Masayoshi Ito, J. Douglas Armstrong,
  systematic nomenclature for the insect brain. Neuron 81 (4), 755-765.
  \href{http://dx.doi.org/10.1016/j.neuron.2013.12.017}{doi:10.1016/j.neuron.2013.12.017}
 }
+\keyword{datasets}
