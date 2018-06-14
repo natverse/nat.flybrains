@@ -18,19 +18,28 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
 
+
+
+<meta property="og:title" content="Function reference" />
+
+
 <!-- mathjax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+
   </head>
 
   <body>
@@ -44,11 +53,21 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">nat.flybrains</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">nat.flybrains</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">1.7</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
+  <a href="../index.html">
+    <span class="fa fa-home fa-lg"></span>
+     
+  </a>
+</li>
+<li>
   <a href="../reference/index.html">Reference</a>
 </li>
       </ul>
@@ -61,6 +80,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -68,121 +88,174 @@
       
       </header>
 
-      <div class="row">
-  <div class="col-md-9">
+<div class="row">
+  <div class="contents col-md-9">
     <div class="page-header">
-      <h1>Function reference</h1>
-      <h4>version&nbsp;1.6</h4>
+      <h1>Reference</h1>
     </div>
 
-    <div class="contents">
-      <h2 id="section-package-overview" class="hasAnchor"><a href="#section-package-overview" class="anchor"></a>Package Overview</h2>
-      <p class="section-desc"><p>Provides an overview of key features and data/functions in the package as well.</p></p>
+    <table class="ref-index">
 
-      
-      <p><a href="nat.flybrains-package.html">Additional flybrain-specific data and tools for use with the NeuroAnatomy
-</a></p>
-      <ul>
-        <li><code><a href="nat.flybrains-package.html">nat.flybrains</a></code></li><li><code><a href="nat.flybrains-package.html">nat.flybrains-package</a></code></li>
-      </ul>
+    <colgroup>
+      <col class="alias" />
+      <col class="title" />
+    </colgroup>
+
+    <tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-package-overview" class="hasAnchor"><a href="#section-package-overview" class="anchor"></a>Package Overview</h2>
+          <p class="section-desc"><p>Provides an overview of key features and data/functions in the package as well.</p></p>
+        </th>
+      </tr>
+      <tr>
+        <!--  -->
+        <td>
+          <p><code><a href="nat.flybrains-package.html">nat.flybrains-package</a></code> </p>
+        </td>
+        <td><p>Additional flybrain-specific data and tools for use with the NeuroAnatomy
+Toolbox (nat)</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
           <h2 id="section-download-more-data" class="hasAnchor"><a href="#section-download-more-data" class="anchor"></a>Download more data</h2>
-      <p class="section-desc"><p>How to download additional data beyond those bundled with this package</p></p>
-
-      
-      <p><a href="download_jefferislab_registrations.html">Download (or update) and install Jefferis lab registrations</a></p>
-      <ul>
-        <li><code><a href="download_jefferislab_registrations.html">download_jefferislab_registrations</a></code></li>
-      </ul>
+          <p class="section-desc"><p>How to download additional data beyond those bundled with this package</p></p>
+        </th>
+      </tr>
+      <tr>
+        <!--  -->
+        <td>
+          <p><code><a href="download_jefferislab_registrations.html">download_jefferislab_registrations()</a></code> </p>
+        </td>
+        <td><p>Download (or update) and install Jefferis lab registrations</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
           <h2 id="section-drosophila-template-brains" class="hasAnchor"><a href="#section-drosophila-template-brains" class="anchor"></a>Drosophila Template Brains</h2>
-      <p class="section-desc"><p>Template objects and surface models for a range of Drosophila template brains.</p></p>
-
-      
-      <p><a href="Dmel.html">Template information and surface model for D. melanogaster reference brain</a></p>
-      <ul>
-        <li><code><a href="Dmel.html">Dmel</a></code></li><li><code><a href="Dmel.html">Dmel.surf</a></code></li>
-      </ul>
-      
-      <p><a href="FCWB.html">Template information and Surface model of the FCWB FlyCircuit reference brain</a></p>
-      <ul>
-        <li><code><a href="FCWB.html">FCWB</a></code></li><li><code><a href="FCWB.html">FCWB.surf</a></code></li>
-      </ul>
-      
-      <p><a href="FCWBNP.surf.html">Surface model of the Insect Brain Name Working Group neuropil segmentation in
-</a></p>
-      <ul>
-        <li><code><a href="FCWBNP.surf.html">FCWBNP.surf</a></code></li>
-      </ul>
-      
-      <p><a href="IBN.html">Template information for the Insect Brain Nomenclature reference brain</a></p>
-      <ul>
-        <li><code><a href="IBN.html">IBN</a></code></li>
-      </ul>
-      
-      <p><a href="IBNWB.html">Template information for the Insect Brain Nomenclature Whole Brain reference
-</a></p>
-      <ul>
-        <li><code><a href="IBNWB.html">IBNWB</a></code></li><li><code><a href="IBNWB.html">IBNWB.surf</a></code></li>
-      </ul>
-      
-      <p><a href="IS2.html">Template information for the IS2 reference brain</a></p>
-      <ul>
-        <li><code><a href="IS2.html">IS2</a></code></li>
-      </ul>
-      
-      <p><a href="IS2.surf.html">Surface model of the IS2 reference brain</a></p>
-      <ul>
-        <li><code><a href="IS2.surf.html">IS2.surf</a></code></li>
-      </ul>
-      
-      <p><a href="IS2NP.surf.html">Surface model of the Insect Brain Name Working Group neuropil segmentation in
-</a></p>
-      <ul>
-        <li><code><a href="IS2NP.surf.html">IS2NP.surf</a></code></li>
-      </ul>
-      
-      <p><a href="JFRC2.html">Template information and surface model for the JFRC2 reference brain</a></p>
-      <ul>
-        <li><code><a href="JFRC2.html">JFRC2</a></code></li><li><code><a href="JFRC2.html">JFRC2.surf</a></code></li>
-      </ul>
-      
-      <p><a href="JFRC2013.html">Template information and surface model for the JFRC2013 reference brain</a></p>
-      <ul>
-        <li><code><a href="JFRC2013.html">JFRC2013</a></code></li><li><code><a href="JFRC2013.html">JFRC2013.surf</a></code></li><li><code><a href="JFRC2013.html">JFRC2013DS</a></code></li><li><code><a href="JFRC2013.html">JFRC2013DS.surf</a></code></li><li><code><a href="JFRC2013.html">JRC2013</a></code></li>
-      </ul>
-      
-      <p><a href="JFRC2NP.surf.html">Surface model of the Insect Brain Name Working Group neuropil segmentation in
-</a></p>
-      <ul>
-        <li><code><a href="JFRC2NP.surf.html">JFRC2NP.surf</a></code></li>
-      </ul>
-      
-      <p><a href="T1.html">Template information and surface model for the T1 reference brain</a></p>
-      <ul>
-        <li><code><a href="T1.html">T1</a></code></li><li><code><a href="T1.html">T1.surf</a></code></li>
-      </ul>
+          <p class="section-desc"><p>Template objects and surface models for a range of Drosophila template brains.</p></p>
+        </th>
+      </tr>
+      <tr>
+        <!--  -->
+        <td>
+          <p><code><a href="Dmel.html">Dmel</a></code> </p>
+        </td>
+        <td><p>Template information and surface model for D. melanogaster reference brain</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="FCWB.html">FCWB</a></code> </p>
+        </td>
+        <td><p>Template information and Surface model of the FCWB FlyCircuit reference brain</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="FCWBNP.surf.html">FCWBNP.surf</a></code> </p>
+        </td>
+        <td><p>Surface model of the Insect Brain Name Working Group neuropil segmentation in
+FCWB space</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="IBN.html">IBN</a></code> </p>
+        </td>
+        <td><p>Template information for the Insect Brain Nomenclature reference brain</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="IBNWB.html">IBNWB</a></code> </p>
+        </td>
+        <td><p>Template information for the Insect Brain Nomenclature Whole Brain reference
+brain</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="IS2.html">IS2</a></code> </p>
+        </td>
+        <td><p>Template information for the IS2 reference brain</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="IS2.surf.html">IS2.surf</a></code> </p>
+        </td>
+        <td><p>Surface model of the IS2 reference brain</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="IS2NP.surf.html">IS2NP.surf</a></code> </p>
+        </td>
+        <td><p>Surface model of the Insect Brain Name Working Group neuropil segmentation in
+IS2 coordinate space</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="JFRC2.html">JFRC2</a></code> </p>
+        </td>
+        <td><p>Template information and surface model for the JFRC2 reference brain</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="JFRC2013.html">JFRC2013</a></code> </p>
+        </td>
+        <td><p>Template information and surface model for the JFRC2013 reference brain</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="JFRC2NP.surf.html">JFRC2NP.surf</a></code> </p>
+        </td>
+        <td><p>Surface model of the Insect Brain Name Working Group neuropil segmentation in
+JFRC2 coordinate space</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="T1.html">T1</a></code> </p>
+        </td>
+        <td><p>Template information and surface model for the T1 reference brain</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
           <h2 id="section-nerve-cord" class="hasAnchor"><a href="#section-nerve-cord" class="anchor"></a>Nerve Cord</h2>
-      <p class="section-desc"><p>Templates and surface meshes for the ventral nerve cord (i.e.&nbsp;Thoracico-Abdominal Ganglion).</p></p>
-
-      
-      <p><a href="VNCIS1.html">Template information and surface model for the VNCIS1 reference neuropil</a></p>
-      <ul>
-        <li><code><a href="VNCIS1.html">VNCIS1</a></code></li><li><code><a href="VNCIS1.html">VNCIS1.surf</a></code></li>
-      </ul>
+          <p class="section-desc"><p>Templates and surface meshes for the ventral nerve cord (i.e. Thoracico-Abdominal Ganglion).</p></p>
+        </th>
+      </tr>
+      <tr>
+        <!--  -->
+        <td>
+          <p><code><a href="VNCIS1.html">VNCIS1</a></code> </p>
+        </td>
+        <td><p>Template information and surface model for the VNCIS1 reference neuropil</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
           <h2 id="section-other-drosophilids" class="hasAnchor"><a href="#section-other-drosophilids" class="anchor"></a>Other Drosophilids</h2>
-      <p class="section-desc"><p>Template and brain surface models for Drosophilids other than D. melanogaster.</p></p>
-
-      
-      <p><a href="Dsim.html">Template information and surface model for D. simulans reference brain</a></p>
-      <ul>
-        <li><code><a href="Dsim.html">Dsim</a></code></li><li><code><a href="Dsim.html">Dsim.surf</a></code></li>
-      </ul>
-      
-      <p><a href="Dvir.html">Template information and surface model for D. virilis reference brain</a></p>
-      <ul>
-        <li><code><a href="Dvir.html">Dvir</a></code></li><li><code><a href="Dvir.html">Dvir.surf</a></code></li>
-      </ul>
-    
-    </div>
+          <p class="section-desc"><p>Template and brain surface models for Drosophilids other than D. melanogaster.</p></p>
+        </th>
+      </tr>
+      <tr>
+        <!--  -->
+        <td>
+          <p><code><a href="Dsim.html">Dsim</a></code> </p>
+        </td>
+        <td><p>Template information and surface model for D. simulans reference brain</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="Dvir.html">Dvir</a></code> </p>
+        </td>
+        <td><p>Template information and surface model for D. virilis reference brain</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="DsecI.html">DsecI</a></code> </p>
+        </td>
+        <td><p>Template information and surface model for D. sechellia reference brain</p></td>
+      </tr>
+    </tbody>
+    </table>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -203,11 +276,14 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+

@@ -18,19 +18,37 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
 
+
+
+<meta property="og:title" content="Template information and surface model for the JFRC2 reference brain — JFRC2" />
+
+<meta property="og:description" content="The JFRC2 reference brain is a spatially calibrated version of the original
+FlyLight reference brain (JFRC), which was delivered uncalibrated. This in
+turn was derived from a single female brain stained with nc82, that was
+imaged at 1 micron spacing in Z. It was then interpolated in Z to give an
+isotropic voxel size of 0.622088 microns.
+The JFRC2.surf surface model was constructed in Amira in the Jefferis Lab using a simple
+threshold, followed by a surface simplification." />
+<meta name="twitter:card" content="summary" />
+
+
 <!-- mathjax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+
   </head>
 
   <body>
@@ -44,11 +62,21 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">nat.flybrains</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">nat.flybrains</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">1.7</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
+  <a href="../index.html">
+    <span class="fa fa-home fa-lg"></span>
+     
+  </a>
+</li>
+<li>
   <a href="../reference/index.html">Reference</a>
 </li>
       </ul>
@@ -61,6 +89,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -68,22 +97,25 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Template information and surface model for the JFRC2 reference brain</h1>
+    <small class="dont-index">Source: <a href='https://github.com/jefferislab/nat.flybrains/blob/master/R/DATA.r'><code>R/DATA.r</code></a></small>
+    <div class="hidden name"><code>JFRC2.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>The JFRC2 reference brain is a spatially calibrated version of the original
 FlyLight reference brain (JFRC), which was delivered uncalibrated. This in
 turn was derived from a single female brain stained with nc82, that was
 imaged at 1 micron spacing in Z. It was then interpolated in Z to give an
 isotropic voxel size of 0.622088 microns.</p>
-
-    <p>The <code>JFRC2.surf</code> surface model was constructed in Amira in the Jefferis Lab using a simple
+<p>The <code>JFRC2.surf</code> surface model was constructed in Amira in the Jefferis Lab using a simple
 threshold, followed by a surface simplification.</p>
     
+    </div>
 
         
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
@@ -94,21 +126,18 @@ threshold, followed by a surface simplification.</p>
  Adrianne Enos, Phuson Hulamm, Shing Chun Benny Lam, Hsing-Hsi Li, Todd R. Laverty, Fuhui Long, Lei Qu, Sean D. Murphy,
  Konrad Rokicki, Todd Safford, Kshiti Shaw, Julie H. Simpson, Allison Sowell, Susana Tae, Yang Yu,
  Christopher T. Zugates (2012). A GAL4-Driver Line Resource for Drosophila Neurobiology. Cell Reports 2 (4), 991 - 1001.
- <a href = 'doi:10.1016/j.celrep.2012.09.011'>http://dx.doi.org/10.1016/j.celrep.2012.09.011</a></p>
+ <a href='http://dx.doi.org/10.1016/j.celrep.2012.09.011'>doi:10.1016/j.celrep.2012.09.011</a></p>
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <p><code><a href='JFRC2NP.surf.html'>JFRC2NP.surf</a></code></p>
+    <div class='dont-index'><p><code><a href='JFRC2NP.surf.html'>JFRC2NP.surf</a></code></p></div>
     
 
-    <h2 class="hasAnchor" id="examples">
-      <a class="anchor" href="#examples"></a>
-      Examples
-    </h2>
-    <pre class="examples"><div class='input'><span class='co'>## Not run: ------------------------------------</span>
-<span class='co'># # Depends on nat</span>
-<span class='co'># plot3d(JFRC2.surf)</span>
-<span class='co'>## ---------------------------------------------</span></div></pre>
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><span class='co'># NOT RUN {</span>
+<span class='co'># Depends on nat</span>
+<span class='fu'>plot3d</span>(<span class='no'>JFRC2.surf</span>)
+<span class='co'># }</span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -130,11 +159,14 @@ threshold, followed by a surface simplification.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+

@@ -18,19 +18,32 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
 
+
+
+<meta property="og:title" content="Template information for the Insect Brain Nomenclature reference brain — IBN" />
+
+<meta property="og:description" content="Template used for the study "A Systematic Nomenclature for the Insect Brain"
+(doi:10.1016/j.neuron.2013.12.017)." />
+<meta name="twitter:card" content="summary" />
+
+
 <!-- mathjax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+
   </head>
 
   <body>
@@ -44,11 +57,21 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">nat.flybrains</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">nat.flybrains</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">1.7</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
+  <a href="../index.html">
+    <span class="fa fa-home fa-lg"></span>
+     
+  </a>
+</li>
+<li>
   <a href="../reference/index.html">Reference</a>
 </li>
       </ul>
@@ -61,6 +84,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -68,39 +92,39 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Template information for the Insect Brain Nomenclature reference brain</h1>
+    <small class="dont-index">Source: <a href='https://github.com/jefferislab/nat.flybrains/blob/master/R/DATA.r'><code>R/DATA.r</code></a></small>
+    <div class="hidden name"><code>IBN.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
-    <p>Template used for the study &quot;A Systematic Nomenclature for the Insect Brain&quot;
-(<a href = 'doi:10.1016/j.neuron.2013.12.017'>http://dx.doi.org/10.1016/j.neuron.2013.12.017</a>).</p>
+    <p>Template used for the study "A Systematic Nomenclature for the Insect Brain"
+(<a href='http://dx.doi.org/10.1016/j.neuron.2013.12.017'>doi:10.1016/j.neuron.2013.12.017</a>).</p>
     
+    </div>
 
         
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>Constructed from the green channel of serial sections of a Drosophila
 melanogaster brain that was tricolor-labeled with a combination of the
-following reporters:<ul>
-<li> cytoplasmic DsRed (UAS-DsRed; Verkhusha et al., 2001; red channel),
-</li>
-<li> presynaptic GFP (synaptic-vesicles-targeted UAS-n-syb-GFP; Estes et
-al., 2000; green channel),
-</li>
-<li> postsynaptic Rdl-hemagglutinin (GABA-receptor-targeted UAS-Rdl-HA;
-Sanchez-Soriano et al., 2005; blue channel).
-</li>
-</ul>
- These were expressed with the pan-neuronal elav-GAL4
+following reporters:</p><ul>
+<li><p>cytoplasmic DsRed (UAS-DsRed; Verkhusha et al., 2001; red channel),</p></li>
+<li><p>presynaptic GFP (synaptic-vesicles-targeted UAS-n-syb-GFP; Estes et
+al., 2000; green channel),</p></li>
+<li><p>postsynaptic Rdl-hemagglutinin (GABA-receptor-targeted UAS-Rdl-HA;
+Sanchez-Soriano et al., 2005; blue channel).</p></li>
+</ul><p>These were expressed with the pan-neuronal elav-GAL4
 expression driver (C155; Lin and Goodman, 1994).</p>
-    <p>Note that, because of the excess amount of ectopic protein expression, the
+<p>Note that, because of the excess amount of ectopic protein expression, the
 presynaptic and postsynaptic labelling (especially the latter) was not
 completely specific, visualizing not only synaptic sites but also cell bodies
 and large fiber bundles.</p>
-    <p>The image was acquired using a confocal laser-scanning microscope LSM510
+<p>The image was acquired using a confocal laser-scanning microscope LSM510
 (Zeiss) with a 40x water-immersion C-Apochromat objective (NA = 1.2). Each
 section, of 135 total, was recorded with a resolution of 1024 by 1024 pixels
 and 1.41 micron optical z-slice steps. These were then down-sampled to a
@@ -114,7 +138,7 @@ resolution of 512 by 512 pixels.</p>
  Rössler, Julie H. Simpson, Nicholas J. Strausfeld, Roland
  Strauss, Leslie B. Vosshall, Insect Brain Name Working Group (2013). A
  systematic nomenclature for the insect brain. Neuron 81 (4), 755-765.
- <a href = 'doi:10.1016/j.neuron.2013.12.017'>http://dx.doi.org/10.1016/j.neuron.2013.12.017</a></p>
+ <a href='http://dx.doi.org/10.1016/j.neuron.2013.12.017'>doi:10.1016/j.neuron.2013.12.017</a></p>
     
 
   </div>
@@ -136,11 +160,14 @@ resolution of 512 by 512 pixels.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+

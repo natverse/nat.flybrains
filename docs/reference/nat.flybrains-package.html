@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Additional flybrain-specific data and tools for use with the NeuroAnatomy
- — nat.flybrains-package • nat.flybrains</title>
+Toolbox (nat) — nat.flybrains-package • nat.flybrains</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -19,19 +19,34 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
 
+
+
+<meta property="og:title" content="Additional flybrain-specific data and tools for use with the NeuroAnatomy
+Toolbox (nat) — nat.flybrains-package" />
+
+<meta property="og:description" content="This package provides data, such as template brain information and
+registrations, along with extra functions to extend nat towards easy use for
+researchers working with fly data." />
+<meta name="twitter:card" content="summary" />
+
+
 <!-- mathjax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+
   </head>
 
   <body>
@@ -45,11 +60,21 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">nat.flybrains</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">nat.flybrains</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">1.7</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
+  <a href="../index.html">
+    <span class="fa fa-home fa-lg"></span>
+     
+  </a>
+</li>
+<li>
   <a href="../reference/index.html">Reference</a>
 </li>
       </ul>
@@ -62,6 +87,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -69,72 +95,63 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Additional flybrain-specific data and tools for use with the NeuroAnatomy
-</h1>
+Toolbox (nat)</h1>
+    <small class="dont-index">Source: <a href='https://github.com/jefferislab/nat.flybrains/blob/master/R/PACKAGE.r'><code>R/PACKAGE.r</code></a></small>
+    <div class="hidden name"><code>nat.flybrains-package.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>This package provides data, such as template brain information and
 registrations, along with extra functions to extend nat towards easy use for
 researchers working with fly data.</p>
     
+    </div>
 
         
     <h2 class="hasAnchor" id="template-brains"><a class="anchor" href="#template-brains"></a>Template brains</h2>
 
     <p>Information on a number of template brains is
-  provided: <ul>
-<li> <a href='FCWB.html'>FCWB</a></p>
-    <p></li>
-<li> <a href='IBN.html'>IBN</a></p>
-    <p></li>
-<li> <a href='IBNWB.html'>IBNWB</a></p>
-    <p></li>
-<li> <a href='IS2.html'>IS2</a></p>
-    <p></li>
-<li> <a href='JFRC2.html'>JFRC2</a></p>
-    <p></li>
-<li> <a href='T1.html'>T1</a> </li>
-</ul></p>
+  provided:</p><ul>
+<li><p><a href='FCWB.html'>FCWB</a></p></li>
+<li><p><a href='IBN.html'>IBN</a></p></li>
+<li><p><a href='IBNWB.html'>IBNWB</a></p></li>
+<li><p><a href='IS2.html'>IS2</a></p></li>
+<li><p><a href='JFRC2.html'>JFRC2</a></p></li>
+<li><p><a href='T1.html'>T1</a></p></li>
+</ul>
     <p>This information is defined in an object of class
   <code>templatebrain</code> of the same name as the template brain.</p>
     
     <h2 class="hasAnchor" id="bridging-registrations"><a class="anchor" href="#bridging-registrations"></a>Bridging registrations</h2>
 
     <p>A number of registrations for bridging data
-  from one template to another are provided. <ul>
-<li> IS2-&gt;FCWB</p>
-    <p></li>
-<li> JFRC2-&gt;FCWB</p>
-    <p></li>
-<li> IBN-&gt;INBWB</p>
-    <p></li>
-<li> INBWB-&gt;JFRC2</p>
-    <p></li>
-<li> IS2-&gt;JFRC2</p>
-    <p></li>
-</ul></p>
+  from one template to another are provided.</p><ul>
+<li><p>IS2-&gt;FCWB</p></li>
+<li><p>JFRC2-&gt;FCWB</p></li>
+<li><p>IBN-&gt;INBWB</p></li>
+<li><p>INBWB-&gt;JFRC2</p></li>
+<li><p>IS2-&gt;JFRC2</p></li>
+</ul>
     <p>See <code>xform_brain</code> for examples of how to use these
   registrations. Additional registrations are available at
-  <a href = 'https://github.com/jefferislab/BridgingRegistrations'>https://github.com/jefferislab/BridgingRegistrations</a>.</p>
+  <a href='https://github.com/jefferislab/BridgingRegistrations'>https://github.com/jefferislab/BridgingRegistrations</a>.</p>
     
     <h2 class="hasAnchor" id="mirroring-registrations"><a class="anchor" href="#mirroring-registrations"></a>Mirroring registrations</h2>
 
     <p>A number of registrations for mirroring
-  data from one side of a template brain to the other are provided. <ul>
-<li> FCWB</p>
-    <p></li>
-<li> IS2</p>
-    <p></li>
-<li> JFRC2</p>
-    <p></li>
-</ul></p>
+  data from one side of a template brain to the other are provided.</p><ul>
+<li><p>FCWB</p></li>
+<li><p>IS2</p></li>
+<li><p>JFRC2</p></li>
+</ul>
     <p>See <code>mirror_brain</code> for examples of how to use these
   registrations. Additional registrations are available at
-  <a href = 'https://github.com/jefferislab/MirrorRegistrations'>https://github.com/jefferislab/MirrorRegistrations</a>.</p>
+  <a href='https://github.com/jefferislab/MirrorRegistrations'>https://github.com/jefferislab/MirrorRegistrations</a>.</p>
     
     <h2 class="hasAnchor" id="additional-registrations"><a class="anchor" href="#additional-registrations"></a>Additional registrations</h2>
 
@@ -143,7 +160,7 @@ researchers working with fly data.</p>
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <p><code><a href='http://www.rdocumentation.org/packages/nat/topics/nat-package'>nat</a>, nat.templatebrains</code></p>
+    <div class='dont-index'><p><code><a href='http://www.rdocumentation.org/packages/nat/topics/nat-package'>nat</a>, nat.templatebrains</code></p></div>
     
 
   </div>
@@ -171,11 +188,14 @@ researchers working with fly data.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+

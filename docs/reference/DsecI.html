@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Template information and surface model for D. simulans reference brain — Dsim • nat.flybrains</title>
+<title>Template information and surface model for D. sechellia reference brain — DsecI • nat.flybrains</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -28,13 +28,16 @@
 
 
 
-<meta property="og:title" content="Template information and surface model for D. simulans reference brain — Dsim" />
+<meta property="og:title" content="Template information and surface model for D. sechellia reference brain — DsecI" />
 
-<meta property="og:description" content="The Dsim reference brain is a shape averaged template brain generated using
+<meta property="og:description" content="The DsecI reference brain is a shape averaged template brain generated using
 the CMTK avg_adm tool. See
 https://github.com/jefferislab/MakeAverageBrain for the relevant code.
-The surface model was constructed in Amira by L. Goetz and G. Jefferis using
-a simple threshold, followed by a surface simplification to ~ 18,000 faces." />
+The surface model was constructed in Amira by G. Jefferis and R. Benton using
+a Z drop correction of the DsecI reference brain in Amira (e^u) followed by
+a simple threshold (10000), surface simplification to ~ 18,000 faces, default
+surface smoothing and manual editing in meshlab to remove a small unconnected
+island of points." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -98,44 +101,42 @@ a simple threshold, followed by a surface simplification to ~ 18,000 faces." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Template information and surface model for D. simulans reference brain</h1>
+    <h1>Template information and surface model for D. sechellia reference brain</h1>
     <small class="dont-index">Source: <a href='https://github.com/jefferislab/nat.flybrains/blob/master/R/DATA-Drosophilids.r'><code>R/DATA-Drosophilids.r</code></a></small>
-    <div class="hidden name"><code>Dsim.Rd</code></div>
+    <div class="hidden name"><code>DsecI.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>The Dsim reference brain is a shape averaged template brain generated using
+    <p>The DsecI reference brain is a shape averaged template brain generated using
 the CMTK avg_adm tool. See
 <a href='https://github.com/jefferislab/MakeAverageBrain'>https://github.com/jefferislab/MakeAverageBrain</a> for the relevant code.</p>
-<p>The surface model was constructed in Amira by L. Goetz and G. Jefferis using
-a simple threshold, followed by a surface simplification to ~ 18,000 faces.</p>
+<p>The surface model was constructed in Amira by G. Jefferis and R. Benton using
+a Z drop correction of the DsecI reference brain in Amira (e^u) followed by
+a simple threshold (10000), surface simplification to ~ 18,000 faces, default
+surface smoothing and manual editing in meshlab to remove a small unconnected
+island of points.</p>
     
     </div>
 
         
-    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
-
-    <p><a href='http://dx.doi.org/10.5281/zenodo.1059'>doi:10.5281/zenodo.1059</a></p>
-    
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
     <div class='dont-index'><p>Other Drosophilid-Brains: <code><a href='Dmel.html'>Dmel</a></code>,
-  <code><a href='DsecI.html'>DsecI</a></code>, <code><a href='Dvir.html'>Dvir</a></code></p></div>
+  <code><a href='Dsim.html'>Dsim</a></code>, <code><a href='Dvir.html'>Dvir</a></code></p></div>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><span class='co'># NOT RUN {</span>
 <span class='co'># Depends on nat</span>
-<span class='fu'>plot3d</span>(<span class='no'>Dsim.surf</span>)
+<span class='fu'>plot3d</span>(<span class='no'>DsecI.surf</span>)
+<span class='fu'>plot3d</span>(<span class='no'>DsecI</span>)
 <span class='co'># }</span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       
-      <li><a href="#details">Details</a></li>
-
       <li><a href="#see-also">See also</a></li>
       
       <li><a href="#examples">Examples</a></li>
