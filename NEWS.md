@@ -1,5 +1,9 @@
-# nat.flybrains 1.7
+# nat.flybrains 1.7.1
 
+* Rename IVLP neuropil to WED in accordance with Ito et al 2014 (#37)
+* Doc tidying and fixes
+
+# nat.flybrains 1.7
 
 * add D. sechellia DsecI template and surface model (with Richard Benton)
 
