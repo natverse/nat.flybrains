@@ -14,8 +14,8 @@ The \code{FCWB} reference brain is a shape averaged template brain generated usi
 the CMTK avg_adm tool. See
 \url{https://github.com/jefferislab/MakeAverageBrain} for the relevant code.
 
-The \code{FCWB.surf} surface model was generated in Amira by constructing an
-isosurface model based on the \code{FCWB} brain.
+The \code{FCWB.surf} surface model was generated in Amira by
+  constructing an isosurface model based on the \code{FCWB} brain.
 }
 \examples{
 FCWB

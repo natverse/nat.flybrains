@@ -20,9 +20,10 @@ The \code{JFRC2013} reference brain is a single female brain. It
   "The neuronal architecture of the mushroom body provides a logic for
   associative learning".
 
-\code{JFRC2013.surf} was generated in Amira from a 2 micron downsampled and
-median filtered version of the JFRC2013 template brain. Further cleaning was
-then carried out in MeshLab to remove non-manifold edges and fill holes.
+\code{JFRC2013.surf} was generated in Amira from a 2 micron
+  downsampled and median filtered version of the JFRC2013 template brain.
+  Further cleaning was then carried out in MeshLab to remove non-manifold
+  edges and fill holes.
 
 \code{JFRC2013DS} is a downsampled version of the
   \code{JFRC2013} reference brain, designed for use with images taken on a

@@ -20,6 +20,7 @@ Suggests:
 LazyData: true
 URL: https://github.com/jefferislab/nat.flybrains, http://flybrain.mrc-lmb.cam.ac.uk/si/bridging/www/
 BugReports: https://github.com/jefferislab/nat.flybrains/issues
-RoxygenNote: 6.0.1
+Encoding: UTF-8
+RoxygenNote: 6.1.1
 Remotes: jefferis/nat,
     jefferislab/nat.templatebrains

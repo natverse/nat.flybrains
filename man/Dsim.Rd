@@ -10,8 +10,9 @@ The Dsim reference brain is a shape averaged template brain generated using
 the CMTK avg_adm tool. See
 \url{https://github.com/jefferislab/MakeAverageBrain} for the relevant code.
 
-The surface model was constructed in Amira by L. Goetz and G. Jefferis using
-a simple threshold, followed by a surface simplification to ~ 18,000 faces.
+The surface model was constructed in Amira by L. Goetz and G.
+  Jefferis using a simple threshold, followed by a surface simplification to
+  ~ 18,000 faces.
 }
 \details{
 \href{http://dx.doi.org/10.5281/zenodo.1059}{doi:10.5281/zenodo.1059}
@@ -26,3 +27,4 @@ plot3d(Dsim.surf)
 Other Drosophilid-Brains: \code{\link{Dmel}},
   \code{\link{DsecI}}, \code{\link{Dvir}}
 }
+\concept{Drosophilid-Brains}

@@ -11,8 +11,9 @@
 #' @docType data
 NULL
 
-#' The surface model was constructed in Amira by L. Goetz and G. Jefferis using
-#' a simple threshold, followed by a surface simplification to ~ 18,000 faces.
+#' @description The surface model was constructed in Amira by L. Goetz and G.
+#'   Jefferis using a simple threshold, followed by a surface simplification to
+#'   ~ 18,000 faces.
 #'
 #' @name Dmel.surf
 #' @rdname Dmel
@@ -39,8 +40,9 @@ NULL
 NULL
 
 
-#' The surface model was constructed in Amira by L. Goetz and G. Jefferis using
-#' a simple threshold, followed by a surface simplification to ~ 18,000 faces.
+#' @description The surface model was constructed in Amira by L. Goetz and G.
+#'   Jefferis using a simple threshold, followed by a surface simplification to
+#'   ~ 18,000 faces.
 #'
 #' @name Dsim.surf
 #' @rdname Dsim
@@ -66,8 +68,9 @@ NULL
 NULL
 
 
-#' The surface model was constructed in Amira by L. Goetz and G. Jefferis using
-#' a simple threshold, followed by a surface simplification to ~ 18,000 faces.
+#' @description The surface model was constructed in Amira by L. Goetz and G.
+#'   Jefferis using a simple threshold, followed by a surface simplification to
+#'   ~ 18,000 faces.
 #'
 #' @name Dvir.surf
 #' @rdname Dvir
@@ -92,11 +95,11 @@ NULL
 NULL
 
 
-#' The surface model was constructed in Amira by G. Jefferis and R. Benton using
-#' a Z drop correction of the DsecI reference brain in Amira (e^u) followed by
-#' a simple threshold (10000), surface simplification to ~ 18,000 faces, default
-#' surface smoothing and manual editing in meshlab to remove a small unconnected
-#' island of points.
+#' @description The surface model was constructed in Amira by G. Jefferis and R.
+#'   Benton using a Z drop correction of the DsecI reference brain in Amira
+#'   (e^u) followed by a simple threshold (10000), surface simplification to ~
+#'   18,000 faces, default surface smoothing and manual editing in meshlab to
+#'   remove a small unconnected island of points.
 #'
 #' @name DsecI.surf
 #' @rdname DsecI

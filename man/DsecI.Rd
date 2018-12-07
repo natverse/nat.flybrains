@@ -10,11 +10,11 @@ The DsecI reference brain is a shape averaged template brain generated using
 the CMTK avg_adm tool. See
 \url{https://github.com/jefferislab/MakeAverageBrain} for the relevant code.
 
-The surface model was constructed in Amira by G. Jefferis and R. Benton using
-a Z drop correction of the DsecI reference brain in Amira (e^u) followed by
-a simple threshold (10000), surface simplification to ~ 18,000 faces, default
-surface smoothing and manual editing in meshlab to remove a small unconnected
-island of points.
+The surface model was constructed in Amira by G. Jefferis and R.
+  Benton using a Z drop correction of the DsecI reference brain in Amira
+  (e^u) followed by a simple threshold (10000), surface simplification to ~
+  18,000 faces, default surface smoothing and manual editing in meshlab to
+  remove a small unconnected island of points.
 }
 \examples{
 \dontrun{
@@ -27,3 +27,4 @@ plot3d(DsecI)
 Other Drosophilid-Brains: \code{\link{Dmel}},
   \code{\link{Dsim}}, \code{\link{Dvir}}
 }
+\concept{Drosophilid-Brains}

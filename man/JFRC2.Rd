@@ -16,8 +16,9 @@ turn was derived from a single female brain stained with nc82, that was
 imaged at 1 micron spacing in Z. It was then interpolated in Z to give an
 isotropic voxel size of 0.622088 microns.
 
-The \code{JFRC2.surf} surface model was constructed in Amira in the Jefferis Lab using a simple
-threshold, followed by a surface simplification.
+The \code{JFRC2.surf} surface model was constructed in Amira in
+  the Jefferis Lab using a simple threshold, followed by a surface
+  simplification.
 }
 \examples{
 JFRC2

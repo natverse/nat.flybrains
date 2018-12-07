@@ -21,8 +21,8 @@
 #' FCWB
 "FCWB"
 
-#' The \code{FCWB.surf} surface model was generated in Amira by constructing an
-#' isosurface model based on the \code{FCWB} brain.
+#' @description The \code{FCWB.surf} surface model was generated in Amira by
+#'   constructing an isosurface model based on the \code{FCWB} brain.
 #'
 #' @name FCWB.surf
 #' @rdname FCWB
@@ -132,8 +132,9 @@ NULL
 #' JFRC2
 "JFRC2"
 
-#' The \code{JFRC2.surf} surface model was constructed in Amira in the Jefferis Lab using a simple
-#' threshold, followed by a surface simplification.
+#' @description The \code{JFRC2.surf} surface model was constructed in Amira in
+#'   the Jefferis Lab using a simple threshold, followed by a surface
+#'   simplification.
 #'
 #' @name JFRC2.surf
 #' @docType data
@@ -239,9 +240,10 @@ NULL
 #' @docType data
 "JFRC2013"
 
-#' \code{JFRC2013.surf} was generated in Amira from a 2 micron downsampled and
-#' median filtered version of the JFRC2013 template brain. Further cleaning was
-#' then carried out in MeshLab to remove non-manifold edges and fill holes.
+#' @description \code{JFRC2013.surf} was generated in Amira from a 2 micron
+#'   downsampled and median filtered version of the JFRC2013 template brain.
+#'   Further cleaning was then carried out in MeshLab to remove non-manifold
+#'   edges and fill holes.
 #'
 #' @name JFRC2013.surf
 #' @rdname JFRC2013
