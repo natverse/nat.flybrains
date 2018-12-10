@@ -1,3 +1,9 @@
+# nat.flybrains 1.7.2
+
+* Add `JRC2018F` female template brain and surface, the first of the Bogovic
+  and Saalfeld average template brains. The intersex template brain from 
+  this series may become the new registration standard.
+
 # nat.flybrains 1.7.1
 
 * Rename IVLP neuropil to WED in accordance with Ito et al 2014 (#37)
