@@ -1,3 +1,7 @@
+# nat.flybrains 1.7.3
+
+* add citation
+
 # nat.flybrains 1.7.2
 
 * Add `JRC2018F` female template brain and surface, the first of the Bogovic
