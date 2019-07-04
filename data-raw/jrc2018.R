@@ -9,7 +9,9 @@ JRC2018F <-
     regName = 'JRC2018F',
     type = 'Average template brain',
     sex = 'F',
-    doi = 'https://doi.org/10.1101/376384'
+    doi = 'https://doi.org/10.1101/376384',
+    description="Average template brain constructed from brains labelled with brp-SNAP presynaptic marker,
+    dehydrated, and mounted in DPX and then imaged by confocal microscope."
   )
 
 use_data(JRC2018F, overwrite = T)
