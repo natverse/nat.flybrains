@@ -16,7 +16,8 @@ Depends:
     nat.templatebrains (>= 0.6)
 Suggests:
     testthat,
-    git2r
+    git2r,
+    spelling
 LazyData: true
 URL: https://github.com/jefferislab/nat.flybrains, http://flybrain.mrc-lmb.cam.ac.uk/si/bridging/www/
 BugReports: https://github.com/jefferislab/nat.flybrains/issues
@@ -24,3 +25,4 @@ Encoding: UTF-8
 RoxygenNote: 6.1.1
 Remotes: jefferis/nat,
     jefferislab/nat.templatebrains
+Language: en-GB
