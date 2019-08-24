@@ -17,10 +17,10 @@ Authors@R:
 Description: Includes 3D brain surfaces, bridging and mirroring
     registrations, and neuropil segmentations for various template brains.
 License: GPL-3
-URL: https://github.com/jefferislab/nat.flybrains,
+URL: https://github.com/natverse/nat.flybrains,
     http://flybrain.mrc-lmb.cam.ac.uk/si/bridging/www/,
     https://natverse.github.io
-BugReports: https://github.com/jefferislab/nat.flybrains/issues
+BugReports: https://github.com/natverse/nat.flybrains/issues
 Depends:
     nat.templatebrains (>= 0.6),
     R (>= 2.10)

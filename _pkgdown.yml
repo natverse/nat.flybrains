@@ -63,7 +63,7 @@ navbar:
       href: news/index.html
     github:
       icon: fa-github fa-lg
-      href: https://github.com/jefferislab/nat.flybrains
+      href: https://github.com/natverse/nat.flybrains
     natverse:
       text: natverse
       href: https://natverse.github.io
