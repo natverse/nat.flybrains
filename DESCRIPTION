@@ -1,28 +1,37 @@
-Package: nat.flybrains
 Type: Package
-Title: Additional data for use with the NeuroAnatomy Toolbox (nat)
+Package: nat.flybrains
+Title: Additional data for use with the NeuroAnatomy Toolbox
+    (nat)
 Version: 1.7.3
-Authors@R: c(
-    person("Gregory", "Jefferis", email = "jefferis@gmail.com", 
-    role = c("aut"), comment = c(ORCID = "0000-0002-0587-9355")),
-    person("James", "Manton", email = "ajd.manton@googlemail.com",
-    role = c("aut", "cre"), comment = c(ORCID = "0000-0001-9260-3156"))
-    )
-Description: Includes 3D brain surfaces, bridging and mirroring registrations,
-    and neuropil segmentations for various template brains.
+Authors@R: 
+    c(person(given = "Gregory",
+             family = "Jefferis",
+             role = "aut",
+             email = "jefferis@gmail.com",
+             comment = c(ORCID = "0000-0002-0587-9355")),
+      person(given = "James",
+             family = "Manton",
+             role = c("aut", "cre"),
+             email = "ajd.manton@googlemail.com",
+             comment = c(ORCID = "0000-0001-9260-3156")))
+Description: Includes 3D brain surfaces, bridging and mirroring
+    registrations, and neuropil segmentations for various template brains.
 License: GPL-3
-Depends:
-    R (>= 2.10),
-    nat.templatebrains (>= 0.6)
-Suggests:
-    testthat,
-    git2r,
-    spelling
-LazyData: true
-URL: https://github.com/jefferislab/nat.flybrains, http://flybrain.mrc-lmb.cam.ac.uk/si/bridging/www/
+URL: https://github.com/jefferislab/nat.flybrains,
+    http://flybrain.mrc-lmb.cam.ac.uk/si/bridging/www/,
+    https://natverse.github.io
 BugReports: https://github.com/jefferislab/nat.flybrains/issues
-Encoding: UTF-8
-RoxygenNote: 6.1.1
-Remotes: jefferis/nat,
+Depends:
+    nat.templatebrains (>= 0.6),
+    R (>= 2.10)
+Suggests:
+    git2r,
+    spelling,
+    testthat
+Remotes: 
+    jefferis/nat,
     jefferislab/nat.templatebrains
+Encoding: UTF-8
 Language: en-GB
+LazyData: true
+RoxygenNote: 6.1.1

@@ -1,12 +1,11 @@
 reference:
 - title: Package Overview
-  desc: Provides an overview of key features and data/functions in the package as well.
-  contents:
-  - nat.flybrains-package
+  desc: Provides an overview of key features and data/functions in the package as
+    well.
+  contents: nat.flybrains-package
 - title: Download more data
   desc: How to download additional data beyond those bundled with this package
-  contents:
-  - download_jefferislab_registrations
+  contents: download_jefferislab_registrations
 - title: Drosophila Template Brains
   desc: Template objects and surface models for a range of Drosophila template brains.
   contents:
@@ -26,9 +25,8 @@ reference:
   - JRC2018F
   - T1
 - title: Nerve Cord
-  desc: >
-    Templates and surface meshes for the ventral nerve cord (i.e.
-    Thoracico-Abdominal Ganglion).
+  desc: |
+    Templates and surface meshes for the ventral nerve cord (i.e. Thoracico-Abdominal Ganglion).
   contents:
   - VNCIS1
   - VNCIS1.surf
@@ -40,3 +38,36 @@ reference:
   - Dvir
   - Dvir.surf
   - DsecI
+navbar:
+  structure:
+    left:
+    - home
+    - intro
+    - reference
+    - articles
+    - tutorials
+    - news
+    - help
+    right:
+    - natverse
+    - github
+  components:
+    home:
+      icon: fa-home fa-lg
+      href: index.html
+    reference:
+      text: Reference
+      href: reference/index.html
+    news:
+      text: Changelog
+      href: news/index.html
+    github:
+      icon: fa-github fa-lg
+      href: https://github.com/jefferislab/nat.flybrains
+    natverse:
+      text: natverse
+      href: https://natverse.github.io
+    help:
+      text: Help
+      href: SUPPORT.html
+
