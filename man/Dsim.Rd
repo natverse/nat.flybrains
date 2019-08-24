@@ -15,7 +15,7 @@ The surface model was constructed in Amira by L. Goetz and G.
   ~ 18,000 faces.
 }
 \details{
-\href{http://dx.doi.org/10.5281/zenodo.1059}{doi:10.5281/zenodo.1059}
+\href{http://dx.doi.org/10.5281/zenodo.10594}{doi:10.5281/zenodo.10594}
 }
 \examples{
 \dontrun{

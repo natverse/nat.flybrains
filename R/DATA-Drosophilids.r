@@ -32,7 +32,7 @@ NULL
 #' the CMTK avg_adm tool. See
 #' \url{https://github.com/jefferislab/MakeAverageBrain} for the relevant code.
 #'
-#' \href{http://dx.doi.org/10.5281/zenodo.1059}{doi:10.5281/zenodo.1059}
+#' \href{http://dx.doi.org/10.5281/zenodo.10594}{doi:10.5281/zenodo.10594}
 #'
 #' @name Dsim
 #' @family Drosophilid-Brains
