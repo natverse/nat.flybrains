@@ -84,11 +84,17 @@ JFRC2 coordinate space" />
 <li>
   <a href="../news/index.html">Changelog</a>
 </li>
+<li>
+  <a href="../SUPPORT.html">Help</a>
+</li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/jefferislab/nat.flybrains">
+  <a href="https://natverse.github.io">natverse</a>
+</li>
+<li>
+  <a href="https://github.com/natverse/nat.flybrains">
     <span class="fa fa-github fa-lg"></span>
      
   </a>
@@ -107,7 +113,7 @@ JFRC2 coordinate space" />
     <div class="page-header">
     <h1>Surface model of the Insect Brain Name Working Group neuropil segmentation in
 JFRC2 coordinate space</h1>
-    <small class="dont-index">Source: <a href='https://github.com/jefferislab/nat.flybrains/blob/master/R/DATA.r'><code>R/DATA.r</code></a></small>
+    <small class="dont-index">Source: <a href='https://github.com/natverse/nat.flybrains/blob/master/R/DATA.r'><code>R/DATA.r</code></a></small>
     <div class="hidden name"><code>JFRC2NP.surf.Rd</code></div>
     </div>
 
@@ -251,7 +257,7 @@ JFRC2 coordinate space</p>
 
   <span class='no'>df2</span><span class='kw'>=</span><span class='fu'><a href='https://tidyr.tidyverse.org/reference/gather.html'>gather</a></span>(<span class='no'>df</span>, <span class='no'>measure</span>, <span class='no'>value</span>, <span class='no'>volume</span>:<span class='no'>surfaceArea</span>)
   <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/library'>library</a></span>(<span class='no'>ggplot2</span>)
-  <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/qplot'>qplot</a></span>( <span class='no'>value</span>, <span class='no'>region</span>, <span class='kw'>data</span><span class='kw'>=</span><span class='no'>df2</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='no'>side</span>, <span class='kw'>facets</span> <span class='kw'>=</span> <span class='no'>.</span> ~ <span class='no'>measure</span>) + <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/scale_continuous'>scale_x_log10</a></span>()
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/qplot.html'>qplot</a></span>( <span class='no'>value</span>, <span class='no'>region</span>, <span class='kw'>data</span><span class='kw'>=</span><span class='no'>df2</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='no'>side</span>, <span class='kw'>facets</span> <span class='kw'>=</span> <span class='no'>.</span> ~ <span class='no'>measure</span>) + <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_x_log10</a></span>()
 
 }
 
