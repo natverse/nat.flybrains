@@ -2,7 +2,7 @@ Type: Package
 Package: nat.flybrains
 Title: Additional data for use with the NeuroAnatomy Toolbox
     (nat)
-Version: 1.7.3
+Version: 1.7.4
 Authors@R: 
     c(person(given = "Gregory",
              family = "Jefferis",
@@ -19,7 +19,7 @@ Description: Includes 3D brain surfaces, bridging and mirroring
 License: GPL-3
 URL: https://github.com/natverse/nat.flybrains,
     http://flybrain.mrc-lmb.cam.ac.uk/si/bridging/www/,
-    https://natverse.github.io
+    https://natverse.github.io/nat.flybrains
 BugReports: https://github.com/natverse/nat.flybrains/issues
 Depends:
     nat.templatebrains (>= 0.6),
