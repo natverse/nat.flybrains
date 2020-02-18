@@ -24,7 +24,9 @@ plot3d(Dsim.surf)
 }
 }
 \seealso{
-Other Drosophilid-Brains: \code{\link{Dmel}},
-  \code{\link{DsecI}}, \code{\link{Dvir}}
+Other Drosophilid-Brains: 
+\code{\link{Dmel}},
+\code{\link{DsecI}},
+\code{\link{Dvir}}
 }
 \concept{Drosophilid-Brains}

@@ -78,11 +78,11 @@ researchers working with fly data.
 \code{\link[nat]{nat}, \link{nat.templatebrains}}
 }
 \author{
-\strong{Maintainer}: James Manton \email{ajd.manton@googlemail.com} (0000-0001-9260-3156)
+\strong{Maintainer}: James Manton \email{ajd.manton@googlemail.com} (\href{https://orcid.org/0000-0001-9260-3156}{ORCID})
 
 Authors:
 \itemize{
-  \item Gregory Jefferis \email{jefferis@gmail.com} (0000-0002-0587-9355)
+  \item Gregory Jefferis \email{jefferis@gmail.com} (\href{https://orcid.org/0000-0002-0587-9355}{ORCID})
 }
 
 }

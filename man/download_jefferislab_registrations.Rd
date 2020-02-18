@@ -4,8 +4,10 @@
 \alias{download_jefferislab_registrations}
 \title{Download (or update) and install Jefferis lab registrations}
 \usage{
-download_jefferislab_registrations(repos = c("BridgingRegistrations",
-  "MirrorRegistrations", "DrosophilidBridgingRegistrations"))
+download_jefferislab_registrations(
+  repos = c("BridgingRegistrations", "MirrorRegistrations",
+    "DrosophilidBridgingRegistrations")
+)
 }
 \arguments{
 \item{repos}{character vector of Jefferis Lab GitHub repositories to download
