@@ -1,3 +1,9 @@
+# nat.flybrains 1.7.5
+
+* Add `JRC2018U` intersex template brain and surface, from the Bogovic
+  and Saalfeld average template brains. This intersex template brain from 
+  may become the new registration standard.
+
 # nat.flybrains 1.7.4
 
 * new github organisation: natverse/nat.flybrains
