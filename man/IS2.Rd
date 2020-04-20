@@ -4,7 +4,9 @@
 \name{IS2}
 \alias{IS2}
 \title{Template information for the IS2 reference brain}
-\format{An object of class \code{templatebrain} of dimension 768 x 768 x 173.}
+\format{
+An object of class \code{templatebrain} of dimension 768 x 768 x 173.
+}
 \usage{
 IS2
 }

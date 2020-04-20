@@ -5,7 +5,9 @@
 \alias{JRC2018F}
 \alias{JRC2018F.surf}
 \title{Template information and surface model for the JRC2018F reference brain}
-\format{An object of class \code{templatebrain} of dimension 1652 x 768 x 479.}
+\format{
+An object of class \code{templatebrain} of dimension 1652 x 768 x 479.
+}
 \usage{
 JRC2018F
 }
