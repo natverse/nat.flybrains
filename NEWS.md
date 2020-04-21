@@ -9,7 +9,7 @@
 * new github organisation: natverse/nat.flybrains
 * other standard doc features for https://natverse.github.io packages
 * fix DOI link for Dsim brain
-* decription for JRC2018F brain
+* description for JRC2018F brain
 
 # nat.flybrains 1.7.3
 
