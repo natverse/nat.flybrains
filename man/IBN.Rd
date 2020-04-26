@@ -5,7 +5,9 @@
 \name{IBN}
 \alias{IBN}
 \title{Template information for the Insect Brain Nomenclature reference brain}
-\format{An object of class \code{templatebrain} of dimension 512 x 512 x 135.}
+\format{
+An object of class \code{templatebrain} of dimension 512 x 512 x 135.
+}
 \usage{
 IBN
 }

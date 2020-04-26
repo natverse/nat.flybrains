@@ -5,7 +5,9 @@
 \alias{T1}
 \alias{T1.surf}
 \title{Template information and surface model for the T1 reference brain}
-\format{An object of class \code{templatebrain} of dimension 768 x 768 x 165.}
+\format{
+An object of class \code{templatebrain} of dimension 768 x 768 x 165.
+}
 \usage{
 T1
 }

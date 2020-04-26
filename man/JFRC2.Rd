@@ -5,7 +5,9 @@
 \alias{JFRC2}
 \alias{JFRC2.surf}
 \title{Template information and surface model for the JFRC2 reference brain}
-\format{An object of class \code{templatebrain} of dimension 1024 x 512 x 218.}
+\format{
+An object of class \code{templatebrain} of dimension 1024 x 512 x 218.
+}
 \usage{
 JFRC2
 }

@@ -5,7 +5,9 @@
 \alias{VNCIS1}
 \alias{VNCIS1.surf}
 \title{Template information and surface model for the VNCIS1 reference neuropil}
-\format{An object of class \code{templatebrain} of dimension 1024 x 768 x 163.}
+\format{
+An object of class \code{templatebrain} of dimension 1024 x 768 x 163.
+}
 \usage{
 VNCIS1
 }

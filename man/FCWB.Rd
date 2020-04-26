@@ -5,7 +5,9 @@
 \alias{FCWB}
 \alias{FCWB.surf}
 \title{Template information and Surface model of the FCWB FlyCircuit reference brain}
-\format{An object of class \code{templatebrain} of dimension 1769 x 1026 x 108.}
+\format{
+An object of class \code{templatebrain} of dimension 1769 x 1026 x 108.
+}
 \usage{
 FCWB
 }

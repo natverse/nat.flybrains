@@ -7,7 +7,9 @@
 \alias{IBNWB.surf}
 \title{Template information for the Insect Brain Nomenclature Whole Brain reference
 brain}
-\format{An object of class \code{templatebrain} of dimension 905 x 513 x 136.}
+\format{
+An object of class \code{templatebrain} of dimension 905 x 513 x 136.
+}
 \usage{
 IBNWB
 }

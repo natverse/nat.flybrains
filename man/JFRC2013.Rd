@@ -8,7 +8,11 @@
 \alias{JFRC2013DS}
 \alias{JFRC2013DS.surf}
 \title{Template information and surface model for the JFRC2013 reference brain}
-\format{An object of class \code{templatebrain} of dimension 1450 x 725 x 436.}
+\format{
+An object of class \code{templatebrain} of dimension 1450 x 725 x 436.
+
+An object of class \code{templatebrain} of dimension 1184 x 592 x 218.
+}
 \usage{
 JFRC2013
 
