@@ -32,6 +32,14 @@
 #' @docType data
 "JRC2018U"
 
+#' @description The \code{JRCVNC2018F} reference VNC was constructed as for
+#'   \code{JRC2018F} brain based on 36 individuals, with a resolution of
+#'  0.4 x 0.4 x 0.4 microns.
+#' @rdname JRCVNC2018F
+#' @name JRCVNC2018F
+#' @docType data
+"JRCVNC2018F"
+
 
 #' @description \code{JRC2018F.surf} and \code{JRC2018U.surf} were generated in
 #'   Amira from a 2 micron downsampled and Lanczos filtered version of the
@@ -73,3 +81,20 @@
 #' plot3d(JRC2018U.surf, col='red', alpha=0.3)
 #' }
 "JRC2018U.surf"
+
+#' @name JRCVNC2018F.surf
+#' @rdname JRCVNC2018F
+#' @docType data
+#' @examples
+#' dim(JRCVNC2018F)
+#' voxdims(JRCVNC2018F)
+#' boundingbox(JRCVNC2018F)
+#' JRCVNC2018F
+#'
+#' \dontrun{
+#' library(nat)
+#' plot3d(JRCVNC2018F)
+#' plot3d(JRCVNC2018F.surf)
+#' plot3d(JRCVNC2018F.surf, col='red', alpha=0.3)
+#' }
+"JRCVNC2018F.surf"

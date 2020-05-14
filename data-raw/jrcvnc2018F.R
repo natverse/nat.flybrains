@@ -1,14 +1,14 @@
-# create JRC2018F_VNC template
+# create JRCVNC2018F template
 
 library(nat)
 JRC2018F_VNC.surf=read.hxsurf('data-raw/JRC2018_VNC_FEMALE_4iso_binary_smooth.surf.10k.surf')
 library(devtools)
-use_data(JRC2018F_VNC.surf, overwrite = T)
+use_data(JRCVNC2018F.surf, overwrite = T)
 
 library(nat.templatebrains)
-JRC2018F_VNC <-
+JRCVNC2018F <-
   as.templatebrain('data-raw/JRC2018_VNC_FEMALE_4iso.nrrd',
-                   regName = 'JRC2018F_VNC',
+                   regName = 'JRCVNC2018F',
                    type = 'Average template VNC',
                    sex = 'F',
                    doi = 'https://doi.org/10.1101/376384',
@@ -16,5 +16,5 @@ JRC2018F_VNC <-
     dehydrated, and mounted in DPX and then imaged by confocal microscope."
   )
 
-use_data(JRC2018F_VNC, overwrite = T)
+use_data(JRCVNC2018F, overwrite = T)
 
