@@ -1,13 +1,13 @@
 # create JRCVNC2018F template
 
 library(nat)
-JRC2018F_VNC.surf=read.hxsurf('data-raw/JRC2018_VNC_FEMALE_4iso_binary_smooth.surf.10k.surf')
+JRCVNC2018F.surf=read.hxsurf('data-raw/JRC2018_VNC_FEMALE_4iso_binary_smooth.surf.10k.surf')
 library(devtools)
 use_data(JRCVNC2018F.surf, overwrite = T)
 
 library(nat.templatebrains)
 JRCVNC2018F <-
-  as.templatebrain('data-raw/JRC2018_VNC_FEMALE_4iso.nrrd',
+  as.templatebrain('data-raw/JRC2018_VNC_FEMALE_4iso.nhdr',
                    regName = 'JRCVNC2018F',
                    type = 'Average template VNC',
                    sex = 'F',
