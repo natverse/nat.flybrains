@@ -30,6 +30,11 @@ reference:
   contents:
   - VNCIS1
   - VNCIS1.surf
+  - JRCVNC2018
+- title: Drosophila EM Template Brains
+  desc: Template objects and surface models for Drosophila electron microscopy volumes
+  contents:
+  - JRCFIB2018F
 - title: Other Drosophilids
   desc: Template and brain surface models for Drosophilids other than D. melanogaster.
   contents:
