@@ -8,21 +8,29 @@
 
 <title>Template information and surface model for the JFRC2013 reference brain — JFRC2013 • nat.flybrains</title>
 
+
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
-<!-- sticky kit -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
+<!-- headroom.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -30,8 +38,8 @@
 
 
 
-<meta property="og:title" content="Template information and surface model for the JFRC2013 reference brain — JFRC2013" />
 
+<meta property="og:title" content="Template information and surface model for the JFRC2013 reference brain — JFRC2013" />
 <meta property="og:description" content="The JFRC2013 reference brain is a single female brain. It
   is a spatially calibrated version of the brain used in Aso et al. 2014,
   &quot;The neuronal architecture of the mushroom body provides a logic for
@@ -45,7 +53,7 @@ JFRC2013DS is a downsampled version of the
   microscope with 20 x magnification. The downsampling has shrunk the z
   direction, such that the brain appears flattened when compared with the
   original." />
-<meta name="twitter:card" content="summary" />
+
 
 
 
@@ -59,9 +67,10 @@ JFRC2013DS is a downsampled version of the
 <![endif]-->
 
 
+
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -75,7 +84,7 @@ JFRC2013DS is a downsampled version of the
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">nat.flybrains</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.7.4</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.8.0</span>
       </span>
     </div>
 
@@ -97,7 +106,6 @@ JFRC2013DS is a downsampled version of the
   <a href="../SUPPORT.html">Help</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://natverse.github.io">natverse</a>
@@ -115,6 +123,7 @@ JFRC2013DS is a downsampled version of the
 </div><!--/.navbar -->
 
       
+
       </header>
 
 <div class="row">
@@ -126,7 +135,6 @@ JFRC2013DS is a downsampled version of the
     </div>
 
     <div class="ref-description">
-    
     <p>The <code>JFRC2013</code> reference brain is a single female brain. It
   is a spatially calibrated version of the brain used in Aso et al. 2014,
   "The neuronal architecture of the mushroom body provides a logic for
@@ -140,17 +148,17 @@ JFRC2013DS is a downsampled version of the
   microscope with 20 x magnification. The downsampling has shrunk the z
   direction, such that the brain appears flattened when compared with the
   original.</p>
-    
     </div>
 
     <pre class="usage"><span class='no'>JFRC2013</span>
 
 <span class='no'>JFRC2013DS</span></pre>
-        
+
+
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>An object of class <code>templatebrain</code> of dimension 1450 x 725 x 436.</p>
-    
+<p>An object of class <code>templatebrain</code> of dimension 1184 x 592 x 218.</p>
     <h2 class="hasAnchor" id="calibration"><a class="anchor" href="#calibration"></a>Calibration</h2>
 
     <p>The isotropic calibration of 0.38 microns is based on a
@@ -159,7 +167,6 @@ JFRC2013DS is a downsampled version of the
   about 20% smaller than when mounted in Vectashield or other glycerol based
   mounting medium.</p>
 <p>No attempt was made to correct for this shrinkage artefact.</p>
-    
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
     <p>Aso, Y., Sitaraman, D., Ichinose, T., Kaun, K. R., Vogt, K.,
@@ -169,10 +176,9 @@ Nitabach, M. N., Heberlein, U., Preat, T., Branson, K. M., Tanimoto, H. and
 Rubin, G. M. (2014b). Mushroom body output neurons encode valence and guide
 memory-based action selection in Drosophila. Elife 3, e04580.
 <a href='http://dx.doi.org/10.7554/eLife.04577'>doi:10.7554/eLife.04577</a></p>
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/dim'>dim</a></span>(<span class='no'>JFRC2013</span>)</div><div class='output co'>#&gt; [1] 1450  725  436</div><div class='input'><span class='fu'>voxdims</span>(<span class='no'>JFRC2013</span>)</div><div class='output co'>#&gt; [1] 0.38 0.38 0.38</div><div class='input'><span class='fu'>boundingbox</span>(<span class='no'>JFRC2013</span>)</div><div class='output co'>#&gt;        [,1]   [,2]  [,3]
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/dim.html'>dim</a></span>(<span class='no'>JFRC2013</span>)</div><div class='output co'>#&gt; [1] 1450  725  436</div><div class='input'><span class='fu'>voxdims</span>(<span class='no'>JFRC2013</span>)</div><div class='output co'>#&gt; [1] 0.38 0.38 0.38</div><div class='input'><span class='fu'>boundingbox</span>(<span class='no'>JFRC2013</span>)</div><div class='output co'>#&gt;        [,1]   [,2]  [,3]
 #&gt; [1,]   0.00   0.00   0.0
 #&gt; [2,] 550.62 275.12 165.3
 #&gt; attr(,"class")
@@ -191,12 +197,13 @@ memory-based action selection in Drosophila. Elife 3, e04580.
 #&gt;   x = 550.62, y = 275.12, z = 165.3.
 #&gt; Description: The JFRC2013 reference brain is a spatially calibrated version of the brain used in Aso et al. 2014, "The neuronal architecture of the mushroom body provides a logic for associative learning". 
 #&gt; DOI: 10.7554/eLife.04577</div><div class='input'>
-</div><span class='co'># NOT RUN {</span>
-<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/library'>library</a></span>(<span class='no'>nat</span>)
-<span class='fu'><a href='https://www.rdocumentation.org/packages/nat/topics/plot3d'>plot3d</a></span>(<span class='no'>JFRC2013</span>)
-<span class='fu'><a href='https://www.rdocumentation.org/packages/nat/topics/plot3d'>plot3d</a></span>(<span class='no'>JFRC2013.surf</span>)
-<span class='fu'><a href='https://www.rdocumentation.org/packages/nat/topics/plot3d'>plot3d</a></span>(<span class='no'>JFRC2013.surf</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='st'>'red'</span>, <span class='kw'>alpha</span><span class='kw'>=</span><span class='fl'>0.3</span>)
-<span class='co'># }</span><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/dim'>dim</a></span>(<span class='no'>JFRC2013DS</span>)</div><div class='output co'>#&gt; [1] 1184  592  218</div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/nat/topics/voxdims'>voxdims</a></span>(<span class='no'>JFRC2013DS</span>)</div><div class='output co'>#&gt; [1] 0.46 0.46 0.46</div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/nat/topics/boundingbox'>boundingbox</a></span>(<span class='no'>JFRC2013DS</span>)</div><div class='output co'>#&gt;        [,1]   [,2]  [,3]
+<span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>nat</span>)
+<span class='fu'><a href='https://rdrr.io/pkg/nat/man/plot3d.html'>plot3d</a></span>(<span class='no'>JFRC2013</span>)
+<span class='fu'><a href='https://rdrr.io/pkg/nat/man/plot3d.html'>plot3d</a></span>(<span class='no'>JFRC2013.surf</span>)
+<span class='fu'><a href='https://rdrr.io/pkg/nat/man/plot3d.html'>plot3d</a></span>(<span class='no'>JFRC2013.surf</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='st'>'red'</span>, <span class='kw'>alpha</span><span class='kw'>=</span><span class='fl'>0.3</span>)
+}
+<span class='fu'><a href='https://rdrr.io/r/base/dim.html'>dim</a></span>(<span class='no'>JFRC2013DS</span>)</div><div class='output co'>#&gt; [1] 1184  592  218</div><div class='input'><span class='fu'><a href='https://rdrr.io/pkg/nat/man/voxdims.html'>voxdims</a></span>(<span class='no'>JFRC2013DS</span>)</div><div class='output co'>#&gt; [1] 0.46 0.46 0.46</div><div class='input'><span class='fu'><a href='https://rdrr.io/pkg/nat/man/boundingbox.html'>boundingbox</a></span>(<span class='no'>JFRC2013DS</span>)</div><div class='output co'>#&gt;        [,1]   [,2]  [,3]
 #&gt; [1,]   0.00   0.00  0.00
 #&gt; [2,] 544.18 271.86 99.82
 #&gt; attr(,"class")
@@ -216,21 +223,13 @@ memory-based action selection in Drosophila. Elife 3, e04580.
 #&gt; Description: This is a downsampled version of the JFRC2013 reference brain, designed for use with images taken on a microscope with 20 x magnification. The downsampling has shrunk the z direction, such that the brain appears flattened when compared with the original. 
 #&gt; DOI: 10.7554/eLife.04577</div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      
-      <li><a href="#format">Format</a></li>
-
-      <li><a href="#calibration">Calibration</a></li>
-
-      <li><a href="#references">References</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
+
 
       <footer>
       <div class="copyright">
@@ -238,13 +237,16 @@ memory-based action selection in Drosophila. Elife 3, e04580.
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
+
       </footer>
    </div>
 
   
 
+
   </body>
 </html>
+
 

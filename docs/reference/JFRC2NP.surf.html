@@ -9,21 +9,29 @@
 <title>Surface model of the Insect Brain Name Working Group neuropil segmentation in
 JFRC2 coordinate space — JFRC2NP.surf • nat.flybrains</title>
 
+
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
-<!-- sticky kit -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
+<!-- headroom.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -31,12 +39,12 @@ JFRC2 coordinate space — JFRC2NP.surf • nat.flybrains</title>
 
 
 
+
 <meta property="og:title" content="Surface model of the Insect Brain Name Working Group neuropil segmentation in
 JFRC2 coordinate space — JFRC2NP.surf" />
-
 <meta property="og:description" content="Surface model of the Insect Brain Name Working Group neuropil segmentation in
 JFRC2 coordinate space" />
-<meta name="twitter:card" content="summary" />
+
 
 
 
@@ -50,9 +58,10 @@ JFRC2 coordinate space" />
 <![endif]-->
 
 
+
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -66,7 +75,7 @@ JFRC2 coordinate space" />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">nat.flybrains</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.7.4</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.8.0</span>
       </span>
     </div>
 
@@ -88,7 +97,6 @@ JFRC2 coordinate space" />
   <a href="../SUPPORT.html">Help</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://natverse.github.io">natverse</a>
@@ -106,6 +114,7 @@ JFRC2 coordinate space" />
 </div><!--/.navbar -->
 
       
+
       </header>
 
 <div class="row">
@@ -118,20 +127,20 @@ JFRC2 coordinate space</h1>
     </div>
 
     <div class="ref-description">
-    
     <p>Surface model of the Insect Brain Name Working Group neuropil segmentation in
 JFRC2 coordinate space</p>
-    
     </div>
 
-        
+
+
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>Note that the supplementary information for the Insect Brain Name
   working group only includes neuropil information in the <code><a href='IBN.html'>IBN</a></code>
   space, which can be downloaded from
   <a href='ftp://flybase.org/flybase/associated_files/InsectBrainNomenclature_RawData.zip'>ftp://flybase.org/flybase/associated_files/InsectBrainNomenclature_RawData.zip</a>.</p>
-    <p>However Arnim Jenett, Kazunori Shinomiya and Kei Ito generated a full brain
+
+<p>However Arnim Jenett, Kazunori Shinomiya and Kei Ito generated a full brain
   segmentation based on the <code><a href='JFRC2.html'>JFRC2</a></code> template (used by the Virtual
   Fly Brain project and internally at Janelia Farm for several years.)</p>
 <p>This surface model was generated in Amira from the segmentation in the file
@@ -140,7 +149,6 @@ JFRC2 coordinate space</p>
   repository <a href='https://github.com/VirtualFlyBrain/DrosAdultBRAINdomains'>https://github.com/VirtualFlyBrain/DrosAdultBRAINdomains</a>.
   The original full size model was then simplified to reduce the number of
   vertices resulting</p>
-    
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
     <p>Kei Ito, Kazunori Shinomiya, Masayoshi Ito, J. Douglas Armstrong,
@@ -150,11 +158,9 @@ JFRC2 coordinate space</p>
   Strauss, Leslie B. Vosshall, Insect Brain Name Working Group (2013). A
   systematic nomenclature for the insect brain. Neuron 81 (4), 755-765.
   <a href='http://dx.doi.org/10.1016/j.neuron.2013.12.017'>doi:10.1016/j.neuron.2013.12.017</a></p>
-    
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
     <div class='dont-index'><p><code><a href='JFRC2.html'>JFRC2</a></code></p></div>
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># list the materials for the different surface regions</span>
@@ -234,50 +240,42 @@ JFRC2 coordinate space</p>
 #&gt; SCL_L       SCL_L 73 #C926CC
 #&gt; EPA_L       EPA_L 74 #28CC3E
 #&gt; GA_L         GA_L 75 #141666</div><div class='input'>
-</div><span class='co'># NOT RUN {</span>
+<span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
 <span class='co'># plot the surface</span>
 <span class='fu'>plot3d</span>(<span class='no'>JFRC2NP.surf</span>)
 
 <span class='co'># calculate volumes ond surface areas for all regions</span>
-<span class='kw'>if</span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/library'>require</a></span>(<span class='st'>"RvtkStatismo"</span>) <span class='kw'>&amp;&amp;</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/library'>require</a></span>(<span class='st'>"tidyr"</span>) <span class='kw'>&amp;&amp;</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/library'>require</a></span>(<span class='st'>"ggplot2"</span>) <span class='kw'>&amp;&amp;</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/library'>require</a></span>(<span class='st'>"stringr"</span>)){
+<span class='kw'>if</span>(<span class='fu'><a href='https://rdrr.io/r/base/library.html'>require</a></span>(<span class='st'>"RvtkStatismo"</span>) <span class='kw'>&amp;&amp;</span> <span class='fu'><a href='https://rdrr.io/r/base/library.html'>require</a></span>(<span class='st'>"tidyr"</span>) <span class='kw'>&amp;&amp;</span> <span class='fu'><a href='https://rdrr.io/r/base/library.html'>require</a></span>(<span class='st'>"ggplot2"</span>) <span class='kw'>&amp;&amp;</span> <span class='fu'><a href='https://rdrr.io/r/base/library.html'>require</a></span>(<span class='st'>"stringr"</span>)){
   <span class='co'># convert each region to a mesh3d object, note that we use simplify=FALSE</span>
   <span class='co'># to stop sapply mangling the result</span>
-  <span class='no'>meshes</span><span class='kw'>=</span><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/lapply'>sapply</a></span>(<span class='no'>JFRC2NP.surf</span>$<span class='no'>RegionList</span>,
-    <span class='kw'>function</span>(<span class='no'>r</span>) <span class='fu'>as.mesh3d</span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/subset'>subset</a></span>(<span class='no'>JFRC2NP.surf</span>, <span class='no'>r</span>)), <span class='kw'>simplify</span><span class='kw'>=</span><span class='fl'>FALSE</span>)
+  <span class='no'>meshes</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/lapply.html'>sapply</a></span>(<span class='no'>JFRC2NP.surf</span>$<span class='no'>RegionList</span>,
+    <span class='kw'>function</span>(<span class='no'>r</span>) <span class='fu'>as.mesh3d</span>(<span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='no'>JFRC2NP.surf</span>, <span class='no'>r</span>)), <span class='kw'>simplify</span><span class='kw'>=</span><span class='fl'>FALSE</span>)
 
   <span class='co'># now calculate information for each mesh</span>
   <span class='co'># NB vtkMeshInfo returns a list so we need to convert to a vector</span>
   <span class='co'># to end up with a nice matrix output</span>
-  <span class='no'>vs</span><span class='kw'>=</span><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/lapply'>sapply</a></span>(<span class='no'>meshes</span>, <span class='kw'>function</span>(<span class='no'>x</span>) <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/unlist'>unlist</a></span>(<span class='fu'>vtkMeshInfo</span>(<span class='no'>x</span>)))
+  <span class='no'>vs</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/lapply.html'>sapply</a></span>(<span class='no'>meshes</span>, <span class='kw'>function</span>(<span class='no'>x</span>) <span class='fu'><a href='https://rdrr.io/r/base/unlist.html'>unlist</a></span>(<span class='fu'>vtkMeshInfo</span>(<span class='no'>x</span>)))
 
   <span class='co'># now make that into a tidy data.frame and plot</span>
-  <span class='no'>df</span><span class='kw'>=</span><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/data.frame'>data.frame</a></span>(<span class='kw'>key</span><span class='kw'>=</span><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/colnames'>colnames</a></span>(<span class='no'>vs</span>), <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/t'>t</a></span>(<span class='no'>vs</span>),
-                <span class='kw'>region</span><span class='kw'>=</span><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/grep'>sub</a></span>(<span class='st'>"_[LR]"</span>, <span class='st'>""</span>, <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/colnames'>colnames</a></span>(<span class='no'>vs</span>)),
-                <span class='kw'>side</span><span class='kw'>=</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_match.html'>str_match</a></span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/colnames'>colnames</a></span>(<span class='no'>vs</span>), <span class='st'>"_([LR])"</span>)[,<span class='fl'>2</span>])
+  <span class='no'>df</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span>(<span class='kw'>key</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>colnames</a></span>(<span class='no'>vs</span>), <span class='fu'><a href='https://rdrr.io/r/base/t.html'>t</a></span>(<span class='no'>vs</span>),
+                <span class='kw'>region</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/grep.html'>sub</a></span>(<span class='st'>"_[LR]"</span>, <span class='st'>""</span>, <span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>colnames</a></span>(<span class='no'>vs</span>)),
+                <span class='kw'>side</span><span class='kw'>=</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_match.html'>str_match</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>colnames</a></span>(<span class='no'>vs</span>), <span class='st'>"_([LR])"</span>)[,<span class='fl'>2</span>])
 
   <span class='no'>df2</span><span class='kw'>=</span><span class='fu'><a href='https://tidyr.tidyverse.org/reference/gather.html'>gather</a></span>(<span class='no'>df</span>, <span class='no'>measure</span>, <span class='no'>value</span>, <span class='no'>volume</span>:<span class='no'>surfaceArea</span>)
-  <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/library'>library</a></span>(<span class='no'>ggplot2</span>)
+  <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/qplot.html'>qplot</a></span>( <span class='no'>value</span>, <span class='no'>region</span>, <span class='kw'>data</span><span class='kw'>=</span><span class='no'>df2</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='no'>side</span>, <span class='kw'>facets</span> <span class='kw'>=</span> <span class='no'>.</span> ~ <span class='no'>measure</span>) + <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_x_log10</a></span>()
 
 }
 
-<span class='co'># }</span></pre>
+}</div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      
-      <li><a href="#details">Details</a></li>
-
-      <li><a href="#references">References</a></li>
-
-      <li><a href="#see-also">See also</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
+
 
       <footer>
       <div class="copyright">
@@ -285,13 +283,16 @@ JFRC2 coordinate space</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
+
       </footer>
    </div>
 
   
 
+
   </body>
 </html>
+
 

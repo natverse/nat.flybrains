@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Template information and surface model for D. melanogaster reference brain — Dmel • nat.flybrains</title>
+<title>Template information and surface models for JRC2018 VNC templates — JRCVNC2018 • nat.flybrains</title>
 
 
 <!-- jquery -->
@@ -39,13 +39,14 @@
 
 
 
-<meta property="og:title" content="Template information and surface model for D. melanogaster reference brain — Dmel" />
-<meta property="og:description" content="The Dmel reference brain is a shape averaged template brain generated using
-the CMTK avg_adm tool. See
-https://github.com/jefferislab/MakeAverageBrain for the relevant code.
-The surface model was constructed in Amira by L. Goetz and G.
-  Jefferis using a simple threshold, followed by a surface simplification to
-  ~ 18,000 faces." />
+<meta property="og:title" content="Template information and surface models for JRC2018 VNC templates — JRCVNC2018" />
+<meta property="og:description" content="The JRCVNC2018F reference VNC was constructed as for
+  JRC2018F brain based on 36 individuals, with a resolution of
+ 0.4 x 0.4 x 0.4 microns.
+JRCVNC2018F.surf, was generated in
+  Amira from a 2 micron downsampled, Lanczos filtered version of the
+  respective template brain. A surface was then generated with a threshold
+  level of 2800 and then smoothed and downsampled." />
 
 
 
@@ -122,36 +123,67 @@ The surface model was constructed in Amira by L. Goetz and G.
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Template information and surface model for D. melanogaster reference brain</h1>
-    <small class="dont-index">Source: <a href='https://github.com/natverse/nat.flybrains/blob/master/R/DATA-Drosophilids.r'><code>R/DATA-Drosophilids.r</code></a></small>
-    <div class="hidden name"><code>Dmel.Rd</code></div>
+    <h1>Template information and surface models for JRC2018 VNC templates</h1>
+    <small class="dont-index">Source: <a href='https://github.com/natverse/nat.flybrains/blob/master/R/JRC2018.R'><code>R/JRC2018.R</code></a></small>
+    <div class="hidden name"><code>JRCVNC2018.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>The Dmel reference brain is a shape averaged template brain generated using
-the CMTK avg_adm tool. See
-<a href='https://github.com/jefferislab/MakeAverageBrain'>https://github.com/jefferislab/MakeAverageBrain</a> for the relevant code.</p>
-<p>The surface model was constructed in Amira by L. Goetz and G.
-  Jefferis using a simple threshold, followed by a surface simplification to
-  ~ 18,000 faces.</p>
+    <p>The <code>JRCVNC2018F</code> reference VNC was constructed as for
+  <code><a href='JRC2018.html'>JRC2018F</a></code> brain based on 36 individuals, with a resolution of
+ 0.4 x 0.4 x 0.4 microns.</p>
+<p><code>JRCVNC2018F.surf</code>, was generated in
+  Amira from a 2 micron downsampled, Lanczos filtered version of the
+  respective template brain. A surface was then generated with a threshold
+  level of 2800 and then smoothed and downsampled.</p>
     </div>
 
+    <pre class="usage"><span class='no'>JRCVNC2018F</span>
+
+<span class='no'>JRCVNC2018F.surf</span></pre>
 
 
-    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p><a href='http://dx.doi.org/10.5281/zenodo.10591'>doi:10.5281/zenodo.10591</a></p>
+    <p>An object of class <code>templatebrain</code> of dimension 660 x 1342 x 358.</p>
+<p>An object of class <code>hxsurf</code> (inherits from <code>list</code>) of length 4.</p>
+    <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
+
+    <p>An unbiased template of the Drosophila brain and ventral nerve
+  cord John A Bogovic, Hideo Otsuna, Larissa Heinrich, Masayoshi Ito,
+  Jennifer Jeter, Geoffrey W Meissner, Aljoscha Nern, Jennifer Colonell, Oz
+  Malkesman, Kei Ito, Stephan Saalfeld bioRxiv 376384; doi:
+  <a href='https://doi.org/10.1101/376384'>doi:10.1101/376384</a></p>
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <div class='dont-index'><p>Other Drosophilid-Brains: 
-<code><a href='DsecI.html'>DsecI</a></code>,
-<code><a href='Dsim.html'>Dsim</a></code>,
-<code><a href='Dvir.html'>Dvir</a></code></p></div>
+    <div class='dont-index'><p><code>JRCVNC2018F</code></p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
-<span class='co'># Depends on nat</span>
-<span class='fu'>plot3d</span>(<span class='no'>Dmel.surf</span>)
+    <pre class="examples"><div class='input'><span class='no'>JRCVNC2018F</span></div><div class='output co'>#&gt; === Template Brain === 
+#&gt; Name: JRCVNC2018F 
+#&gt; Short Name: JRCVNC2018F 
+#&gt; Type: Average template VNC 
+#&gt; Sex:  F 
+#&gt; Dimensions:660 x 1342 x 358 voxels
+#&gt; Voxel size:
+#&gt;   x = 0.4 microns
+#&gt;   y = 0.4 microns
+#&gt;   z = 0.4 microns
+#&gt; Bounding box (microns):
+#&gt;   x = 0, y = 0, z = 0,
+#&gt;   x = 263.6, y = 536.4, z = 142.8.
+#&gt; Description: Average template VNC constructed from VNC labelled with brp-SNAP presynaptic marker,
+#&gt;     dehydrated, and mounted in DPX and then imaged by confocal microscope. 
+#&gt; DOI: https://doi.org/10.1101/376384</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/dim.html'>dim</a></span>(<span class='no'>JRCVNC2018F</span>)</div><div class='output co'>#&gt; [1]  660 1342  358</div><div class='input'><span class='fu'>voxdims</span>(<span class='no'>JRCVNC2018F</span>)</div><div class='output co'>#&gt; [1] 0.4 0.4 0.4</div><div class='input'><span class='fu'>boundingbox</span>(<span class='no'>JRCVNC2018F</span>)</div><div class='output co'>#&gt;       [,1]  [,2]  [,3]
+#&gt; [1,]   0.0   0.0   0.0
+#&gt; [2,] 263.6 536.4 142.8
+#&gt; attr(,"class")
+#&gt; [1] "boundingbox"</div><div class='input'>
+<span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>nat</span>)
+<span class='fu'><a href='https://rdrr.io/pkg/nat/man/plot3d.html'>plot3d</a></span>(<span class='no'>JRCVNC2018F</span>)
+<span class='fu'><a href='https://rdrr.io/pkg/nat/man/plot3d.html'>plot3d</a></span>(<span class='no'>JRCVNC2018F.surf</span>)
+<span class='fu'><a href='https://rdrr.io/pkg/nat/man/plot3d.html'>plot3d</a></span>(<span class='no'>JRCVNC2018F.surf</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='st'>'red'</span>, <span class='kw'>alpha</span><span class='kw'>=</span><span class='fl'>0.3</span>)
 }</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
