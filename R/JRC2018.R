@@ -1,6 +1,6 @@
-#' Template information and surface model for the JRC2018 reference brains
+#' Template information and surface models for the JRC2018 reference brains
 #'
-#' @description The \code{JRC2018F} reference brains is an average template
+#' @description The \code{JRC2018F} reference brain is an average template
 #'   brain constructed from brains labelled with brp-SNAP, dehydrated, and
 #'   mounted in DPX and imaged at 0.19 x 0.19 x 0.38 microns. The image was
 #'   downsampled in XY to result in a 0.38 micron isotropic voxel size, which we
@@ -33,11 +33,11 @@
 "JRC2018U"
 
 
-#' @description \code{JRC2018F.surf} and \code{JRC2018U.surf} were generated in
-#'   Amira from a 2 micron downsampled and Lanczos filtered version of the
-#'   JRC2018F template brain. A surface was then generated with a threshold
-#'   level of 20; this was then smoothed and downsampled. See
-#'   \code{data-raw/JFRC2018_FEMALE_surface.hx} or
+#' @description \code{JRC2018F.surf}, \code{JRC2018U.surf} were generated in
+#'   Amira from a 2 micron downsampled, Lanczos filtered 8 bit version of the
+#'   respective template brain. A surface was then generated with a threshold
+#'   level of 20 in case of brains this was then smoothed and downsampled. See
+#'   \code{data-raw/JFRC2018_FEMALE_surface.hx},
 #'   \code{data-raw/JRC2018_UNISEX_surface.hx} for details.
 #'
 #' @name JRC2018F.surf
@@ -59,6 +59,7 @@
 
 #' @name JRC2018U.surf
 #' @rdname JRC2018
+#' @seealso \code{\link{JRCVNC2018}}
 #' @docType data
 #' @examples
 #' dim(JRC2018U)
@@ -73,3 +74,43 @@
 #' plot3d(JRC2018U.surf, col='red', alpha=0.3)
 #' }
 "JRC2018U.surf"
+
+
+#' Template information and surface models for JRC2018 VNC templates
+#'
+#' @description The \code{JRCVNC2018F} reference VNC was constructed as for
+#'   \code{\link{JRC2018F}} brain based on 36 individuals, with a resolution of
+#'  0.4 x 0.4 x 0.4 microns.
+#' @rdname JRCVNC2018
+#' @name JRCVNC2018
+#' @aliases JRCVNC2018F
+#' @docType data
+"JRCVNC2018F"
+
+#' @description \code{JRCVNC2018F.surf}, was generated in
+#'   Amira from a 2 micron downsampled, Lanczos filtered version of the
+#'   respective template brain. A surface was then generated with a threshold
+#'   level of 2800 and then smoothed and downsampled.
+#'
+#' @references An unbiased template of the Drosophila brain and ventral nerve
+#'   cord John A Bogovic, Hideo Otsuna, Larissa Heinrich, Masayoshi Ito,
+#'   Jennifer Jeter, Geoffrey W Meissner, Aljoscha Nern, Jennifer Colonell, Oz
+#'   Malkesman, Kei Ito, Stephan Saalfeld bioRxiv 376384; doi:
+#'   \href{https://doi.org/10.1101/376384}{doi:10.1101/376384}
+#' @name JRCVNC2018F.surf
+#' @rdname JRCVNC2018
+#' @docType data
+#' @seealso \code{\link{JRCVNC2018F}}
+#' @examples
+#' JRCVNC2018F
+#' dim(JRCVNC2018F)
+#' voxdims(JRCVNC2018F)
+#' boundingbox(JRCVNC2018F)
+#'
+#' \dontrun{
+#' library(nat)
+#' plot3d(JRCVNC2018F)
+#' plot3d(JRCVNC2018F.surf)
+#' plot3d(JRCVNC2018F.surf, col='red', alpha=0.3)
+#' }
+"JRCVNC2018F.surf"

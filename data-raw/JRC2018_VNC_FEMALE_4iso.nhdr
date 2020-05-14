@@ -1,0 +1,12 @@
+NRRD0004
+type: uint16
+encoding: gzip
+endian: big
+dimension: 3
+sizes: 660 1342 358
+space dimension: 3
+space directions: (0.4,0,0) (0,0.4,0) (0,0,0.4)
+space units: microns microns microns
+lineskip: 11
+datafile: JRC2018_VNC_FEMALE_4iso.nrrd
+
