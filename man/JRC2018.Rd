@@ -6,7 +6,7 @@
 \alias{JRC2018U}
 \alias{JRC2018F.surf}
 \alias{JRC2018U.surf}
-\title{Template information and surface model for the JRC2018 reference brains}
+\title{Template information and surface models for the JRC2018 reference brains}
 \format{
 An object of class \code{templatebrain} of dimension 1652 x 768 x 479.
 
@@ -26,7 +26,7 @@ JRC2018F.surf
 JRC2018U.surf
 }
 \description{
-The \code{JRC2018F} reference brains is an average template
+The \code{JRC2018F} reference brain is an average template
   brain constructed from brains labelled with brp-SNAP, dehydrated, and
   mounted in DPX and imaged at 0.19 x 0.19 x 0.38 microns. The image was
   downsampled in XY to result in a 0.38 micron isotropic voxel size, which we
@@ -35,11 +35,11 @@ The \code{JRC2018F} reference brains is an average template
 The \code{JRC2018U} reference brain was constructed as for
   \code{JRC2018F} brain but pooling both male and female brains.
 
-\code{JRC2018F.surf} and \code{JRC2018U.surf} were generated in
-  Amira from a 2 micron downsampled and Lanczos filtered version of the
-  JRC2018F template brain. A surface was then generated with a threshold
-  level of 20; this was then smoothed and downsampled. See
-  \code{data-raw/JFRC2018_FEMALE_surface.hx} or
+\code{JRC2018F.surf}, \code{JRC2018U.surf} were generated in
+  Amira from a 2 micron downsampled, Lanczos filtered 8 bit version of the
+  respective template brain. A surface was then generated with a threshold
+  level of 20 in case of brains this was then smoothed and downsampled. See
+  \code{data-raw/JFRC2018_FEMALE_surface.hx},
   \code{data-raw/JRC2018_UNISEX_surface.hx} for details.
 }
 \details{
@@ -82,5 +82,8 @@ An unbiased template of the Drosophila brain and ventral nerve
   Jennifer Jeter, Geoffrey W Meissner, Aljoscha Nern, Jennifer Colonell, Oz
   Malkesman, Kei Ito, Stephan Saalfeld bioRxiv 376384; doi:
   \href{https://doi.org/10.1101/376384}{doi:10.1101/376384}
+}
+\seealso{
+\code{\link{JRCVNC2018}}
 }
 \keyword{datasets}
