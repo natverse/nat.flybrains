@@ -1,7 +1,7 @@
 # nat.flybrains
 <!-- badges: start -->
 [![natverse](https://img.shields.io/badge/natverse-Part%20of%20the%20natverse-a241b6)](https://natverse.github.io)
-[![Build Status](https://travis-ci.org/natverse/nat.flybrains/master.svg)](https://travis-ci.org/natverse/nat.flybrains)
+[![Build Status](https://travis-ci.org/natverse/nat.flybrains.svg?branch=master)](https://travis-ci.org/natverse/nat.flybrains)
 [![Release Version](https://img.shields.io/github/release/natverse/nat.flybrains.svg)](https://github.com/natverse/nat.flybrains/releases/latest)
 [![DOI](https://zenodo.org/badge/18224570.svg)](https://zenodo.org/badge/latestdoi/18224570)
 [![Docs](https://img.shields.io/badge/docs-100%25-brightgreen.svg)](https://natverse.github.io/nat.flybrains/reference/)
