@@ -1,6 +1,15 @@
 language: r
-sudo: required
-dist: trusty
+dist: xenial
+sudo: false
+r:
+  - oldrel
+  - release
+r_build_args: --no-manual
+r_check_args: --no-manual
+addons:
+  apt:
+    packages:
+    - libglu1-mesa-dev
 cache:
   packages: true
   directories:
@@ -11,16 +20,6 @@ before_install:
   - bash build-cmtk.sh
 before_script:
   - export PATH=$PATH:$HOME/usr/local/bin
-r_binary_packages:
-  - rgl
-  - RANN
-  - igraph
-  - filehash
-  - digest
-  - testthat
-  - RCurl
-  - stringi
-  - stringr
 env:
   global:
     - RGL_USE_NULL=TRUE
