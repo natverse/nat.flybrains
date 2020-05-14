@@ -1,7 +1,7 @@
 # create JRCVNC2018F template
 
 library(nat)
-JRCVNC2018F.surf=read.hxsurf('data-raw/JRC2018_VNC_FEMALE_4iso_binary_smooth.surf.10k.surf')
+JRCVNC2018F.surf=read.hxsurf('data-raw/JRC2018_VNC_FEMALE_4um_iso_smooth.surf.18k.surf')
 library(devtools)
 use_data(JRCVNC2018F.surf, overwrite = T)
 

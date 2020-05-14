@@ -41,11 +41,12 @@
 "JRCVNC2018F"
 
 
-#' @description \code{JRC2018F.surf} and \code{JRC2018U.surf} were generated in
+#' @description \code{JRC2018F.surf}, \code{JRC2018U.surf}, and  \code{JRCVNC2018F.surf} were generated in
 #'   Amira from a 2 micron downsampled and Lanczos filtered version of the
-#'   JRC2018F template brain. A surface was then generated with a threshold
-#'   level of 20; this was then smoothed and downsampled. See
-#'   \code{data-raw/JFRC2018_FEMALE_surface.hx} or
+#'   respective template brain or VNC. A surface was then generated with a threshold
+#'   level of 20 in case of brains , 2800 in case of VNC;
+#'   this was then smoothed and downsampled. See
+#'   \code{data-raw/JFRC2018_FEMALE_surface.hx},
 #'   \code{data-raw/JRC2018_UNISEX_surface.hx} for details.
 #'
 #' @name JRC2018F.surf
