@@ -36,7 +36,6 @@
 #'   K; Jain, Viren; Plaza, Stephen M
 #'   \href{https://www.biorxiv.org/content/10.1101/2020.01.21.911859v1}{bioRxiv
 #'   doi:10.1101/2020.01.21.911859}.
-#'
 NULL
 # "JRCFIB2018F"
 
