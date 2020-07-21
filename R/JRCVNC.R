@@ -22,25 +22,13 @@
 #' @name JRCVNC2018F
 #' @rdname JRCVNC
 #' @docType data
-"JRC2018F"
-
-
-
-
-
-#' Template information and surface models for JRC2018 VNC templates
-#'
-#' @description The \code{JRCVNC2018F} reference VNC was constructed as for
-#'   \code{\link{JRC2018F}} brain based on 36 individuals, with a resolution of
-#'  0.4 x 0.4 x 0.4 microns.
-#' @rdname JRCVNC2018
-#' @name JRCVNC2018
-#' @aliases JRCVNC2018F
-#' @docType data
 "JRCVNC2018F"
 
+
+
+
 #' @description The \code{JRCVNC2018U} reference VNC was constructed as for
-#'   \code{JRCVNC2018F} brain but pooling both male and female brains.
+#'   \code{JRCVNC2018F} VNC but pooling both male and female brains.
 #' @rdname JRCVNC
 #' @name JRCVNC2018U
 #' @docType data
@@ -51,15 +39,9 @@
 #'   respective template VNC. A surface was then generated with a threshold
 #'   level of 2800 and then smoothed and downsampled.
 #'
-#' @references An unbiased template of the Drosophila brain and ventral nerve
-#'   cord John A Bogovic, Hideo Otsuna, Larissa Heinrich, Masayoshi Ito,
-#'   Jennifer Jeter, Geoffrey W Meissner, Aljoscha Nern, Jennifer Colonell, Oz
-#'   Malkesman, Kei Ito, Stephan Saalfeld bioRxiv 376384; doi:
-#'   \href{https://doi.org/10.1101/376384}{doi:10.1101/376384}
 #' @name JRCVNC2018F.surf
-#' @rdname JRCVNC2018
+#' @rdname JRCVNC
 #' @docType data
-#' @seealso \code{\link{JRCVNC2018F}}
 #' @examples
 #' JRCVNC2018F
 #' dim(JRCVNC2018F)
@@ -79,11 +61,6 @@
 #'   respective template VNC. A surface was then generated with a threshold
 #'   level of 20 and then smoothed and downsampled.
 #'
-#' @references An unbiased template of the Drosophila brain and ventral nerve
-#'   cord John A Bogovic, Hideo Otsuna, Larissa Heinrich, Masayoshi Ito,
-#'   Jennifer Jeter, Geoffrey W Meissner, Aljoscha Nern, Jennifer Colonell, Oz
-#'   Malkesman, Kei Ito, Stephan Saalfeld bioRxiv 376384; doi:
-#'   \href{https://doi.org/10.1101/376384}{doi:10.1101/376384}
 #' @name JRCVNC2018U.surf
 #' @rdname JRCVNC
 #' @docType data

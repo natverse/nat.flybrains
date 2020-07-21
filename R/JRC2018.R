@@ -59,7 +59,7 @@
 
 #' @name JRC2018U.surf
 #' @rdname JRC2018
-#' @seealso \code{\link{JRCVNC2018}}
+#' @seealso \code{\link{JRCVNC2018F}}
 #' @docType data
 #' @examples
 #' dim(JRC2018U)

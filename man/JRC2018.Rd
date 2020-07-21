@@ -84,6 +84,6 @@ An unbiased template of the Drosophila brain and ventral nerve
   \href{https://doi.org/10.1101/376384}{doi:10.1101/376384}
 }
 \seealso{
-\code{\link{JRCVNC2018}}
+\code{\link{JRCVNC2018F}}
 }
 \keyword{datasets}
