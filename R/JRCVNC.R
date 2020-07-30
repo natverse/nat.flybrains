@@ -19,7 +19,8 @@
 #'   Jennifer Jeter, Geoffrey W Meissner, Aljoscha Nern, Jennifer Colonell, Oz
 #'   Malkesman, Kei Ito, Stephan Saalfeld bioRxiv 376384; doi:
 #'   \href{https://doi.org/10.1101/376384}{doi:10.1101/376384}
-#' @name JRCVNC2018F
+#' @name JRCVNC2018
+#' @aliases JRCVNC2018F
 #' @rdname JRCVNC
 #' @docType data
 "JRCVNC2018F"
