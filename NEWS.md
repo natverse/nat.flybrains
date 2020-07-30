@@ -1,6 +1,11 @@
+# nat.flybrains 1.8.1
+
+* Add `JRCVNC2018U` template nerve cord and surface, from the Bogovic
+  and Saalfeld average template brains. Thanks to @istvantaisz (#45,#46)
+  
 # nat.flybrains 1.8.0
 
-* Add `JRCFIB2018F` Janleia electron microscopy hemibrain template brain; this
+* Add `JRCFIB2018F` Janelia electron microscopy hemibrain template brain; this
   will help link EM connectomics and light level anatomical data (#43)
 * Add `JRC2018U` intersex template brain and surface, from the Bogovic
   and Saalfeld average template brains. This intersex template brain from 
