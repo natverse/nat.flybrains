@@ -22,6 +22,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -34,7 +36,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">nat.flybrains</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.8.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.8.2</span>
       </span>
     </div>
 
@@ -58,10 +60,10 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://natverse.github.io">natverse</a>
+  <a href="https://natverse.github.io" class="external-link">natverse</a>
 </li>
 <li>
-  <a href="https://github.com/natverse/nat.flybrains">
+  <a href="https://github.com/natverse/nat.flybrains" class="external-link">
     <span class="fa fa-github fa-lg"></span>
      
   </a>
@@ -78,111 +80,116 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="natflybrains" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#natflybrains" class="anchor"></a>nat.flybrains</h1></div>
+<div class="section level1">
+<div class="page-header"><h1 id="natflybrains">nat.flybrains<a class="anchor" aria-label="anchor" href="#natflybrains"></a>
+</h1></div>
 <!-- badges: start -->
 
-<p><strong>nat.flybrains</strong> provides additional data and functions for use with the <a href="https://github.com/jefferis/nat">NeuroAnatomy Toolbox</a> (nat). In particular <strong>nat.flybrains</strong> defines the physical properties of a number of commonly used template brains in <em>Drosophila</em> neuronatomy including:</p>
+<p><strong>nat.flybrains</strong> provides additional data and functions for use with the <a href="https://github.com/jefferis/nat" class="external-link">NeuroAnatomy Toolbox</a> (nat). In particular <strong>nat.flybrains</strong> defines the physical properties of a number of commonly used template brains in <em>Drosophila</em> neuronatomy including:</p>
 <ul>
 <li>
-<a href="https://dx.doi.org/10.1016/j.celrep.2012.09.011">JFRC2</a>,</li>
+<a href="https://dx.doi.org/10.1016/j.celrep.2012.09.011" class="external-link">JFRC2</a>,</li>
 <li>
-<a href="https://dx.doi.org/10.1016/j.cub.2010.07.045">IS2</a>,</li>
+<a href="https://dx.doi.org/10.1016/j.cub.2010.07.045" class="external-link">IS2</a>,</li>
 <li>
-<a href="https://dx.doi.org/10.1016/j.cub.2010.08.025">T1</a>,</li>
+<a href="https://dx.doi.org/10.1016/j.cub.2010.08.025" class="external-link">T1</a>,</li>
 <li>
-<a href="https://dx.doi.org/10.1016/j.cub.2010.11.056">FlyCircuit</a>,</li>
+<a href="https://dx.doi.org/10.1016/j.cub.2010.11.056" class="external-link">FlyCircuit</a>,</li>
 <li>
-<a href="https://dx.doi.org/10.1016/j.neuron.2013.12.017">Insect Brain Name</a>,</li>
+<a href="https://dx.doi.org/10.1016/j.neuron.2013.12.017" class="external-link">Insect Brain Name</a>,</li>
 </ul>
-<p>along with bridging registrations between some of these template brains (see <a href="https://github.com/jefferislab/BridgingRegistrations" class="uri">https://github.com/jefferislab/BridgingRegistrations</a>) and functions to transform objects such as <strong>nat</strong> neurons from one space to another as simply as:</p>
-<pre><code># convert neuron from IS2 space to JFRC2 space
-myneuron.jfrc2=xform_brain(myneuron, sample=IS2, reference=JFRC2)
+<p>along with bridging registrations between some of these template brains (see <a href="https://github.com/jefferislab/BridgingRegistrations" class="external-link uri">https://github.com/jefferislab/BridgingRegistrations</a>) and functions to transform objects such as <strong>nat</strong> neurons from one space to another as simply as:</p>
+<pre><code><span class="co"># convert neuron from IS2 space to JFRC2 space</span>
+<span class="va">myneuron.jfrc2</span><span class="op">=</span><span class="fu">xform_brain</span><span class="op">(</span><span class="va">myneuron</span>, sample<span class="op">=</span><span class="va">IS2</span>, reference<span class="op">=</span><span class="va">JFRC2</span><span class="op">)</span>
 
-# flip neuron to opposite hemisphere of JFRC2 space
-myneuron.jfrc2.flip=mirror_brain(myneuron.jfrc2, JFRC2)
-
-# to install additional/updated registrations 
-# (beyond those distributed as part of the R package)
-# Strongly recommended!
-download_jefferislab_registrations()
-
-# for more information
-JFRC2
-IS2
-?xform_brain
-?mirror_brain
-</code></pre>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
-<p>This package is fully functional but there are presently no plans to release a version to CRAN, since there is a significant amount of data included with the package (and CRAN discourages large packages).</p>
-<p>You can, however, download the <a href="https://github.com/natverse/nat.flybrains/tarball/master">tar ball</a>, and run <code>R CMD INSTALL</code> on it, or (highly recommended) use the <strong>devtools</strong> package to install straight from github:</p>
-<div class="sourceCode" id="cb2"><pre class="r"><span class="co"># install devtools package if you don't already have it</span>
-<span class="kw">if</span> (!<span class="fu"><a href="https://rdrr.io/r/base/library.html">require</a></span>(<span class="st">"remotes"</span>)) <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"remotes"</span>)
-<span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"natverse/nat.flybrains"</span>)
+<span class="co"># flip neuron to opposite hemisphere of JFRC2 space</span>
+<span class="va">myneuron.jfrc2.flip</span><span class="op">=</span><span class="fu">mirror_brain</span><span class="op">(</span><span class="va">myneuron.jfrc2</span>, <span class="va">JFRC2</span><span class="op">)</span>
 
 <span class="co"># to install additional/updated registrations </span>
 <span class="co"># (beyond those distributed as part of the R package)</span>
 <span class="co"># Strongly recommended!</span>
-<span class="kw pkg">nat.flybrains</span><span class="kw ns">::</span><span class="fu"><a href="reference/download_jefferislab_registrations.html">download_jefferislab_registrations</a></span>()</pre></div>
-<p>Note: Windows users need <a href="https://cloud.r-project.org/bin/windows/Rtools/">Rtools</a> and <a href="https://CRAN.R-project.org/package=devtools">devtools</a> to install this way.</p>
+<span class="fu"><a href="reference/download_jefferislab_registrations.html">download_jefferislab_registrations</a></span><span class="op">(</span><span class="op">)</span>
+
+<span class="co"># for more information</span>
+<span class="va">JFRC2</span>
+<span class="va">IS2</span>
+<span class="op">?</span><span class="va">xform_brain</span>
+<span class="op">?</span><span class="va">mirror_brain</span></code></pre>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<p>This package is fully functional but there are presently no plans to release a version to CRAN, since there is a significant amount of data included with the package (and CRAN discourages large packages).</p>
+<p>You can, however, download the <a href="https://github.com/natverse/nat.flybrains/tarball/master" class="external-link">tar ball</a>, and run <code>R CMD INSTALL</code> on it, or (highly recommended) use the <strong>devtools</strong> package to install straight from github:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># install devtools package if you don't already have it</span>
+<span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="st"><a href="https://remotes.r-lib.org" class="external-link">"remotes"</a></span><span class="op">)</span><span class="op">)</span> <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span>
+<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/remotes/man/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"natverse/nat.flybrains"</span><span class="op">)</span>
+
+<span class="co"># to install additional/updated registrations </span>
+<span class="co"># (beyond those distributed as part of the R package)</span>
+<span class="co"># Strongly recommended!</span>
+<span class="fu">nat.flybrains</span><span class="fu">::</span><span class="fu"><a href="reference/download_jefferislab_registrations.html">download_jefferislab_registrations</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<p>Note: Windows users need <a href="https://cloud.r-project.org/bin/windows/Rtools/" class="external-link">Rtools</a> and <a href="https://CRAN.R-project.org/package=devtools" class="external-link">devtools</a> to install this way.</p>
 </div>
 </div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Browse source code at <br><a href="https://github.com/natverse/nat.flybrains/">https://​github.com/​natverse/​nat.flybrains/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/natverse/nat.flybrains/issues">https://​github.com/​natverse/​nat.flybrains/​issues</a>
-</li>
-</ul>
-</div>
-<div class="license">
-<h2>License</h2>
-<ul class="list-unstyled">
-<li><a href="LICENSE.html">Full license</a></li>
-<li><small><a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a></small></li>
-</ul>
-</div>
-<div class="citation">
-<h2>Citation</h2>
-<ul class="list-unstyled">
-<li><a href="authors.html">Citing nat.flybrains</a></li>
-</ul>
-</div>
-<div class="developers">
-<h2>Developers</h2>
-<ul class="list-unstyled">
-<li>Gregory Jefferis <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-0587-9355" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
-<li>James Manton <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0001-9260-3156" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li><a href="https://github.com/natverse/nat.flybrains/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/natverse/nat.flybrains/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
+<div class="license">
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
-<li><a href="https://natverse.github.io"><img src="https://img.shields.io/badge/natverse-Part%20of%20the%20natverse-a241b6" alt="natverse"></a></li>
-<li><a href="https://travis-ci.org/natverse/nat.flybrains"><img src="https://travis-ci.org/natverse/nat.flybrains.svg?branch=master" alt="Build Status"></a></li>
-<li><a href="https://github.com/natverse/nat.flybrains/releases/latest"><img src="https://img.shields.io/github/release/natverse/nat.flybrains.svg" alt="Release Version"></a></li>
-<li><a href="https://zenodo.org/badge/latestdoi/18224570"><img src="https://zenodo.org/badge/18224570.svg" alt="DOI"></a></li>
-<li><a href="https://natverse.github.io/nat.flybrains/reference/"><img src="https://img.shields.io/badge/docs-100%25-brightgreen.svg" alt="Docs"></a></li>
+<li><a href="LICENSE.html">Full license</a></li>
+<li><small><a href="https://www.r-project.org/Licenses/GPL-3" class="external-link">GPL-3</a></small></li>
 </ul>
 </div>
+
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing nat.flybrains</a></li>
+</ul>
 </div>
+
+<div class="developers">
+<h2 data-toc-skip>Developers</h2>
+<ul class="list-unstyled">
+<li>Gregory Jefferis <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-0587-9355" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>James Manton <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0001-9260-3156" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+</ul>
+</div>
+
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://natverse.github.io" class="external-link"><img src="https://img.shields.io/badge/natverse-Part%20of%20the%20natverse-a241b6" alt="natverse"></a></li>
+<li><a href="https://travis-ci.org/natverse/nat.flybrains" class="external-link"><img src="https://travis-ci.org/natverse/nat.flybrains.svg?branch=master" alt="Build Status"></a></li>
+<li><a href="https://github.com/natverse/nat.flybrains/releases/latest" class="external-link"><img src="https://img.shields.io/github/release/natverse/nat.flybrains.svg" alt="Release Version"></a></li>
+<li><a href="https://zenodo.org/badge/latestdoi/18224570" class="external-link"><img src="https://zenodo.org/badge/18224570.svg" alt="DOI"></a></li>
+<li><a href="https://natverse.github.io/nat.flybrains/reference/" class="external-link"><img src="https://img.shields.io/badge/docs-100%25-brightgreen.svg" alt="Docs"></a></li>
+</ul>
+</div>
+
+  </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by Gregory Jefferis, James Manton.</p>
+  <p></p>
+<p>Developed by Gregory Jefferis, James Manton.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
 </div>
 
       </footer>
@@ -190,6 +197,8 @@ IS2
 
   
 
+
+  
 
   </body>
 </html>
