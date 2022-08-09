@@ -2,7 +2,7 @@ Type: Package
 Package: nat.flybrains
 Title: Additional data for use with the NeuroAnatomy Toolbox
     (nat)
-Version: 1.8.1
+Version: 1.8.2
 Authors@R: 
     c(person(given = "Gregory",
              family = "Jefferis",

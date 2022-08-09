@@ -1,3 +1,7 @@
+# nat.flybrains 1.8.2
+
+* Add `JRC2018M` template brain, from the Bogovic and Saalfeld average template brains.
+
 # nat.flybrains 1.8.1
 
 * Add `JRCVNC2018U` template nerve cord and surface, from the Bogovic
