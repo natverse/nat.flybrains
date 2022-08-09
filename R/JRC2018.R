@@ -33,6 +33,14 @@
 "JRC2018U"
 
 
+#' @description The \code{JRC2018M} reference brain was constructed as for
+#'   \code{JRC2018F} brain but with 26 male brains.
+#' @rdname JRC2018
+#' @name JRC2018M
+#' @docType data
+"JRC2018M"
+
+
 #' @description \code{JRC2018F.surf}, \code{JRC2018U.surf} were generated in
 #'   Amira from a 2 micron downsampled, Lanczos filtered 8 bit version of the
 #'   respective template brain. A surface was then generated with a threshold

@@ -4,6 +4,7 @@
 \name{JRC2018F}
 \alias{JRC2018F}
 \alias{JRC2018U}
+\alias{JRC2018M}
 \alias{JRC2018F.surf}
 \alias{JRC2018U.surf}
 \title{Template information and surface models for the JRC2018 reference brains}
@@ -11,6 +12,8 @@
 An object of class \code{templatebrain} of dimension 1652 x 768 x 479.
 
 An object of class \code{templatebrain} of dimension 1652 x 773 x 456.
+
+An object of class \code{templatebrain} of dimension 1561 x 744 x 546.
 
 An object of class \code{hxsurf} (inherits from \code{list}) of length 4.
 
@@ -20,6 +23,8 @@ An object of class \code{hxsurf} (inherits from \code{list}) of length 4.
 JRC2018F
 
 JRC2018U
+
+JRC2018M
 
 JRC2018F.surf
 
@@ -34,6 +39,9 @@ The \code{JRC2018F} reference brain is an average template
 
 The \code{JRC2018U} reference brain was constructed as for
   \code{JRC2018F} brain but pooling both male and female brains.
+
+The \code{JRC2018M} reference brain was constructed as for
+  \code{JRC2018F} brain but with 26 male brains.
 
 \code{JRC2018F.surf}, \code{JRC2018U.surf} were generated in
   Amira from a 2 micron downsampled, Lanczos filtered 8 bit version of the
